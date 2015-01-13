@@ -1,0 +1,16 @@
+{
+  "name": "hkjc",
+  "private": true,
+  "dependencies": {
+    "requirejs": "~2.1.14",
+    "requirejs-text": "~2.0.12",
+    "underscore": "~1.7.0",
+    "backbone": "~1.1.2",
+    "zeptojs": "~1.1.4"
+  },
+  "devDependencies": {
+    "iscroll": "~5.1.2",
+    "zepto-cookie": "*",
+    "query-string": "~1.0.0"
+  }
+}
