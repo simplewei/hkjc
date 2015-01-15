@@ -71,7 +71,7 @@ module.exports = function (grunt) {
         open: true,
         livereload: 35729,
         // Change this to '0.0.0.0' to access the server from outside
-        hostname: 'm.tuishui.tenpay.com'
+        hostname: '127.0.0.1'
       },
       proxypass: {
           proxies: [
@@ -80,6 +80,12 @@ module.exports = function (grunt) {
                   context: '/cgi-bin',
                   // 退税生产环境ip
                   host: '10.133.41.107'
+              },{
+                  // 反向代理路径
+                  context: '/node',
+                  // 本地nodejs
+                  host: 'localhost',
+                  port: 8000
               }
           ]
       },

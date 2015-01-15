@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>赛马</title>
+    <meta name="description" content="赛马">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!-- build:css(dist) /styles/apply.min.css -->
+
+    <!-- endbuild -->
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header>门票</header>
+        <div class="container">
+            <div id="qrcode">
+                <div class="header" style="width=100%;background:#333;color:#fff;">门票</div>
+            </div>
+        </div>
+        
+
+        <input type="text" id="qrInput"><br><br>
+        <button id="qrbtn">生成二维码</button><br><br>
+        <button id="canvasbtn">生成门票截图</button>
+    </div>
+
+
+    <!-- build:js(.) /scripts/bower_components/vendor.min.js -->
+    <!-- bower:js -->
+    <script type="text/javascript" src="/bower_components/requirejs/require.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js(dist) /scripts/modules/apply/main.min.js -->
+    <script type="text/javascript" src="/scripts/config/r.config.js"></script>
+    <script src="./html2canvas.js"></script>
+
+    <!-- endbuild -->
+
+</body>
+
+</html>
