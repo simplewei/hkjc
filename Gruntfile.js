@@ -196,16 +196,7 @@ module.exports = function (grunt) {
           mainConfigFile: "<%= config.app %>/scripts/config/r.config.js",
           
           modules: [
-          
-          {
-            name: "modules/apply/main",
-          },{
-            name: "modules/record/main"
-          },{
-            name: "modules/my/myPassport"
-          },{
-            name: "modules/my/main"
-          }],
+          ],
           dir: 'dist',
           skipDirOptimize: true
         }
