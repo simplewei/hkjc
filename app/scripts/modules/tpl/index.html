@@ -1,0 +1,42 @@
+<!-- 
+    checkin_addr    1：跑马地   2：沙田
+    race_addr       1：跑马地   2：沙田
+    race_type       1: 日常     2：夜场
+ -->
+
+<div class="form-line">
+    <div class="form-label">
+        <label for="">觀賽日期</label>
+    </div>
+    <div class="form-cnt">
+        <select class="select select-time" name="" id="">
+            <% _.each(race_info, function(){ %>
+                <!-- <option value="">1月14日 星期三 夜馬</option> -->
+                <% var date = new Date(this.race_day); %>
+                <option value="">1月14日 星期三 夜馬</option>
+            <% }) %>
+        </select>
+    </div>
+    <div class="form-ico"><span class="ico-arrow"><!--箭头图标--></span>
+    </div>
+</div>
+<div class="form-line">
+    <div class="form-label">
+        <label for="">賽事地點</label>
+    </div>
+    <div class="form-cnt">
+        <input class="text" type="text" id="" placeholder="" value="沙田" readonly>
+    </div>
+</div>
+<div class="form-line">
+    <div class="form-label">
+        <label for="">入場地點</label>
+    </div>
+    <div class="form-cnt">
+        <select class="select select-location" name="" id="">
+            <option value="">跑馬地</option>
+        </select>
+    </div>
+    <div class="form-ico"><span class="ico-arrow"><!--箭头图标--></span>
+    </div>
+</div>
