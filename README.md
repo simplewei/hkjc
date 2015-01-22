@@ -4,10 +4,14 @@
 这是一个基于YEOMAN搭建的系统，集成了grunt-proxy、requirejs及rev打包特性。
 通过下面简单的几步你就可以搭建起整个前端开发系统。
 
-##1.  选择1个本地文件夹
+##1.  下载项目
+
+选择1个本地文件夹,在此路径下打开命令行
 
 	git init
 	git clone https://github.com/simplewei/hkjc.git
+
+	cd hkjc
 
 ##2.  安装依赖
 
@@ -17,6 +21,8 @@
 > 如果本地没有安装过bower，请参看 [yeoman中文官网](http://yeomanjs.org/) 
 
 > 通过 `npm install bower -g` 安装依赖，并且依赖本地git（已经安装过git忽略）
+
+> 内网环境git、npm代理推荐 Proxifier 软件
 
 ##3.  自定义zepto模块，并编译出目标文件
 
