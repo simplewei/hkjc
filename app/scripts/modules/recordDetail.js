@@ -48,7 +48,10 @@ var demo = {"list_infos":[{"checkin_addr":"2","create_time":"2015-01-21 15:18:56
 					text: params.qrcode
 				});
 				$('.btn-line', $layer).tap(function(){
-					$layer.remove()
+					$layer.find('.layer-main').addClass('fadeOut');
+					setTimeout(function(){
+						$layer.remove();
+					}, 500);
 				});
 			};
 
