@@ -6,15 +6,15 @@
 
 
 
-##1  选择1个本地文件夹
+##1.  选择1个本地文件夹
 
-		git init
-		git clone https://github.com/simplewei/hkjc.git
+	git init
+	git clone https://github.com/simplewei/hkjc.git
 
-##2  安装依赖
+##2.  安装依赖
 
-		npm install
-		bower install
+	npm install
+	bower install
 
 
 ----------
@@ -23,19 +23,19 @@
 > 如果本地没有安装过bower，请参看 [yeoman中文官网](http://yeomanjs.org/) 
 > 通过 `npm install bower -g` 安装依赖，并且依赖本地git（已经安装过git忽略）
 
-##3  自定义zepto模块，并编译出目标文件
+##3.  自定义zepto模块，并编译出目标文件
 
-	找到bower_components/zeptojs/make文件 第42行,添加deferred、callbacks模块，结果如下：
+找到bower_components/zeptojs/make文件 第42行, 增加touch、deferred特性，替换为下面代码：
 
-		modules = (env['MODULES'] || 'zepto event ajax form ie callbacks deferred ie touch').split(' ')
+	modules = (env['MODULES'] || 'zepto event ajax form ie callbacks deferred ie touch').split(' ')
 
-	然后在此目录下运行
+然后在此目录下运行
 
-		npm install
-		npm run-script dist
+	npm install
+	npm run-script dist
 
 
-- 运行demo
+##4. 运行demo
 
 		grunt serve
 		
