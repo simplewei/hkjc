@@ -11,7 +11,7 @@
     <meta content="" name="pgv" />
     <title>賽馬會公眾席門票</title>
     <link href="/styles/main.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="/styles/widgets/loading.css">
     <style>
     @-webkit-keyframes fadeIn {
         0% {
@@ -67,7 +67,7 @@
             <ul>
                 <li class="nav-item on"><a href="/">購買門票</a>
                 </li>
-                <li class="nav-item"><a href="/records.html">購買記錄</a>
+                <li class="nav-item"><a href="/pages/record.html">購買記錄</a>
                 </li>
             </ul>
         </header>
@@ -84,16 +84,13 @@
                     <p>香港賽馬會公眾席入場門票</p>
                     <p>HK$<em>1.00</em>/張</p>
                 </div>
-                <div class="race-info">
+                <div>
                     <div class="form-line">
                         <div class="form-label">
                             <label for="">觀賽日期</label>
                         </div>
                         <div class="form-cnt">
-                            <select class="select select-time hide" name="" id="">
-                                <% debugger %>
-                                <option value="">1月14日 星期三 夜馬</option>
-                                <% debugger %>
+                            <select class="select select-location" id="race-date">
                             </select>
                         </div>
                         <div class="form-ico"><span class="ico-arrow"><!--箭头图标--></span>
@@ -104,7 +101,7 @@
                             <label for="">賽事地點</label>
                         </div>
                         <div class="form-cnt">
-                            <input class="text" type="text" id="" placeholder="" value="沙田" readonly>
+                            <input class="text" type="text" id="race-addr"value="" readonly="">
                         </div>
                     </div>
                     <div class="form-line">
@@ -112,7 +109,7 @@
                             <label for="">入場地點</label>
                         </div>
                         <div class="form-cnt">
-                            <select class="select select-location" name="" id="">
+                            <select class="select select-location" id="race-chkin">
                                 <option value="">跑馬地</option>
                             </select>
                         </div>
@@ -128,13 +125,11 @@
                         <!--交互说明：
                             on | 当点击del/add瞬间，在其后追加此类
                         -->
-                        <div class="count-select">
-                            <a href="#none" class="del on">-</a>
+                        <div class="count-select" data-limit=10>
+                            <a href="javascript:;" class="del">-</a>
                             <input class="number" type="number" id="" placeholder="" value="1" readonly>
-                            <a href="#none" class="add">+</a>
+                            <a href="javascript:;" class="add">+</a>
                         </div>
-                    </div>
-                    <div class="form-ico"><span class="ico-arrow"><!--箭头图标--></span>
                     </div>
                 </div>
             </div>
@@ -142,16 +137,18 @@
                 <div class="form-label"><span class="title">總支付：</span>
                 </div>
                 <div class="form-cnt">
-                    <del>原价HK$ 20.00</del>
-                    <span class="now">HK$<em>2.00</em></span>
+                    <del class="old">原价HK$ <em>20.00</em></del>
+                    <span class="now">HK$<em>1.00</em></span>
                 </div>
             </div>
             <div class="form-line-btn">
-                <a class="btn-opt btn-book" href="#">立即預定</a>
+                <a class="btn-opt btn-book" href="javascript:;">立即預定</a>
             </div>
         </form>
-        <p class="warmtips">入場人士須年滿18歲&nbsp;&nbsp;切勿沉迷賭博<a class="g-link" href="notice.shtml">條款及細則</a>
-        </p>
+        <footer class="footer">
+            <p class="warmtips">入場人士須年滿18歲&nbsp;&nbsp;切勿沉迷賭博<a class="g-link" href="notice.shtml">條款及細則</a>
+            </p>
+        </footer>
     </div>
 
     <!-- build:js(.) /scripts/bower_components/vendor.min.js -->

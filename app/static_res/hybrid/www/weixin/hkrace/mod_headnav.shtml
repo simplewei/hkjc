@@ -1,6 +1,6 @@
 <header class="headnav">
 	<ul>
-		<li class="nav-item on"><a href="pay_index.shtml">購買門票</a></li>
+		<li class="nav-item"><a href="pay_index.shtml">購買門票</a></li>
 		<li class="nav-item"><a href="record_list.shtml">購買記錄</a></li>
 	</ul>
 </header>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta content="" name="pgv" />
+<title>賽馬會公眾席門票</title>
+<link href="/styles/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/styles/widgets/animate.css">
+</head>
+<body class="iscroll-body record-list">
+    <div class="container">
+        <div class="iscroll-wrap"><!-- 盒模型布局 -->
+          <header class="headnav">
+    <ul>
+        <li class="nav-item"><a href="/">購買門票</a></li>
+        <li class="nav-item"><a href="javascript:;">購買記錄</a></li>
+    </ul>
+</header>
+          <div class="iscroll" id="wrapper"><!-- iscroll父节点，JS控制 -->
+            <!--交互说明：
+                系统繁忙  | 在main后追加“show-busy-tips”
+                暂无记录  | 在main后追加“show-no-tips”
+                提示加载  | 在main后追加“show-loading-tips”
+                記錄内容  | 在main后追加“show-record-wrap”
+            --> 
+            <div class="main show-record-wrap"><!-- iscroll唯一子节点 -->
+                <div class="busy-tips"><!-- 系统繁忙 提示结构 -->
+                    <p>系统繁忙</p>
+                </div>
+                <div class="no-tips"><!-- 系统繁忙 提示结构 -->
+                    <p>當前沒有購買記錄</p>
+                </div>
+                <div class="loading-tips"><!-- 加載 提示结构 -->
+                    <p>加載中...</p>
+                </div>
+                <div class="record-wrap">
+                    <ul class="record">
+                        <!--交互說明
+                            點擊 li 時 | 跳轉record_detail.shtml頁，展示相應的票面詳情信息
+                        -->
+                        <li class="record-item">
+                            <div class="item-info">
+                                <p class="name">夜馬 1月14日 星期三</p>
+                                <p class="line"><span class="title">入場地點</span><span class="content">沙田</span></p>
+                                <p class="line"><span class="title">購買日期</span><span class="content">2014-01-12 15：30</span></p>
+                            </div>
+                            <div class="item-sum">
+                                <strong><span>10</span>張</strong>
+                                <p>入场门票</p>
+                            </div>
+                            <div class="ico-wrap">
+                                <span class="ico-arrow"><!--箭头图标--></span>
+                            </div>
+                        </li>
+                        <li class="record-item">
+                            <div class="item-info">
+                                <p class="name">夜馬 1月14日 星期三</p>
+                                <p class="line"><span class="title">入場地點</span><span class="content">沙田</span></p>
+                                <p class="line"><span class="title">購買日期</span><span class="content">2014-01-12 15：30</span></p>
+                            </div>
+                            <div class="item-sum">
+                                <strong><span>10</span>張</strong>
+                                <p>入场门票</p>
+                            </div>
+                            <div class="ico-wrap">
+                                <span class="ico-arrow"><!--箭头图标--></span>
+                            </div>
+                        </li>
+                        <li class="record-item">
+                            <div class="item-info">
+                                <p class="name">夜馬 1月14日 星期三</p>
+                                <p class="line"><span class="title">入場地點</span><span class="content">沙田</span></p>
+                                <p class="line"><span class="title">購買日期</span><span class="content">2014-01-12 15：30</span></p>
+                            </div>
+                            <div class="item-sum">
+                                <strong><span>10</span>張</strong>
+                                <p>入场门票</p>
+                            </div>
+                            <div class="ico-wrap">
+                                <span class="ico-arrow"><!--箭头图标--></span>
+                            </div>
+                        </li>
+                        <li class="record-item">
+                            <div class="item-info">
+                                <p class="name">夜馬 1月14日 星期三</p>
+                                <p class="line"><span class="title">入場地點</span><span class="content">沙田</span></p>
+                                <p class="line"><span class="title">購買日期</span><span class="content">2014-01-12 15：30</span></p>
+                            </div>
+                            <div class="item-sum">
+                                <strong><span>10</span>張</strong>
+                                <p>入场门票</p>
+                            </div>
+                            <div class="ico-wrap">
+                                <span class="ico-arrow"><!--箭头图标--></span>
+                            </div>
+                        </li>
+                        <li class="record-item">
+                            <div class="item-info">
+                                <p class="name">夜馬 1月14日 星期三</p>
+                                <p class="line"><span class="title">入場地點</span><span class="content">沙田</span></p>
+                                <p class="line"><span class="title">購買日期</span><span class="content">2014-01-12 15：30</span></p>
+                            </div>
+                            <div class="item-sum">
+                                <strong><span>10</span>張</strong>
+                                <p>入场门票</p>
+                            </div>
+                            <div class="ico-wrap">
+                                <span class="ico-arrow"><!--箭头图标--></span>
+                            </div>
+                        </li>
+                        <li class="record-item">
+                            <div class="item-info">
+                                <p class="name">夜馬 1月14日 星期三</p>
+                                <p class="line"><span class="title">入場地點</span><span class="content">沙田</span></p>
+                                <p class="line"><span class="title">購買日期</span><span class="content">2014-01-12 15：30</span></p>
+                            </div>
+                            <div class="item-sum">
+                                <strong><span>10</span>張</strong>
+                                <p>入场门票</p>
+                            </div>
+                            <div class="ico-wrap">
+                                <span class="ico-arrow"><!--箭头图标--></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--交互说明：
+                        下拉列表时，展示加载更多 | load-more去掉hide
+                        没有更多数据 | no-more去掉hide
+                    -->
+                    <p class="load-more hide">加載更多...</p>
+                    <p class="no-more hide">没有更多了</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- build:js(.) /scripts/bower_components/vendor.min.js -->
+    <!-- bower:js -->
+    <script type="text/javascript" src="/bower_components/requirejs/require.js"></script>
+    <!-- endbower <script type="text/javascript" src="/demo/html2canvas.js"></script>-->
+    <!-- endbuild -->
+
+    <!-- build:js(dist) /scripts/modules/record.min.js -->
+    <script type="text/javascript" src="/scripts/config/r.config.js"></script>
+
+    <!-- endbuild -->
+
+    <script>
+    // for test
+    require(['scripts/modules/record']);
+    </script>
+
+</body>
+</html>

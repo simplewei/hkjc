@@ -25,10 +25,20 @@
 			</dl>
 		</div>
 		<div class="form-line-btn">
-			<!--交互說明
-				點選按鈕時 | 在btn-opt后追加btn-press
-	        -->
-			<a class="btn-opt" href="#">完成</a>
+			<a class="btn-opt" href="record_list.shtml">查看購買記錄</a>
+			<a class="btn-select" href="record_list.shtml">與好友分享</a>
+		</div>
+		<!--
+			layer彈窗: 分享
+
+			交互說明：默認隱藏，展示時，在layer后追加show-layer，同時JS禁止用戶滑動頁面等操作事件。
+
+			分享圖片名稱：/res/hybrid/img/www/weixin/hkrace/ico_hkrace.png
+
+		-->
+		<div class="layer layer-share">
+			<div class="share">
+			</div>
 		</div>
 	</div>
 </body>

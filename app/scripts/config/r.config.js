@@ -9,12 +9,12 @@ require.config({
     'zepto': '../bower_components/zeptojs/dist/zepto',
     'backbone': '../bower_components/backbone/backbone',
     'underscore': '../bower_components/underscore/underscore',
-    'iscroll': '../bower_components/iscroll/build/iscroll-lite',
+    'iscroll': '../bower_components/iscroll/build/iscroll',
     'queryString': '../bower_components/query-string/query-string',
     'qrcode': '../bower_components/qrcodejs/qrcode.min',
     'html2canvas': '../bower_components/html2canvas/build/html2canvas',
     'widgets': 'scripts/widgets',
-    'modules': 'scripts/modules',
+    'modules': 'scripts/modules'
   },
   shim:{
     zepto: {

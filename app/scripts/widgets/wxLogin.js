@@ -7,8 +7,8 @@
  * date 2014-08-30
  */
 
-define(['zepto', 'queryString'],
-    function($, queryString) {
+define(['zepto', 'queryString', '/scripts/config/sys.config.js'],
+    function($, queryString, config) {
 
     var exports = {},
         login_cgi = '/cgi-bin/v2.0/hkjc_login.cgi',
@@ -56,22 +56,34 @@ define(['zepto', 'queryString'],
      * 登陆入口
      */
     exports.login = function() {
+
         var deferred = $.Deferred();
-        // return deferred.resolve();  //just for test
-        exports.check().then(function(data) {
-            data.retcode = parseInt(data.retcode);
-            if (data.retcode === 0) {
-                deferred.resolve();
-            } else if (data.retcode == '2000002') {
-                exports.OAuthLogin().then(deferred.resolve);
-            };
-        });
+
+        if(navigator.userAgent.indexOf('MicroMessenger') >= 0){
+            // 微信登陆            
+            exports.check().then(function(data) {
+                data.retcode = parseInt(data.retcode);
+                if (data.retcode === 0) {
+                    deferred.resolve();
+                } else if (data.retcode == '2000002') {
+                    exports.OAuthLogin().then(deferred.resolve);
+                };
+            });
+        }else{
+            // QQ登陆 -- 方便测试
+            $.get('/cgi-bin/v2.0/hkjc_query_race.cgi?req_type=1&limit=0').then(function(data) {
+                data.retcode = parseInt(data.retcode);
+                if (data.retcode === 0) {
+                    deferred.resolve();
+                } else if (data.retcode == '2000002') {
+                    location.href = 'http://ui.ptlogin2.qq.com/cgi-bin/login?appid=1000101&s_url=' +
+                    encodeURIComponent(location.href) + '&style=9';
+                };
+            });
+        };        
 
         return deferred;
     };
-
-
-
 
     return exports;
 
