@@ -15,6 +15,7 @@
 	bower install
 
 > 如果本地没有安装过bower，请参看 [yeoman中文官网](http://yeomanjs.org/) 
+
 > 通过 `npm install bower -g` 安装依赖，并且依赖本地git（已经安装过git忽略）
 
 ##3.  自定义zepto模块，并编译出目标文件

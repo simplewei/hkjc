@@ -6,6 +6,7 @@
 %>
 <% _.each(list_infos, function(record){ %>
       <%
+            if(!record.create_time) return;
             var time = new Date(record.create_time);
             var month = time.getMonth()+1;
             var date = time.getDate();

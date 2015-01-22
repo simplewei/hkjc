@@ -2,6 +2,10 @@
     var addrMap = {
         '1': '跑马地',
         '2': '沙田'
+    },
+    raceAddrMap = {
+        '1': '香港銅鑼灣時代廣場跑馬地',
+        '2': '香港新界東部沙田區沙田賽馬場'
     };
     var time = new Date(create_time);
     var month = time.getMonth()+1;
@@ -27,7 +31,9 @@
         <li><span class="title">門票數量</span>
             <span class="content"><%- ticket_count %>張</span>
         </li>
-        <li><span class="title">觀賽地址</span><span class="content">香港銅鑼灣時代廣場跑馬地(待完善)</span>
+        <li><span class="title">觀賽地址</span><span class="content">
+            <%- raceAddrMap[race_addr] %>
+        </span>
         </li>
     </ul>
 </div>
