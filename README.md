@@ -1,7 +1,7 @@
 # hkjc
 
 
-这是一个基于YEOMAN搭建的系统，集成了grunt-proxy、requirejs及rev打包特性。
+这是一个基于YEOMAN搭建的系统，集成了grunt-proxy、requirejs及rev等打包特性。
 通过下面简单的几步你就可以搭建起整个前端开发系统。
 
 ##1.  下载项目
