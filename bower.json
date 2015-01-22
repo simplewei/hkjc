@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "iscroll": "~5.1.2",
-    "zepto-cookie": "*",
     "query-string": "~1.0.0"
   }
 }
