@@ -4,8 +4,6 @@
 这是一个基于YEOMAN搭建的系统，集成了grunt-proxy、requirejs及rev打包特性。
 通过下面简单的几步你就可以搭建起整个前端开发系统。
 
-
-
 ##1.  选择1个本地文件夹
 
 	git init
@@ -15,10 +13,6 @@
 
 	npm install
 	bower install
-
-
-----------
-
 
 > 如果本地没有安装过bower，请参看 [yeoman中文官网](http://yeomanjs.org/) 
 > 通过 `npm install bower -g` 安装依赖，并且依赖本地git（已经安装过git忽略）
