@@ -40,7 +40,7 @@
 
 		grunt serve
 		
->  至于要不要加个 host  `127.0.0.1	hkjc.qq.com` 就随意了
+>  最好加个 host  `127.0.0.1	hkjc.qq.com`  免得无法跳登陆
 
 
 #Tips
