@@ -162,16 +162,6 @@ module.exports = function (grunt) {
       ]
     },
 
-    // Mocha testing framework configuration options
-    mocha: {
-      all: {
-        options: {
-          run: true,
-          urls: ['http://<%= connect.test.options.hostname %>:<%= connect.test.options.port %>/index.html']
-        }
-      }
-    },
-
     // Add vendor prefixed styles
     autoprefixer: {
       options: {
@@ -414,6 +404,8 @@ module.exports = function (grunt) {
     grunt.task.run([target ? ('serve:' + target) : 'serve']);
   });
 
+
+  //  还未启用
   grunt.registerTask('test', function (target) {
     if (target !== 'watch') {
       grunt.task.run([
@@ -424,8 +416,7 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      'connect:test',
-      'mocha'
+      'connect:test'
     ]);
   });
 
