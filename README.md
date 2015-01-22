@@ -40,7 +40,9 @@
 
 		grunt serve
 		
->  最好加个 host  `127.0.0.1	hkjc.qq.com`  免得无法跳登陆
+>  注意清除本地80端口占用，如apache、nginx，请关闭他们
+>  
+>  最好再加个 host  `127.0.0.1	hkjc.qq.com`  免得无法跳登陆
 
 
 #Tips
