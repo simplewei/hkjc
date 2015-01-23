@@ -34,21 +34,29 @@ module.exports = app
 
 
 // 静态文件目录 - 获取图片
-app.use('/node/ticket/', function(req, res){
-	
-	uExtract.snapshot('http://hkjc.qq.com/', function(job) {
-		var _path = path.join('/node', job.image);
-		console.log(_path)
-		res.writeHead(302, {
-		  'Location': _path
-		});
-		res.end();
+app.use('/node/ticket/',  function(req, res) {
+
+	uExtract.snapshot('http://127.0.0.1:8000/node/tpl/ticket.html?qr=123456', {
+		// zoomFactor: 2,
+		viewportSize: { width: 300, height: 400 },
+		image: 'snapshot/tickets/watermask.png',
+		javascriptEnabled: true,
+		callback: function(job) {
+
+			console.log(job.image)
+			var _path = path.join('/node', job.image);
+			console.log(_path)
+			res.writeHead(302, {
+				'Location': _path
+			});
+			res.end();
+		}
 	});
 });
 
 //静态文件目录 - 获取图片
 app.use('/node/snapshot', express.static(__dirname + '/snapshot/'));
-
+app.use('/node/tpl', express.static(__dirname + '/tpl/'));
 
 if (!module.parent) {
   app.listen(8000);

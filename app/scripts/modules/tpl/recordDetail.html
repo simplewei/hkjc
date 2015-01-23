@@ -59,7 +59,32 @@
             2：已使用
             3：已过期
     -->
-    
+        <% var ticket_info= [{
+            "qrcode": "S002114-9100001895-C1006",
+            "state": "1"
+        },{
+            "qrcode": "S002114-9100001895-C1007",
+            "state": "1"
+        },{
+            "qrcode": "S002114-9100001895-C1008",
+            "state": "1"
+        },{
+            "qrcode": "S002114-9100001895-C1009",
+            "state": "1"
+        },
+        {
+            "qrcode": "S002114-9100001895-FB508",
+            "state": "1"
+        },
+        {
+            "qrcode": "S002114-9100001970-FB508",
+            "state": "2"
+        },
+        {
+            "qrcode": "S002114-9100001974-C1005",
+            "state": "3"
+        }]
+    %>
     <% _.each(ticket_info, function(ticket, i){
         var className;
         if(ticket.state == 1 ){
