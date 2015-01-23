@@ -1,5 +1,5 @@
 <div class="layer layer-qrcode">
-    <div class="layer-main fadeIn">
+    <div class="layer-main">
         <!--交互说明：
             已使用展示 | 在 qrcode 加上ticket-used
             過期展示(未使用)| 在 qrcode 加上ticket-expired
@@ -12,19 +12,20 @@
             5、黃色 | ticket-color-yellow
         -->
         <div class="qrcode <%- className %>">
-            <div class="qrcode-title">
-                <span class="ico ico-hkrace"></span>
-                <p>香港赛马会观众席入场门票(<span><%- checkin %></span>)</p>
-                <p>赛事日期:<span><%- date %></span>
-                </p>
-            </div>
             <div class="qrcode-img">
+                <div class="qrcode-title">
+                    <span class="ico ico-hkrace"></span>
+                    <p>香港赛马会观众席入场门票(<span><%- checkin %></span>)</p>
+                    <p>赛事日期:<span><%- date %></span>
+                    </p>
+                </div>
                 <div class="img-wrap">
                     <!-- <img width="238" height="238" src="http://tid.tenpay.com/ui_static/demo/tinno/test_qrcode.png"> -->
                 </div>
-                <p class="tips-1">長按此QR碼將門票保存到相冊</p>
-                <p class="tips-2">入場時向工作人員出示此QR碼</p>
             </div>
+            <div class="qrcode-tips">
+                <p class="tips-1">長按此QR碼將門票保存到相冊</p>
+                <p class="tips-2">入場時向工作人員出示此QR碼</p></div>
             <div class="btn-line">
                 <!--交互说明：
                     on | 当点击btn-close瞬间，在其后追加此类

@@ -1,0 +1,135 @@
+/*
+ * 马会门票购买成功页
+ *
+ * /cgi-bin/v2.0/hkjc_query_all_order.cgi
+ * param: page_id	页数,从0开始
+ * param: limit		每页记录数，需大于0
+ * response: total_count	总条目数，可用于分页
+ * response: list_infos		本页记录明细
+ *
+ * author: simplewei
+ * date: 2015-01-21
+ */
+
+require(['zepto', 'queryString', 'widgets/wxLogin', 'widgets/loading', 'widgets/weixinApi'],
+	function($, queryString, wxLogin, loading, weixin) {
+
+		loading.show();
+
+		wxLogin.login().then(function() {
+
+
+			/*
+			 * 获取订单明细
+			 */
+			var getListInfo = function(id){
+
+				return $.ajax({
+					url: '/cgi-bin/v2.0/hkjc_query_order.cgi',
+					data: {
+						listid: id
+					}
+				});
+			};
+
+
+			/*
+			 * 页面初始化入口
+			 * 支付中心会将订单号作为 out_trade_no 字段带回
+			 */
+			
+			var parsed = queryString.parse(location.search);
+			getListInfo(parsed.out_trade_no).then(function(data){
+
+				loading.hide();
+
+				//  计算出比赛日期、入场场地、 支付金额，并展示
+				var addrMap = {
+					'1': '跑马地',
+					'2': '沙田'
+				};
+				var time = new Date(data.list_info.race_day);
+				var month = time.getMonth() + 1;
+				var date = time.getDate();
+				var day = ['日', '一', '二', '三', '四', '五', '六'][time.getDay()];
+				var type = {'1': '日','2': '夜'}[data.list_info.race_type];
+				var _date = '' + month + '月' + date + '日 星期' + day + ' ' + type + '馬';
+				
+				$("#date").html(_date);
+				$("#addr").html(addrMap[data.list_info.checkin_addr]);
+				$("#price").html('HK$'+ (data.list_info.total_money/100).toFixed(2));
+			
+				share(data.list_info);
+			});
+
+			//  绑定 与好友分享 按钮
+			$('.btn-select').on('tap', function(){
+				$('.layer-share').removeClass('hide');
+			});
+			//  绑定 分享弹层 点击，去除该弹层
+			$('.layer-share').on('tap', function(){
+				$('.layer-share').addClass('hide');
+			});
+			
+		});
+
+
+		//微信分享
+		function share(data, callbacks) {
+
+			weixin.ready(function(Api) {
+				// 微信分享的数据
+
+				var wxData = {
+					"appId": "wx1cf17f8626cfbaf6", // 服务号可以填写appId
+					// imgUrl需用ip，否则微信在ios中会把域名解析成ip来做请求
+					"imgUrl": '/styles/img/ico_hkrace.png',
+					"link": 'http://hkjc.qq.com?race_id'+ data.race_id,
+					"desc": '描述 —— 待提供文案',
+					"title": "title —— 待提供文案"
+				};
+
+
+				// 分享的回调
+				var wxCallbacks = {
+					// 分享操作开始之前
+					ready: function() {
+						// 你可以在这里对分享的数据进行重组
+						//alert("准备分享");
+					},
+					// 分享被用户自动取消
+					cancel: function(resp) {
+						// 你可以在你的页面上给用户一个小Tip，为什么要取消呢？
+						//alert("分享被取消");
+					},
+					// 分享失败了
+					fail: function(resp) {
+						// 分享失败了，是不是可以告诉用户：不要紧，可能是网络问题，一会儿再试试？
+						//alert("分享失败");
+					},
+					// 分享成功
+					confirm: function(resp) {
+						// 分享成功了，我们是不是可以做一些分享统计呢？
+						//window.location.href='http://192.168.1.128:8080/wwyj/test.html';
+						//alert("分享成功");
+					},
+					// 整个分享过程结束
+					all: function(resp) {
+						// 如果你做的是一个鼓励用户进行分享的产品，在这里是不是可以给用户一些反馈了？
+						//alert("分享结束");
+					}
+				};
+				$.extend(wxData, data);
+				$.extend(wxCallbacks, callbacks);
+
+				// 用户点开右上角popup菜单后，点击分享给好友，会执行下面这个代码
+				Api.shareToFriend(wxData, wxCallbacks);
+
+				// 点击分享到朋友圈，会执行下面这个代码
+				Api.shareToTimeline(wxData, wxCallbacks);
+
+
+			});
+		};
+
+	});

@@ -9,14 +9,21 @@
 <meta content="email=no" name="format-detection">
 <meta content="" name="pgv" />
 <title>賽馬會公眾席門票</title>
-<link href="/styles/main.css" rel="stylesheet" type="text/css">
+
+<!-- build:css(dist) /styles/main.min.css -->
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/styles/widgets/loading.css">
 <link rel="stylesheet" href="/styles/widgets/animate.css">
+<!-- endbuild -->
 
 </head>
 <body class="record-detail">
-    <div class="container">
+    <div class="container show-loading-tips">
+        <div class="loading-tips"><!-- 加載 提示结构 -->
+            <p>加載中...</p>
+        </div>
         <footer class="footer">
-            <p class="warmtips">入場人士須年滿18歲&nbsp;&nbsp;切勿沉迷賭博<a class="g-link" href="notice.shtml">條款及細則</a>
+            <p class="warmtips">入場人士須年滿18歲&nbsp;&nbsp;切勿沉迷賭博<a class="g-link" href="/pages/notice.html">條款及細則</a>
             </p>
         </footer>
     </div>
@@ -25,17 +32,13 @@
     <!-- build:js(.) /scripts/bower_components/vendor.min.js -->
     <!-- bower:js -->
     <script type="text/javascript" src="/bower_components/requirejs/require.js"></script>
-    <!-- endbower <script type="text/javascript" src="/demo/html2canvas.js"></script>-->
+    <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:js(dist) /scripts/modules/record.min.js -->
+    <!-- build:js(dist) /scripts/modules/recordDetail.min.js -->
     <script type="text/javascript" src="/scripts/config/r.config.js"></script>
-
+    <script type="text/javascript" src="/scripts/modules/recordDetail.js"></script>
     <!-- endbuild -->
 
-    <script>
-    // for test
-    require(['scripts/modules/recordDetail']);
-    </script>
 </body>
 </html>

@@ -9,8 +9,13 @@
 <meta content="email=no" name="format-detection">
 <meta content="" name="pgv" />
 <title>賽馬會公眾席門票</title>
-<link href="/styles/main.css" rel="stylesheet" type="text/css">
+
+<!-- build:css(dist) /styles/main.min.css -->
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/styles/widgets/loading.css">
 <link rel="stylesheet" href="/styles/widgets/animate.css">
+<!-- endbuild -->
+    
 </head>
 <body class="iscroll-body record-list">
     <div class="container">
@@ -57,18 +62,13 @@
     <!-- build:js(.) /scripts/bower_components/vendor.min.js -->
     <!-- bower:js -->
     <script type="text/javascript" src="/bower_components/requirejs/require.js"></script>
-    <!-- endbower <script type="text/javascript" src="/demo/html2canvas.js"></script>-->
+    <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js(dist) /scripts/modules/record.min.js -->
     <script type="text/javascript" src="/scripts/config/r.config.js"></script>
-
+    <script type="text/javascript" src="/scripts/modules/record.js"></script>
     <!-- endbuild -->
-
-    <script>
-    // for test
-    require(['scripts/modules/record']);
-    </script>
 
 </body>
 </html>

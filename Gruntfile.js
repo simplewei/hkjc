@@ -84,8 +84,7 @@ module.exports = function (grunt) {
                   // 反向代理路径
                   context: '/node',
                   // 本地nodejs
-                  host: '10.129.133.31',
-                  port: 8000
+                  host: '10.129.133.31'
               }
           ]
       },
@@ -186,6 +185,15 @@ module.exports = function (grunt) {
           mainConfigFile: "<%= config.app %>/scripts/config/r.config.js",
           
           modules: [
+            {
+              name: "modules/index",
+            },{
+              name: "modules/record"
+            },{
+              name: "modules/recordDetail"
+            },{
+              name: "modules/success"
+            }
           ],
           dir: 'dist',
           skipDirOptimize: true

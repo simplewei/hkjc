@@ -10,55 +10,12 @@
     <meta content="email=no" name="format-detection">
     <meta content="" name="pgv" />
     <title>賽馬會公眾席門票</title>
-    <link href="/styles/main.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/styles/widgets/loading.css">
-    <style>
-    @-webkit-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    .fadeIn {
-        animation-name: fadeIn;
-        animation-duration: 1s;
-        -webkit-animation-name: fadeIn;
-        -webkit-animation-duration: 1s;
-    }
-    @-webkit-keyframes fadeOut {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    @keyframes fadeOut {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    .fadeOut {
-        animation-name: fadeOut;
-        animation-duration: 1s;
-        -webkit-animation-name: fadeOut;
-        -webkit-animation-duration: 1s;
-    }
-    </style>
 
+    <!-- build:css(dist) /styles/main.min.css -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/widgets/loading.css">
+    <link rel="stylesheet" href="/styles/widgets/animate.css">
+    <!-- endbuild -->
 </head>
 
 <body class="pay-index">
@@ -110,7 +67,6 @@
                         </div>
                         <div class="form-cnt">
                             <select class="select select-location" id="race-chkin">
-                                <option value="">跑馬地</option>
                             </select>
                         </div>
                         <div class="form-ico"><span class="ico-arrow"><!--箭头图标--></span>
@@ -146,7 +102,7 @@
             </div>
         </form>
         <footer class="footer">
-            <p class="warmtips">入場人士須年滿18歲&nbsp;&nbsp;切勿沉迷賭博<a class="g-link" href="notice.shtml">條款及細則</a>
+            <p class="warmtips">入場人士須年滿18歲&nbsp;&nbsp;切勿沉迷賭博<a class="g-link" href="/pages/notice.html">條款及細則</a>
             </p>
         </footer>
     </div>
@@ -154,18 +110,14 @@
     <!-- build:js(.) /scripts/bower_components/vendor.min.js -->
     <!-- bower:js -->
     <script type="text/javascript" src="/bower_components/requirejs/require.js"></script>
-    <!-- endbower <script type="text/javascript" src="/demo/html2canvas.js"></script>-->
+    <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js(dist) /scripts/modules/index.min.js -->
     <script type="text/javascript" src="/scripts/config/r.config.js"></script>
-
+    <script type="text/javascript" src="/scripts/modules/index.js"></script>
 
     <!-- endbuild -->
-
-    <script>
-    require(['scripts/modules/index']);
-    </script>
 
 </body>
 

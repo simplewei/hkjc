@@ -140,10 +140,10 @@ require(['zepto', 'underscore', 'widgets/wxLogin', 'widgets/tips', 'widgets/load
 			$('.count-select .add,.count-select .del').removeClass('on');
 			var currentVal = $('.count-select input').val();
 			var limit = $('.count-select').attr('data-limit');
-			if (currentVal <= 1) {
+			if (parseInt(currentVal) <= 1) {
 				$('.count-select .del').addClass('on');
 			};
-			if (currentVal >= limit) {
+			if (parseInt(currentVal) >= parseInt(limit)) {
 				$('.count-select .add').addClass('on');
 			};
 			cclatePrice();

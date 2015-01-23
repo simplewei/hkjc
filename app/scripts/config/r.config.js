@@ -11,7 +11,7 @@ require.config({
     'underscore': '../bower_components/underscore/underscore',
     'iscroll': '../bower_components/iscroll/build/iscroll',
     'queryString': '../bower_components/query-string/query-string',
-    'qrcode': '../bower_components/qrcodejs/qrcode.min',
+    'qrcode': '../bower_components/qrcodejs/qrcode',
     'html2canvas': '../bower_components/html2canvas/build/html2canvas',
     'widgets': 'scripts/widgets',
     'modules': 'scripts/modules'
@@ -30,6 +30,7 @@ require.config({
       exports: 'html2canvas'
     }
   },
+  
   map:{
     '*': {
       jquery: 'zepto'
