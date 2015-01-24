@@ -16,7 +16,7 @@ define(['widgets/weixinApi'], function(weixin){
 		var wxData = {
 			"appId": "wx1cf17f8626cfbaf6", // 服务号可以填写appId
 			// imgUrl需用ip，否则微信在ios中会把域名解析成ip来做请求
-			"imgUrl": 'http://ui.ptlogin2.qq.com/style/8/images/logo.png',
+			"imgUrl": 'http://hkjc.qq.com/styles/img/share_logo.gif',
 			"link": 'http://hkjc.qq.com',
 			"desc": 'WeChat賽馬獨享HK$1優惠價購買香港賽馬會公眾席門票，快來買一張吧！',
 			"title": "WeChat 賽馬"
@@ -54,7 +54,6 @@ define(['widgets/weixinApi'], function(weixin){
 			}
 		};
 
-alert(2)
 		// 用户点开右上角popup菜单后，点击分享给好友，会执行下面这个代码
 		Api.shareToFriend(wxData, wxCallbacks);
 

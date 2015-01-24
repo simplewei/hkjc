@@ -1,4 +1,5 @@
 
+
 /*
  * 这是一个生成和获取图片的应用
  *
@@ -17,7 +18,7 @@
 var fs = require("fs");
 var path = require('path');
 var express = require('express');
-var uExtract = require('url-extract')();
+var qr = require('qr-image');
 
 var app = express();
 var bodyParser = require('body-parser');
@@ -40,31 +41,11 @@ app.use('/node/ticket',  function(req, res) {
 	var checkin_addr = req.query.checkin_addr;
 	var race_day = req.query.race_day;
 	var race_type = req.query.race_type;
-	var url = 'http://127.0.0.1:8000/node/tpl/ticket.html?code='+code+
-		'&checkin_addr='+ checkin_addr + '&race_day='+ race_day + '&race_type='+ race_type;
-	uExtract.snapshot(url, {
-		viewportSize: { width: 300, height: 400 },
-		image: 'snapshot/tickets/'+code+'.png',
-		javascriptEnabled: true,
-		callback: function(job) {
 
-			res.writeHead(302, {
-				'Location': path.join('/node', job.image)
-			});
-
-			// 出于安全考虑，1分钟后销毁图片
-			setTimeout(function() {
-				fs.unlink(path.join(__dirname, job.image));
-			}, 60000);
-
-			res.end();
-		}
-	});
+	var img = qr.image(code);
+	res.writeHead(200, {'Content-Type': 'image/png'});
+	img.pipe(res);
 });
-
-//静态文件目录 - 获取图片
-app.use('/node/snapshot', express.static(__dirname + '/snapshot/'));
-app.use('/node/tpl', express.static(__dirname + '/tpl/'));
 
 if (!module.parent) {
   app.listen(8000);

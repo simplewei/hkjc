@@ -27,6 +27,7 @@
 
     if (parsed.code) {
         new QRCode('img-wrap', {
+            useSVG: true,
             text: parsed.code
         });
     };

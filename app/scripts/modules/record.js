@@ -12,7 +12,7 @@
  */
 
 require(['zepto', 'underscore', 'iscroll', 'widgets/wxLogin', 'widgets/tips', 'widgets/loading',
-	'text!modules/tpl/record.html'],
+	'text!modules/tpl/record.html', 'widgets/defaultWxShare'],
 	function($, _, iscroll, wxLogin, tips, loading, recordTpl) {
 
 	

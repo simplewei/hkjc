@@ -28,7 +28,7 @@ input:disabled,select:disabled{opacity: 1; /*去掉禁用时文本半透明效�
 input:-moz-placeholder{color:#C4C4C4;}
 /* 设置webkit内核下输入框属性placeholder中值的文件颜色 */
 ::-webkit-input-placeholder{color:#C4C4C4;}
-/*body{background:#EFEFF4;color: #888888;font-family:"Helvetica";-webkit-user-select:none; 禁止选中文本 -webkit-tap-highlight-color:rgba(0,0,0,0);/* 设置点击链接时遮罩层为全透明 */overflow:hidden;min-height:100%;}*/
+body{background:#EFEFF4;color: #888888;font-family:"Helvetica";-webkit-user-select:none;/* 禁止选中文本 */-webkit-tap-highlight-color:rgba(0,0,0,0);/* 设置点击链接时遮罩层为全透明 */overflow:hidden;min-height:100%;}
 /* 设置webkit内核下文字大小不小于12px */
 html,body{-webkit-text-size-adjust:none;height:100%;}
 /* 禁止长按链接、按钮、输入框出现系统默认弹框菜单 */
@@ -773,3 +773,12 @@ img {vertical-align: middle;}
 .notice h1 {padding-top: 25px;margin-bottom: 15px; font-size: 16px;text-align: center;font-weight: bold;}
 .notice h2,.notice p {font-size: 12px;line-height: 20px;}
 .notice h2 {font-weight: bold;}
+
+
+.qrcode-download{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    opacity: 0;
+    z-index: 10;
+}

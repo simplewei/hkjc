@@ -12,11 +12,11 @@
 
 require(['zepto', 'underscore', 'iscroll', 'queryString', 'qrcode', 
 	'html2canvas', 'widgets/wxLogin', 'widgets/tips', 'widgets/loading',
-	'text!modules/tpl/recordDetail.html', 'text!modules/tpl/recordDetailLayer.html'],
+	'text!modules/tpl/recordDetail.html', 'text!modules/tpl/recordDetailLayer.html', 'widgets/defaultWxShare'],
 	function($, _, iscroll, queryString, qrcode, html2canvas, wxLogin,
 	tips, loading, rdTpl, rdlTpl) {
 
-var demo = {"list_info":{"checkin_addr":"1","create_time":"2015-01-23 17:24:10","from_url":"wechat","listid":"3000000003201501230000010560","modify_time":"2015-01-23 17:25:14","pay_time":"2015-01-23 17:25:16","race_addr":"1","race_day":"2015-01-28","race_id":"1","race_type":"2","send_msg":"0","spid":"3000000003","state":"1","ticket_count":"1","ticket_price":"10","total_money":"10","trade_state":"4","transid":"1010013000000003201501230000473267","uin":"ojmkttwv_4zEk3uec5d8jxZx6jEc"},"listid":"3000000003201501230000010560","msg_id":"1f85810a142200553902907h","retcode":"0","retmsg":"ok","ticket_info":[{"qrcode":"S002114-9000001108-01006","state":"1"}],"tid":"hkjc_query_order"}
+// var demo = {"list_info":{"checkin_addr":"1","create_time":"2015-01-23 17:24:10","from_url":"wechat","listid":"3000000003201501230000010560","modify_time":"2015-01-23 17:25:14","pay_time":"2015-01-23 17:25:16","race_addr":"1","race_day":"2015-01-28","race_id":"1","race_type":"2","send_msg":"0","spid":"3000000003","state":"1","ticket_count":"1","ticket_price":"10","total_money":"10","trade_state":"4","transid":"1010013000000003201501230000473267","uin":"ojmkttwv_4zEk3uec5d8jxZx6jEc"},"listid":"3000000003201501230000010560","msg_id":"1f85810a142200553902907h","retcode":"0","retmsg":"ok","ticket_info":[{"qrcode":"S002114-9000001108-01006","state":"1"}],"tid":"hkjc_query_order"}
 
 		wxLogin.login().then(function() {
 
@@ -50,35 +50,28 @@ var demo = {"list_info":{"checkin_addr":"1","create_time":"2015-01-23 17:24:10",
 					height: 238,
 					text: params.qrcode
 				});
+
 				$('.btn-line', $layer).tap(function(){
 					$layer.remove();
 				});
 				
-				// 生成门票图片 html2canvas
 				
-				// setTimeout(function(){
-				// 	html2canvas(document, {
-				// 		onrendered: function(canvas){
-				// 			// var $canvas = $(canvas);
-				// 			$('.qrcode-img').append('<img src="'+
-				// 				canvas.toDataURL()+'"/>');
-				// 			// alert(a)
-				// 			// $.ajax({
-				// 			// 	url: '/node/ticket', 
-				// 			// 	type: 'POST',
-				// 			// 	data:{
-				// 	 	// 				imgData: canvas.toDataURL(),
-				// 	 	// 				name: $('#qrInput').val()
-				// 	 	// 			},
-				// 	 	// 			timeout: 7000,
-				// 	 	// 			success: function(data){
-				// 	 	// 				$('.qrcode-img').append('<img src="'+
-				// 			// 				data.url+'"/>');
-				// 			// 		}
-				// 	 	// 		});
-				// 		}
-				// 	});
-				// }, 100);
+
+				// 生成门票图片 html2canvas
+				// $.ajax({
+				// 	url: '/node/ticket',
+				// 	data: {
+				// 		code: params.qrcode,
+				// 		checkin_addr: params.checkin_addr,
+				// 		race_day: params.race_day,
+				// 		race_type: params.race_type
+				// 	},
+				// 	timeout: 3000
+				// }).then(function(data){
+				// 	$('.img-wrap').append('<img class="qrcode-download" src="'+
+				// 		data.url+'" width="238" height="238"/>')
+				// });
+
 
 			};
 
@@ -90,7 +83,7 @@ var demo = {"list_info":{"checkin_addr":"1","create_time":"2015-01-23 17:24:10",
 			var init = function(){
 				var parsed = queryString.parse(location.search);
 				getListInfo(parsed.listid).then(function(data){
-					var _html = _.template(rdTpl)(demo);
+					var _html = _.template(rdTpl)(data);
 					$(_html).insertBefore('footer')
 					.on('tap', '.tickets>li', showQrcode);
 					$('.container').removeClass('show-loading-tips');

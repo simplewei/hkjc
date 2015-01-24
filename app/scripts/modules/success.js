@@ -40,6 +40,7 @@ require(['zepto', 'queryString', 'widgets/wxLogin', 'widgets/loading', 'widgets/
 			
 			var parsed = queryString.parse(location.search);
 			getListInfo(parsed.out_trade_no).then(function(data){
+// var data={"list_info":{"checkin_addr":"1","create_time":"2015-01-24 17:10:33","from_url":"wechat","listid":"3000000003201501240000010645","modify_time":"2015-01-24 17:11:11","pay_time":"2015-01-24 17:11:14","race_addr":"1","race_day":"2015-02-15","race_id":"11","race_type":"1","send_msg":"0","spid":"3000000003","state":"1","ticket_count":"1","ticket_price":"10","total_money":"10","trade_state":"4","transid":"1010013000000003201501240000473388","uin":"ojmkttwv_4zEk3uec5d8jxZx6jEc"},"listid":"3000000003201501240000010645","msg_id":"1f85810a142209067420386h","retcode":"0","retmsg":"ok","ticket_info":[{"qrcode":"S002114-9000001108-11001","state":"1"}],"tid":"hkjc_query_order"}
 
 				loading.hide();
 
@@ -79,6 +80,10 @@ require(['zepto', 'queryString', 'widgets/wxLogin', 'widgets/loading', 'widgets/
 
 			weixin.ready(function(Api) {
 				// 微信分享的数据
+				var addrMap = {
+					'1': '跑馬地',
+					'2': '沙田'
+				};
 				var _time = new Date(data.race_day);
 				var _desc = '我用WeChat以優惠價HK$'+ (data.ticket_price/100) +'買了'+
 					(_time.getMonth()+1)+ '月'+ _time.getDate() +'日'+ 
@@ -87,7 +92,7 @@ require(['zepto', 'queryString', 'widgets/wxLogin', 'widgets/loading', 'widgets/
 					"appId": "wx1cf17f8626cfbaf6", // 服务号可以填写appId
 					// imgUrl需用ip，否则微信在ios中会把域名解析成ip来做请求
 					"imgUrl": 'http://hkjc.qq.com/styles/img/share_logo.gif',
-					"link": 'http://hkjc.qq.com?race_id'+ data.race_id,
+					"link": 'http://hkjc.qq.com?race_id='+ data.race_id,
 					"desc": _desc,
 					"title": "WeChat 賽馬"
 				};
@@ -113,8 +118,7 @@ require(['zepto', 'queryString', 'widgets/wxLogin', 'widgets/loading', 'widgets/
 					// 分享成功
 					confirm: function(resp) {
 						// 分享成功了，我们是不是可以做一些分享统计呢？
-						//window.location.href='http://192.168.1.128:8080/wwyj/test.html';
-						//alert("分享成功");
+						$('.layer-share').addClass('hide');
 					},
 					// 整个分享过程结束
 					all: function(resp) {

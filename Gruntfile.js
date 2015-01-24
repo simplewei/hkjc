@@ -84,7 +84,8 @@ module.exports = function (grunt) {
                   // 反向代理路径
                   context: '/node',
                   // 本地nodejs
-                  host: '10.129.133.31'
+                  host: '127.0.0.1',
+                  port: 8000
               }
           ]
       },
