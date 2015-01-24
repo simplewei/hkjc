@@ -1,3 +1,4 @@
+
 /*
  * 这是一个生成和获取图片的应用
  *
@@ -14,7 +15,10 @@
  */
 
 var fs = require("fs");
+var path = require('path');
 var express = require('express');
+var uExtract = require('url-extract')();
+
 var app = express();
 var bodyParser = require('body-parser');
 var multer = require('multer'); 
@@ -27,35 +31,40 @@ app.use(multer());
 // for parsing multipart/form-data
 
 module.exports = app
-//配置
 
-//保存base64图片POST方法
-app.post('/node/ticket', function(req, res){
-    //接收前台POST过来的base64
-    
-    var imgData = req.body.imgData;
-    //过滤data:URL
-    var base64Data = imgData.replace(/^data:image\/\w+;base64,/, "");
-    var dataBuffer = new Buffer(base64Data, 'base64');
-    var filename = req.body.name+".png";
 
-    var _path = __dirname + '/resource/tickets/';
-    fs.writeFile(_path+filename, dataBuffer, function(err) {
-        if(err){
-          res.send(err);
-        }else{
-          res.send({url:'/node/ticket/'+filename});
-          // 出于安全考虑，1分钟后销毁图片
-          setTimeout(function(){
-            fs.unlink(_path+filename);
-          },60000);
-        };
-    });
+// 静态文件目录 - 获取图片
+app.use('/node/ticket',  function(req, res) {
+
+	var code = req.query.code;
+	var checkin_addr = req.query.checkin_addr;
+	var race_day = req.query.race_day;
+	var race_type = req.query.race_type;
+	var url = 'http://127.0.0.1:8000/node/tpl/ticket.html?code='+code+
+		'&checkin_addr='+ checkin_addr + '&race_day='+ race_day + '&race_type='+ race_type;
+	uExtract.snapshot(url, {
+		viewportSize: { width: 300, height: 400 },
+		image: 'snapshot/tickets/'+code+'.png',
+		javascriptEnabled: true,
+		callback: function(job) {
+
+			res.writeHead(302, {
+				'Location': path.join('/node', job.image)
+			});
+
+			// 出于安全考虑，1分钟后销毁图片
+			setTimeout(function() {
+				fs.unlink(path.join(__dirname, job.image));
+			}, 60000);
+
+			res.end();
+		}
+	});
 });
 
 //静态文件目录 - 获取图片
-app.use('/node/ticket', express.static(__dirname + '/resource/tickets/'));
-
+app.use('/node/snapshot', express.static(__dirname + '/snapshot/'));
+app.use('/node/tpl', express.static(__dirname + '/tpl/'));
 
 if (!module.parent) {
   app.listen(8000);

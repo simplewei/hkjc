@@ -15,7 +15,7 @@
  * date: 2015-01-19
  */
 require(['zepto', 'underscore', 'widgets/wxLogin', 'widgets/tips', 'widgets/loading',
-	'text!modules/tpl/index.html'],
+	'text!modules/tpl/index.html', 'widgets/defaultWxShare'],
 	function($, _, wxLogin, tips, loading, tpl) {
 
 	loading.show();
@@ -37,11 +37,11 @@ require(['zepto', 'underscore', 'widgets/wxLogin', 'widgets/tips', 'widgets/load
 
 		/*
 		 * 根据后台规则的映射表
-		 * '1'表示 跑马地
+		 * '1'表示 跑馬地
 		 * '2'表示 沙田
 		 */
 		var addrMap = {
-			'1': '跑马地',
+			'1': '跑馬地',
 			'2': '沙田'
 		};
 
@@ -155,7 +155,7 @@ require(['zepto', 'underscore', 'widgets/wxLogin', 'widgets/tips', 'widgets/load
 		var initCountSelector = function(){
 
 			$('.count-select').on('tap', '.add, .del', function(){
-				if($(this).hasClass('on')){
+				if($(this).hasClass('add') && $(this).hasClass('on')){
 					new tips({content: '超出购买限额'});
 					return;
 				};

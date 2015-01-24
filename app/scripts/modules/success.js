@@ -5,7 +5,7 @@
  * param: page_id	页数,从0开始
  * param: limit		每页记录数，需大于0
  * response: total_count	总条目数，可用于分页
- * response: list_infos		本页记录明细
+ * response: list_info		本页记录明细
  *
  * author: simplewei
  * date: 2015-01-21
@@ -45,7 +45,7 @@ require(['zepto', 'queryString', 'widgets/wxLogin', 'widgets/loading', 'widgets/
 
 				//  计算出比赛日期、入场场地、 支付金额，并展示
 				var addrMap = {
-					'1': '跑马地',
+					'1': '跑馬地',
 					'2': '沙田'
 				};
 				var time = new Date(data.list_info.race_day);
@@ -79,14 +79,17 @@ require(['zepto', 'queryString', 'widgets/wxLogin', 'widgets/loading', 'widgets/
 
 			weixin.ready(function(Api) {
 				// 微信分享的数据
-
+				var _time = new Date(data.race_day);
+				var _desc = '我用WeChat以優惠價HK$'+ (data.ticket_price/100) +'買了'+
+					(_time.getMonth()+1)+ '月'+ _time.getDate() +'日'+ 
+					addrMap[data.checkin_addr] + '的香港賽馬會公眾席門票，你也快來買一張吧！'
 				var wxData = {
 					"appId": "wx1cf17f8626cfbaf6", // 服务号可以填写appId
 					// imgUrl需用ip，否则微信在ios中会把域名解析成ip来做请求
-					"imgUrl": '/styles/img/ico_hkrace.png',
+					"imgUrl": 'http://hkjc.qq.com/styles/img/share_logo.gif',
 					"link": 'http://hkjc.qq.com?race_id'+ data.race_id,
-					"desc": '描述 —— 待提供文案',
-					"title": "title —— 待提供文案"
+					"desc": _desc,
+					"title": "WeChat 賽馬"
 				};
 
 

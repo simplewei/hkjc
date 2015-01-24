@@ -25,14 +25,14 @@
         <li><span class="title">入場地點</span>
             <span class="content"><%- addrMap[list_info.checkin_addr] %></span>
         </li>
-        <li><span class="title">觀賽場地</span>
+        <li><span class="title">賽事地點</span>
             <span class="content"><%- addrMap[list_info.race_addr] %></span>
         </li>
         <li><span class="title">門票數量</span>
             <span class="content"><%- list_info.ticket_count %>張</span>
         </li>
-        <li><span class="title">觀賽地址</span><span class="content">
-            <%- raceAddrMap[list_info.race_addr] %>
+        <li><span class="title">入場地址</span><span class="content">
+            <%- raceAddrMap[list_info.checkin_addr] %>
         </span>
         </li>
     </ul>
@@ -106,7 +106,7 @@
         <li class="<%- className %>" data-params="<%- JSON.stringify(params) %>">
             <div class="ticket-item">
                 <span class="ico ico-hkrace"></span>
-                <h2>賽馬入場門票</h2>
+                <h2>公眾席入場門票</h2>
                 <p class="state">
                     <span class="state-used">已使用</span>
                     <span class="state-expired">已過期</span>

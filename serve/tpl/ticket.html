@@ -1,43 +1,57 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="./resource/main.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./resource/main.css">
     <script src="./resource/query-string.js"></script>
-    <style>
-    </style>
-	<script>
-		document.write(12345)
-	</script>
+    <script src="./resource/qrcode.min.js"></script>
 </head>
 
 <body>
+    <div class="qrcode ticket-color-red">
+        <div class="qrcode-img">
+            <div class="qrcode-title">
+                <span class="ico ico-hkrace"></span>
+                <p>香港賽馬會公眾席入場門票(<span id="checkin_addr"></span>)</p>
+                <p>赛事日期：<span id="race_time"></span>
+                </p>
+            </div>
+            <div class="img-wrap" id="img-wrap">
+
+            </div>
+        </div>
+    </div>
+
     <script>
     var parsed = queryString.parse(location.search);
-    if (parsed.qr) {
-    	var dom = document.createElement('div');
-    	document.body.appendChild(dom);
-    	dom.innerHTML  = parsed.qr;
+
+    if (parsed.code) {
+        new QRCode('img-wrap', {
+            text: parsed.code
+        });
+    };
+
+    var _date = '' + month + '月' + date + '日 星期' + day + ' ' + type + '馬';
+    if (parsed.checkin_addr) {
+        var addrMap = {
+            '1': '跑馬地',
+            '2': '沙田'
+        };
+        document.getElementById('checkin_addr').innerHTML = addrMap[parsed.checkin_addr];
+    };
+    if (parsed.race_day && parsed.race_type) {
+        var time = new Date(parsed.race_day);
+        var month = time.getMonth() + 1;
+        var date = time.getDate();
+        var day = ['日', '一', '二', '三', '四', '五', '六'][time.getDay()];
+        var type = {
+            '1': '日',
+            '2': '夜'
+        }[parsed.race_type];
+        var _date = ''+ month+ '月'+ date+ '日 星期'+ day+ ' '+ type+ '馬';
+        document.getElementById('race_time').innerHTML = _date;
     };
     </script>
-	<script>
-		document.write(12345)
-	</script>
-
-	<div class="qrcode ticket-color-red">
-    <div class="qrcode-img">
-        <div class="qrcode-title">
-            <span class="ico ico-hkrace"></span>
-            <p>香港赛马会观众席入场门票(<span>跑馬地</span>)</p>
-            <p>赛事日期:<span>1月28日 星期三 夜馬</span>
-            </p>
-        </div>
-        <div class="img-wrap" title="S002114-9100001895-C1006">
-
-            <canvas width="238" height="238" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;">
-
-
-	</div></div></div>
 </body>
 
 </html>
