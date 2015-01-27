@@ -56,6 +56,7 @@ require(['zepto', 'queryString', 'widgets/wxLogin', 'widgets/loading', 'widgets/
 				var type = {'1': '日','2': '夜'}[data.list_info.race_type];
 				var _date = '' + month + '月' + date + '日 星期' + day + ' ' + type + '馬';
 				
+				$('#count').html(data.list_info.ticket_count);
 				$("#date").html(_date);
 				$("#addr").html(addrMap[data.list_info.checkin_addr]);
 				$("#price").html('HK$'+ (data.list_info.total_money/100).toFixed(2));

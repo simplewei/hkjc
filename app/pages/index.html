@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Canvas 在retina屏下显示发虚</title>
+<script src="canvas2image.js"></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <canvas id="canvas-1" width="300" heigth="200"></canvas>
+    <canvas id="canvas-2" width="300" heigth="200"></canvas>
+    <div id="i"></div>
+    <script>
+        (function () {
+            var canvas = document.getElementById('canvas-1');
+            var ctx = canvas.getContext('2d');
+            var width = canvas.width;
+            var height = canvas.height;
+            var text = '香港賽馬會公眾席入場門票(）';
+
+            ctx.font = '14px sans-serif';
+            ctx.fillStyle = '#666';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(text, width / 2, height / 2);
+        })();
+
+        (function () {
+            var canvas = document.getElementById('canvas-2');
+            var ctx = canvas.getContext('2d');
+            var width = canvas.width;
+            var height = canvas.height;
+            var text = '香港賽馬會公眾席入場門票(）';
+
+            (function (canvas, ctx) {
+                var devicePixelRatio = window.devicePixelRatio || 1;
+                var backingStorePixelRatio = ctx.webkitBackingStorePixelRatio ||
+                                             ctx.mozBackingStorePixelRatio ||
+                                             ctx.msBackingStorePixelRatio ||
+                                             ctx.oBackingStorePixelRatio ||
+                                             ctx.backingStorePixelRatio || 1;
+
+                var ratio = devicePixelRatio / backingStorePixelRatio;
+
+                if (devicePixelRatio !== backingStorePixelRatio) {
+                    var oldWidth = canvas.width;
+                    var oldHeight = canvas.height;
+
+                    canvas.width = oldWidth * ratio*2;
+                    canvas.height = oldHeight * ratio*2;
+
+                    canvas.style.width = oldWidth + 'px';
+                    canvas.style.height = oldHeight + 'px';
+
+                    ctx.scale(ratio*2, ratio*2);
+                }
+
+            })(canvas, ctx);
+
+            ctx.font = '14px sans-serif';
+            ctx.fillStyle = '#666';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            // debugger
+            ctx.fillText(text, width / 2, height / 2);
+            debugger
+            var x= Canvas2Image.convertToPNG(ctx.canvas, ctx.canvas.width/2, ctx.canvas.height/2)
+            document.getElementById('i').appendChild(x);
+            x.style.width = ctx.canvas.width/4 +'px'
+            x.style.height = ctx.canvas.height/4 +'px'
+        })();
+
+    </script>
+</body>
+</html>

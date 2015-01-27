@@ -14,9 +14,10 @@
  * author: simplewei
  * date: 2015-01-19
  */
-require(['zepto', 'underscore', 'widgets/wxLogin', 'widgets/tips', 'widgets/loading',
+
+require(['zepto', 'queryString', 'underscore', 'widgets/wxLogin', 'widgets/tips', 'widgets/loading',
 	'text!modules/tpl/index.html', 'widgets/defaultWxShare'],
-	function($, _, wxLogin, tips, loading, tpl) {
+	function($, queryString, _, wxLogin, tips, loading, tpl) {
 
 	loading.show();
 
@@ -204,6 +205,27 @@ require(['zepto', 'underscore', 'widgets/wxLogin', 'widgets/tips', 'widgets/load
 			pay(race_id, count);
 		};
 
+
+		/*
+		 * 根据race_id自动联想赛事选项
+		 * 
+		 */
+		 var autoComplete = function(data){
+		 	var parsed = queryString.parse(location.search);
+		 	if(parsed.race_id){		 		
+		 		$.each(data.race_info,function(i,m){// debugger
+		 			$.each(this.race,function(i,n){
+			 				$.each(this.checkin_info,function(){
+				 			if(this.race_id == parsed.race_id){
+				 				$('#race-date').val(JSON.stringify(m.race));
+				 			};
+				 		});
+			 		});
+		 		});
+		 	};
+		 	// debugger
+		 };
+
 		/*
 		 * 页面初始化入口
 		 */
@@ -213,7 +235,8 @@ require(['zepto', 'underscore', 'widgets/wxLogin', 'widgets/tips', 'widgets/load
 				loading.hide();
 				var temp = _.template(tpl);
 				var _html = temp(data);
-				$('#race-date').html(_html).change();				
+				$('#race-date').html(_html).change();
+				autoComplete(data);
 			});
 
 			// 根据用户选择联动赛事地点

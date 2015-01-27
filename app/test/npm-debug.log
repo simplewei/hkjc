@@ -1,0 +1,1970 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'F:\\github\\hkjc\\app\\test',
+6 verbose install   [ 'url',
+6 verbose install     'xmlserializer',
+6 verbose install     'ayepromise',
+6 verbose install     'inlineresources',
+6 verbose install     'grunt',
+6 verbose install     'grunt-browserify',
+6 verbose install     'grunt-cli',
+6 verbose install     'grunt-contrib-clean',
+6 verbose install     'grunt-contrib-concat',
+6 verbose install     'grunt-contrib-jasmine',
+6 verbose install     'grunt-contrib-jshint',
+6 verbose install     'grunt-contrib-uglify',
+6 verbose install     'grunt-contrib-watch',
+6 verbose install     'grunt-regex-check',
+6 verbose install     'grunt-umd',
+6 verbose install     'imagediff',
+6 verbose install     'jasmine-core',
+6 verbose install     'jquery',
+6 verbose install     'slimerjs' ] ]
+7 info preinstall rasterizehtml@0.9.2
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'url@~0.10.1', null ]
+10 verbose cache add name=undefined spec="url@~0.10.1" args=["url@~0.10.1",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'url@~0.10.1',
+11 verbose parsed url   path: 'url@~0.10.1',
+11 verbose parsed url   href: 'url@~0.10.1' }
+12 verbose cache add name="url" spec="~0.10.1" args=["url","~0.10.1"]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: '~0.10.1',
+13 verbose parsed url   path: '~0.10.1',
+13 verbose parsed url   href: '~0.10.1' }
+14 verbose addNamed [ 'url', '~0.10.1' ]
+15 verbose addNamed [ null, '>=0.10.1-0 <0.11.0-0' ]
+16 verbose cache add [ 'xmlserializer@~0.3.1', null ]
+17 verbose cache add name=undefined spec="xmlserializer@~0.3.1" args=["xmlserializer@~0.3.1",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'xmlserializer@~0.3.1',
+18 verbose parsed url   path: 'xmlserializer@~0.3.1',
+18 verbose parsed url   href: 'xmlserializer@~0.3.1' }
+19 verbose cache add name="xmlserializer" spec="~0.3.1" args=["xmlserializer","~0.3.1"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '~0.3.1',
+20 verbose parsed url   path: '~0.3.1',
+20 verbose parsed url   href: '~0.3.1' }
+21 verbose addNamed [ 'xmlserializer', '~0.3.1' ]
+22 verbose addNamed [ null, '>=0.3.1-0 <0.4.0-0' ]
+23 verbose cache add [ 'ayepromise@~1.1.1', null ]
+24 verbose cache add name=undefined spec="ayepromise@~1.1.1" args=["ayepromise@~1.1.1",null]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: null,
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: 'ayepromise@~1.1.1',
+25 verbose parsed url   path: 'ayepromise@~1.1.1',
+25 verbose parsed url   href: 'ayepromise@~1.1.1' }
+26 verbose cache add name="ayepromise" spec="~1.1.1" args=["ayepromise","~1.1.1"]
+27 verbose parsed url { protocol: null,
+27 verbose parsed url   slashes: null,
+27 verbose parsed url   auth: null,
+27 verbose parsed url   host: null,
+27 verbose parsed url   port: null,
+27 verbose parsed url   hostname: null,
+27 verbose parsed url   hash: null,
+27 verbose parsed url   search: null,
+27 verbose parsed url   query: null,
+27 verbose parsed url   pathname: '~1.1.1',
+27 verbose parsed url   path: '~1.1.1',
+27 verbose parsed url   href: '~1.1.1' }
+28 verbose addNamed [ 'ayepromise', '~1.1.1' ]
+29 verbose addNamed [ null, '>=1.1.1-0 <1.2.0-0' ]
+30 verbose cache add [ 'inlineresources@~0.1.1', null ]
+31 verbose cache add name=undefined spec="inlineresources@~0.1.1" args=["inlineresources@~0.1.1",null]
+32 verbose parsed url { protocol: null,
+32 verbose parsed url   slashes: null,
+32 verbose parsed url   auth: null,
+32 verbose parsed url   host: null,
+32 verbose parsed url   port: null,
+32 verbose parsed url   hostname: null,
+32 verbose parsed url   hash: null,
+32 verbose parsed url   search: null,
+32 verbose parsed url   query: null,
+32 verbose parsed url   pathname: 'inlineresources@~0.1.1',
+32 verbose parsed url   path: 'inlineresources@~0.1.1',
+32 verbose parsed url   href: 'inlineresources@~0.1.1' }
+33 verbose cache add name="inlineresources" spec="~0.1.1" args=["inlineresources","~0.1.1"]
+34 verbose parsed url { protocol: null,
+34 verbose parsed url   slashes: null,
+34 verbose parsed url   auth: null,
+34 verbose parsed url   host: null,
+34 verbose parsed url   port: null,
+34 verbose parsed url   hostname: null,
+34 verbose parsed url   hash: null,
+34 verbose parsed url   search: null,
+34 verbose parsed url   query: null,
+34 verbose parsed url   pathname: '~0.1.1',
+34 verbose parsed url   path: '~0.1.1',
+34 verbose parsed url   href: '~0.1.1' }
+35 verbose addNamed [ 'inlineresources', '~0.1.1' ]
+36 verbose addNamed [ null, '>=0.1.1-0 <0.2.0-0' ]
+37 verbose cache add [ 'grunt@~0.4.1', null ]
+38 verbose cache add name=undefined spec="grunt@~0.4.1" args=["grunt@~0.4.1",null]
+39 verbose parsed url { protocol: null,
+39 verbose parsed url   slashes: null,
+39 verbose parsed url   auth: null,
+39 verbose parsed url   host: null,
+39 verbose parsed url   port: null,
+39 verbose parsed url   hostname: null,
+39 verbose parsed url   hash: null,
+39 verbose parsed url   search: null,
+39 verbose parsed url   query: null,
+39 verbose parsed url   pathname: 'grunt@~0.4.1',
+39 verbose parsed url   path: 'grunt@~0.4.1',
+39 verbose parsed url   href: 'grunt@~0.4.1' }
+40 verbose cache add name="grunt" spec="~0.4.1" args=["grunt","~0.4.1"]
+41 verbose parsed url { protocol: null,
+41 verbose parsed url   slashes: null,
+41 verbose parsed url   auth: null,
+41 verbose parsed url   host: null,
+41 verbose parsed url   port: null,
+41 verbose parsed url   hostname: null,
+41 verbose parsed url   hash: null,
+41 verbose parsed url   search: null,
+41 verbose parsed url   query: null,
+41 verbose parsed url   pathname: '~0.4.1',
+41 verbose parsed url   path: '~0.4.1',
+41 verbose parsed url   href: '~0.4.1' }
+42 verbose addNamed [ 'grunt', '~0.4.1' ]
+43 verbose addNamed [ null, '>=0.4.1-0 <0.5.0-0' ]
+44 verbose cache add [ 'grunt-browserify@~2.0.7', null ]
+45 verbose cache add name=undefined spec="grunt-browserify@~2.0.7" args=["grunt-browserify@~2.0.7",null]
+46 verbose parsed url { protocol: null,
+46 verbose parsed url   slashes: null,
+46 verbose parsed url   auth: null,
+46 verbose parsed url   host: null,
+46 verbose parsed url   port: null,
+46 verbose parsed url   hostname: null,
+46 verbose parsed url   hash: null,
+46 verbose parsed url   search: null,
+46 verbose parsed url   query: null,
+46 verbose parsed url   pathname: 'grunt-browserify@~2.0.7',
+46 verbose parsed url   path: 'grunt-browserify@~2.0.7',
+46 verbose parsed url   href: 'grunt-browserify@~2.0.7' }
+47 verbose cache add name="grunt-browserify" spec="~2.0.7" args=["grunt-browserify","~2.0.7"]
+48 verbose parsed url { protocol: null,
+48 verbose parsed url   slashes: null,
+48 verbose parsed url   auth: null,
+48 verbose parsed url   host: null,
+48 verbose parsed url   port: null,
+48 verbose parsed url   hostname: null,
+48 verbose parsed url   hash: null,
+48 verbose parsed url   search: null,
+48 verbose parsed url   query: null,
+48 verbose parsed url   pathname: '~2.0.7',
+48 verbose parsed url   path: '~2.0.7',
+48 verbose parsed url   href: '~2.0.7' }
+49 verbose addNamed [ 'grunt-browserify', '~2.0.7' ]
+50 verbose addNamed [ null, '>=2.0.7-0 <2.1.0-0' ]
+51 verbose cache add [ 'grunt-cli@~0.1', null ]
+52 verbose cache add name=undefined spec="grunt-cli@~0.1" args=["grunt-cli@~0.1",null]
+53 verbose parsed url { protocol: null,
+53 verbose parsed url   slashes: null,
+53 verbose parsed url   auth: null,
+53 verbose parsed url   host: null,
+53 verbose parsed url   port: null,
+53 verbose parsed url   hostname: null,
+53 verbose parsed url   hash: null,
+53 verbose parsed url   search: null,
+53 verbose parsed url   query: null,
+53 verbose parsed url   pathname: 'grunt-cli@~0.1',
+53 verbose parsed url   path: 'grunt-cli@~0.1',
+53 verbose parsed url   href: 'grunt-cli@~0.1' }
+54 verbose cache add name="grunt-cli" spec="~0.1" args=["grunt-cli","~0.1"]
+55 verbose parsed url { protocol: null,
+55 verbose parsed url   slashes: null,
+55 verbose parsed url   auth: null,
+55 verbose parsed url   host: null,
+55 verbose parsed url   port: null,
+55 verbose parsed url   hostname: null,
+55 verbose parsed url   hash: null,
+55 verbose parsed url   search: null,
+55 verbose parsed url   query: null,
+55 verbose parsed url   pathname: '~0.1',
+55 verbose parsed url   path: '~0.1',
+55 verbose parsed url   href: '~0.1' }
+56 verbose addNamed [ 'grunt-cli', '~0.1' ]
+57 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+58 verbose cache add [ 'grunt-contrib-clean@~0.5.0', null ]
+59 verbose cache add name=undefined spec="grunt-contrib-clean@~0.5.0" args=["grunt-contrib-clean@~0.5.0",null]
+60 verbose parsed url { protocol: null,
+60 verbose parsed url   slashes: null,
+60 verbose parsed url   auth: null,
+60 verbose parsed url   host: null,
+60 verbose parsed url   port: null,
+60 verbose parsed url   hostname: null,
+60 verbose parsed url   hash: null,
+60 verbose parsed url   search: null,
+60 verbose parsed url   query: null,
+60 verbose parsed url   pathname: 'grunt-contrib-clean@~0.5.0',
+60 verbose parsed url   path: 'grunt-contrib-clean@~0.5.0',
+60 verbose parsed url   href: 'grunt-contrib-clean@~0.5.0' }
+61 verbose cache add name="grunt-contrib-clean" spec="~0.5.0" args=["grunt-contrib-clean","~0.5.0"]
+62 verbose parsed url { protocol: null,
+62 verbose parsed url   slashes: null,
+62 verbose parsed url   auth: null,
+62 verbose parsed url   host: null,
+62 verbose parsed url   port: null,
+62 verbose parsed url   hostname: null,
+62 verbose parsed url   hash: null,
+62 verbose parsed url   search: null,
+62 verbose parsed url   query: null,
+62 verbose parsed url   pathname: '~0.5.0',
+62 verbose parsed url   path: '~0.5.0',
+62 verbose parsed url   href: '~0.5.0' }
+63 verbose addNamed [ 'grunt-contrib-clean', '~0.5.0' ]
+64 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+65 verbose cache add [ 'grunt-contrib-concat@~0.4.0', null ]
+66 verbose cache add name=undefined spec="grunt-contrib-concat@~0.4.0" args=["grunt-contrib-concat@~0.4.0",null]
+67 verbose parsed url { protocol: null,
+67 verbose parsed url   slashes: null,
+67 verbose parsed url   auth: null,
+67 verbose parsed url   host: null,
+67 verbose parsed url   port: null,
+67 verbose parsed url   hostname: null,
+67 verbose parsed url   hash: null,
+67 verbose parsed url   search: null,
+67 verbose parsed url   query: null,
+67 verbose parsed url   pathname: 'grunt-contrib-concat@~0.4.0',
+67 verbose parsed url   path: 'grunt-contrib-concat@~0.4.0',
+67 verbose parsed url   href: 'grunt-contrib-concat@~0.4.0' }
+68 verbose cache add name="grunt-contrib-concat" spec="~0.4.0" args=["grunt-contrib-concat","~0.4.0"]
+69 verbose parsed url { protocol: null,
+69 verbose parsed url   slashes: null,
+69 verbose parsed url   auth: null,
+69 verbose parsed url   host: null,
+69 verbose parsed url   port: null,
+69 verbose parsed url   hostname: null,
+69 verbose parsed url   hash: null,
+69 verbose parsed url   search: null,
+69 verbose parsed url   query: null,
+69 verbose parsed url   pathname: '~0.4.0',
+69 verbose parsed url   path: '~0.4.0',
+69 verbose parsed url   href: '~0.4.0' }
+70 verbose addNamed [ 'grunt-contrib-concat', '~0.4.0' ]
+71 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+72 verbose cache add [ 'grunt-contrib-jasmine@~0.6.4', null ]
+73 verbose cache add name=undefined spec="grunt-contrib-jasmine@~0.6.4" args=["grunt-contrib-jasmine@~0.6.4",null]
+74 verbose parsed url { protocol: null,
+74 verbose parsed url   slashes: null,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: null,
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: null,
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: 'grunt-contrib-jasmine@~0.6.4',
+74 verbose parsed url   path: 'grunt-contrib-jasmine@~0.6.4',
+74 verbose parsed url   href: 'grunt-contrib-jasmine@~0.6.4' }
+75 verbose cache add name="grunt-contrib-jasmine" spec="~0.6.4" args=["grunt-contrib-jasmine","~0.6.4"]
+76 verbose parsed url { protocol: null,
+76 verbose parsed url   slashes: null,
+76 verbose parsed url   auth: null,
+76 verbose parsed url   host: null,
+76 verbose parsed url   port: null,
+76 verbose parsed url   hostname: null,
+76 verbose parsed url   hash: null,
+76 verbose parsed url   search: null,
+76 verbose parsed url   query: null,
+76 verbose parsed url   pathname: '~0.6.4',
+76 verbose parsed url   path: '~0.6.4',
+76 verbose parsed url   href: '~0.6.4' }
+77 verbose addNamed [ 'grunt-contrib-jasmine', '~0.6.4' ]
+78 verbose addNamed [ null, '>=0.6.4-0 <0.7.0-0' ]
+79 verbose cache add [ 'grunt-contrib-jshint@~0.10.0', null ]
+80 verbose cache add name=undefined spec="grunt-contrib-jshint@~0.10.0" args=["grunt-contrib-jshint@~0.10.0",null]
+81 verbose parsed url { protocol: null,
+81 verbose parsed url   slashes: null,
+81 verbose parsed url   auth: null,
+81 verbose parsed url   host: null,
+81 verbose parsed url   port: null,
+81 verbose parsed url   hostname: null,
+81 verbose parsed url   hash: null,
+81 verbose parsed url   search: null,
+81 verbose parsed url   query: null,
+81 verbose parsed url   pathname: 'grunt-contrib-jshint@~0.10.0',
+81 verbose parsed url   path: 'grunt-contrib-jshint@~0.10.0',
+81 verbose parsed url   href: 'grunt-contrib-jshint@~0.10.0' }
+82 verbose cache add name="grunt-contrib-jshint" spec="~0.10.0" args=["grunt-contrib-jshint","~0.10.0"]
+83 verbose parsed url { protocol: null,
+83 verbose parsed url   slashes: null,
+83 verbose parsed url   auth: null,
+83 verbose parsed url   host: null,
+83 verbose parsed url   port: null,
+83 verbose parsed url   hostname: null,
+83 verbose parsed url   hash: null,
+83 verbose parsed url   search: null,
+83 verbose parsed url   query: null,
+83 verbose parsed url   pathname: '~0.10.0',
+83 verbose parsed url   path: '~0.10.0',
+83 verbose parsed url   href: '~0.10.0' }
+84 verbose addNamed [ 'grunt-contrib-jshint', '~0.10.0' ]
+85 verbose addNamed [ null, '>=0.10.0-0 <0.11.0-0' ]
+86 verbose cache add [ 'grunt-contrib-uglify@~0.4.0', null ]
+87 verbose cache add name=undefined spec="grunt-contrib-uglify@~0.4.0" args=["grunt-contrib-uglify@~0.4.0",null]
+88 verbose parsed url { protocol: null,
+88 verbose parsed url   slashes: null,
+88 verbose parsed url   auth: null,
+88 verbose parsed url   host: null,
+88 verbose parsed url   port: null,
+88 verbose parsed url   hostname: null,
+88 verbose parsed url   hash: null,
+88 verbose parsed url   search: null,
+88 verbose parsed url   query: null,
+88 verbose parsed url   pathname: 'grunt-contrib-uglify@~0.4.0',
+88 verbose parsed url   path: 'grunt-contrib-uglify@~0.4.0',
+88 verbose parsed url   href: 'grunt-contrib-uglify@~0.4.0' }
+89 verbose cache add name="grunt-contrib-uglify" spec="~0.4.0" args=["grunt-contrib-uglify","~0.4.0"]
+90 verbose parsed url { protocol: null,
+90 verbose parsed url   slashes: null,
+90 verbose parsed url   auth: null,
+90 verbose parsed url   host: null,
+90 verbose parsed url   port: null,
+90 verbose parsed url   hostname: null,
+90 verbose parsed url   hash: null,
+90 verbose parsed url   search: null,
+90 verbose parsed url   query: null,
+90 verbose parsed url   pathname: '~0.4.0',
+90 verbose parsed url   path: '~0.4.0',
+90 verbose parsed url   href: '~0.4.0' }
+91 verbose addNamed [ 'grunt-contrib-uglify', '~0.4.0' ]
+92 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+93 verbose cache add [ 'grunt-contrib-watch@~0.6.1', null ]
+94 verbose cache add name=undefined spec="grunt-contrib-watch@~0.6.1" args=["grunt-contrib-watch@~0.6.1",null]
+95 verbose parsed url { protocol: null,
+95 verbose parsed url   slashes: null,
+95 verbose parsed url   auth: null,
+95 verbose parsed url   host: null,
+95 verbose parsed url   port: null,
+95 verbose parsed url   hostname: null,
+95 verbose parsed url   hash: null,
+95 verbose parsed url   search: null,
+95 verbose parsed url   query: null,
+95 verbose parsed url   pathname: 'grunt-contrib-watch@~0.6.1',
+95 verbose parsed url   path: 'grunt-contrib-watch@~0.6.1',
+95 verbose parsed url   href: 'grunt-contrib-watch@~0.6.1' }
+96 verbose cache add name="grunt-contrib-watch" spec="~0.6.1" args=["grunt-contrib-watch","~0.6.1"]
+97 verbose parsed url { protocol: null,
+97 verbose parsed url   slashes: null,
+97 verbose parsed url   auth: null,
+97 verbose parsed url   host: null,
+97 verbose parsed url   port: null,
+97 verbose parsed url   hostname: null,
+97 verbose parsed url   hash: null,
+97 verbose parsed url   search: null,
+97 verbose parsed url   query: null,
+97 verbose parsed url   pathname: '~0.6.1',
+97 verbose parsed url   path: '~0.6.1',
+97 verbose parsed url   href: '~0.6.1' }
+98 verbose addNamed [ 'grunt-contrib-watch', '~0.6.1' ]
+99 verbose addNamed [ null, '>=0.6.1-0 <0.7.0-0' ]
+100 verbose cache add [ 'grunt-regex-check@~0.1.5', null ]
+101 verbose cache add name=undefined spec="grunt-regex-check@~0.1.5" args=["grunt-regex-check@~0.1.5",null]
+102 verbose parsed url { protocol: null,
+102 verbose parsed url   slashes: null,
+102 verbose parsed url   auth: null,
+102 verbose parsed url   host: null,
+102 verbose parsed url   port: null,
+102 verbose parsed url   hostname: null,
+102 verbose parsed url   hash: null,
+102 verbose parsed url   search: null,
+102 verbose parsed url   query: null,
+102 verbose parsed url   pathname: 'grunt-regex-check@~0.1.5',
+102 verbose parsed url   path: 'grunt-regex-check@~0.1.5',
+102 verbose parsed url   href: 'grunt-regex-check@~0.1.5' }
+103 verbose cache add name="grunt-regex-check" spec="~0.1.5" args=["grunt-regex-check","~0.1.5"]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: '~0.1.5',
+104 verbose parsed url   path: '~0.1.5',
+104 verbose parsed url   href: '~0.1.5' }
+105 verbose addNamed [ 'grunt-regex-check', '~0.1.5' ]
+106 verbose addNamed [ null, '>=0.1.5-0 <0.2.0-0' ]
+107 verbose cache add [ 'grunt-umd@~1.7.3', null ]
+108 verbose cache add name=undefined spec="grunt-umd@~1.7.3" args=["grunt-umd@~1.7.3",null]
+109 verbose parsed url { protocol: null,
+109 verbose parsed url   slashes: null,
+109 verbose parsed url   auth: null,
+109 verbose parsed url   host: null,
+109 verbose parsed url   port: null,
+109 verbose parsed url   hostname: null,
+109 verbose parsed url   hash: null,
+109 verbose parsed url   search: null,
+109 verbose parsed url   query: null,
+109 verbose parsed url   pathname: 'grunt-umd@~1.7.3',
+109 verbose parsed url   path: 'grunt-umd@~1.7.3',
+109 verbose parsed url   href: 'grunt-umd@~1.7.3' }
+110 verbose cache add name="grunt-umd" spec="~1.7.3" args=["grunt-umd","~1.7.3"]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: '~1.7.3',
+111 verbose parsed url   path: '~1.7.3',
+111 verbose parsed url   href: '~1.7.3' }
+112 verbose addNamed [ 'grunt-umd', '~1.7.3' ]
+113 verbose addNamed [ null, '>=1.7.3-0 <1.8.0-0' ]
+114 verbose cache add [ 'imagediff@git://github.com/cburgmer/js-imagediff#v1.1merged',
+114 verbose cache add   null ]
+115 verbose cache add name=undefined spec="imagediff@git://github.com/cburgmer/js-imagediff#v1.1merged" args=["imagediff@git://github.com/cburgmer/js-imagediff#v1.1merged",null]
+116 verbose parsed url { protocol: null,
+116 verbose parsed url   slashes: null,
+116 verbose parsed url   auth: null,
+116 verbose parsed url   host: null,
+116 verbose parsed url   port: null,
+116 verbose parsed url   hostname: null,
+116 verbose parsed url   hash: '#v1.1merged',
+116 verbose parsed url   search: null,
+116 verbose parsed url   query: null,
+116 verbose parsed url   pathname: 'imagediff@git://github.com/cburgmer/js-imagediff',
+116 verbose parsed url   path: 'imagediff@git://github.com/cburgmer/js-imagediff',
+116 verbose parsed url   href: 'imagediff@git://github.com/cburgmer/js-imagediff#v1.1merged' }
+117 verbose cache add [ 'jasmine-core@2.0.0', null ]
+118 verbose cache add name=undefined spec="jasmine-core@2.0.0" args=["jasmine-core@2.0.0",null]
+119 verbose parsed url { protocol: null,
+119 verbose parsed url   slashes: null,
+119 verbose parsed url   auth: null,
+119 verbose parsed url   host: null,
+119 verbose parsed url   port: null,
+119 verbose parsed url   hostname: null,
+119 verbose parsed url   hash: null,
+119 verbose parsed url   search: null,
+119 verbose parsed url   query: null,
+119 verbose parsed url   pathname: 'jasmine-core@2.0.0',
+119 verbose parsed url   path: 'jasmine-core@2.0.0',
+119 verbose parsed url   href: 'jasmine-core@2.0.0' }
+120 verbose cache add name="jasmine-core" spec="2.0.0" args=["jasmine-core","2.0.0"]
+121 verbose parsed url { protocol: null,
+121 verbose parsed url   slashes: null,
+121 verbose parsed url   auth: null,
+121 verbose parsed url   host: null,
+121 verbose parsed url   port: null,
+121 verbose parsed url   hostname: null,
+121 verbose parsed url   hash: null,
+121 verbose parsed url   search: null,
+121 verbose parsed url   query: null,
+121 verbose parsed url   pathname: '2.0.0',
+121 verbose parsed url   path: '2.0.0',
+121 verbose parsed url   href: '2.0.0' }
+122 verbose addNamed [ 'jasmine-core', '2.0.0' ]
+123 verbose addNamed [ '2.0.0', '2.0.0' ]
+124 silly lockFile c64eb249-url-0-10-1 url@~0.10.1
+125 verbose lock url@~0.10.1 C:\Users\simplewei\AppData\Roaming\npm-cache\c64eb249-url-0-10-1.lock
+126 silly lockFile d9192f73-xmlserializer-0-3-1 xmlserializer@~0.3.1
+127 verbose lock xmlserializer@~0.3.1 C:\Users\simplewei\AppData\Roaming\npm-cache\d9192f73-xmlserializer-0-3-1.lock
+128 silly lockFile c91f0236-ayepromise-1-1-1 ayepromise@~1.1.1
+129 verbose lock ayepromise@~1.1.1 C:\Users\simplewei\AppData\Roaming\npm-cache\c91f0236-ayepromise-1-1-1.lock
+130 silly lockFile 8ad58d89-inlineresources-0-1-1 inlineresources@~0.1.1
+131 verbose lock inlineresources@~0.1.1 C:\Users\simplewei\AppData\Roaming\npm-cache\8ad58d89-inlineresources-0-1-1.lock
+132 silly lockFile 766a3bd3-grunt-0-4-1 grunt@~0.4.1
+133 verbose lock grunt@~0.4.1 C:\Users\simplewei\AppData\Roaming\npm-cache\766a3bd3-grunt-0-4-1.lock
+134 silly lockFile 1f2faaf4-grunt-browserify-2-0-7 grunt-browserify@~2.0.7
+135 verbose lock grunt-browserify@~2.0.7 C:\Users\simplewei\AppData\Roaming\npm-cache\1f2faaf4-grunt-browserify-2-0-7.lock
+136 silly lockFile c01faaa1-grunt-cli-0-1 grunt-cli@~0.1
+137 verbose lock grunt-cli@~0.1 C:\Users\simplewei\AppData\Roaming\npm-cache\c01faaa1-grunt-cli-0-1.lock
+138 silly lockFile 83f743bc-grunt-contrib-clean-0-5-0 grunt-contrib-clean@~0.5.0
+139 verbose lock grunt-contrib-clean@~0.5.0 C:\Users\simplewei\AppData\Roaming\npm-cache\83f743bc-grunt-contrib-clean-0-5-0.lock
+140 silly lockFile cc7194be-grunt-contrib-concat-0-4-0 grunt-contrib-concat@~0.4.0
+141 verbose lock grunt-contrib-concat@~0.4.0 C:\Users\simplewei\AppData\Roaming\npm-cache\cc7194be-grunt-contrib-concat-0-4-0.lock
+142 silly lockFile e9b7c2c7-grunt-contrib-jasmine-0-6-4 grunt-contrib-jasmine@~0.6.4
+143 verbose lock grunt-contrib-jasmine@~0.6.4 C:\Users\simplewei\AppData\Roaming\npm-cache\e9b7c2c7-grunt-contrib-jasmine-0-6-4.lock
+144 silly lockFile 956acfd4-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@~0.10.0
+145 verbose lock grunt-contrib-jshint@~0.10.0 C:\Users\simplewei\AppData\Roaming\npm-cache\956acfd4-grunt-contrib-jshint-0-10-0.lock
+146 silly lockFile bea3f155-grunt-contrib-uglify-0-4-0 grunt-contrib-uglify@~0.4.0
+147 verbose lock grunt-contrib-uglify@~0.4.0 C:\Users\simplewei\AppData\Roaming\npm-cache\bea3f155-grunt-contrib-uglify-0-4-0.lock
+148 silly lockFile 82ce6ec8-grunt-contrib-watch-0-6-1 grunt-contrib-watch@~0.6.1
+149 verbose lock grunt-contrib-watch@~0.6.1 C:\Users\simplewei\AppData\Roaming\npm-cache\82ce6ec8-grunt-contrib-watch-0-6-1.lock
+150 silly lockFile e5bd82df-grunt-regex-check-0-1-5 grunt-regex-check@~0.1.5
+151 verbose lock grunt-regex-check@~0.1.5 C:\Users\simplewei\AppData\Roaming\npm-cache\e5bd82df-grunt-regex-check-0-1-5.lock
+152 silly lockFile 7c071ae3-grunt-umd-1-7-3 grunt-umd@~1.7.3
+153 verbose lock grunt-umd@~1.7.3 C:\Users\simplewei\AppData\Roaming\npm-cache\7c071ae3-grunt-umd-1-7-3.lock
+154 verbose cache add name="imagediff" spec="git://github.com/cburgmer/js-imagediff#v1.1merged" args=["imagediff","git://github.com/cburgmer/js-imagediff#v1.1merged"]
+155 verbose parsed url { protocol: 'git:',
+155 verbose parsed url   slashes: true,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: 'github.com',
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: 'github.com',
+155 verbose parsed url   hash: '#v1.1merged',
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: '/cburgmer/js-imagediff',
+155 verbose parsed url   path: '/cburgmer/js-imagediff',
+155 verbose parsed url   href: 'git://github.com/cburgmer/js-imagediff#v1.1merged' }
+156 silly lockFile 2c2617c9-github-com-cburgmer-js-imagediff git://github.com/cburgmer/js-imagediff
+157 verbose lock git://github.com/cburgmer/js-imagediff C:\Users\simplewei\AppData\Roaming\npm-cache\2c2617c9-github-com-cburgmer-js-imagediff.lock
+158 silly lockFile 664559b2-jasmine-core-2-0-0 jasmine-core@2.0.0
+159 verbose lock jasmine-core@2.0.0 C:\Users\simplewei\AppData\Roaming\npm-cache\664559b2-jasmine-core-2-0-0.lock
+160 verbose cache add [ 'jquery@~2.1.0', null ]
+161 verbose cache add name=undefined spec="jquery@~2.1.0" args=["jquery@~2.1.0",null]
+162 verbose parsed url { protocol: null,
+162 verbose parsed url   slashes: null,
+162 verbose parsed url   auth: null,
+162 verbose parsed url   host: null,
+162 verbose parsed url   port: null,
+162 verbose parsed url   hostname: null,
+162 verbose parsed url   hash: null,
+162 verbose parsed url   search: null,
+162 verbose parsed url   query: null,
+162 verbose parsed url   pathname: 'jquery@~2.1.0',
+162 verbose parsed url   path: 'jquery@~2.1.0',
+162 verbose parsed url   href: 'jquery@~2.1.0' }
+163 verbose cache add name="jquery" spec="~2.1.0" args=["jquery","~2.1.0"]
+164 verbose parsed url { protocol: null,
+164 verbose parsed url   slashes: null,
+164 verbose parsed url   auth: null,
+164 verbose parsed url   host: null,
+164 verbose parsed url   port: null,
+164 verbose parsed url   hostname: null,
+164 verbose parsed url   hash: null,
+164 verbose parsed url   search: null,
+164 verbose parsed url   query: null,
+164 verbose parsed url   pathname: '~2.1.0',
+164 verbose parsed url   path: '~2.1.0',
+164 verbose parsed url   href: '~2.1.0' }
+165 verbose addNamed [ 'jquery', '~2.1.0' ]
+166 verbose addNamed [ null, '>=2.1.0-0 <2.2.0-0' ]
+167 silly lockFile 76a8e64b-jquery-2-1-0 jquery@~2.1.0
+168 verbose lock jquery@~2.1.0 C:\Users\simplewei\AppData\Roaming\npm-cache\76a8e64b-jquery-2-1-0.lock
+169 verbose cache add [ 'slimerjs@0.9.1-2', null ]
+170 verbose cache add name=undefined spec="slimerjs@0.9.1-2" args=["slimerjs@0.9.1-2",null]
+171 verbose parsed url { protocol: null,
+171 verbose parsed url   slashes: null,
+171 verbose parsed url   auth: null,
+171 verbose parsed url   host: null,
+171 verbose parsed url   port: null,
+171 verbose parsed url   hostname: null,
+171 verbose parsed url   hash: null,
+171 verbose parsed url   search: null,
+171 verbose parsed url   query: null,
+171 verbose parsed url   pathname: 'slimerjs@0.9.1-2',
+171 verbose parsed url   path: 'slimerjs@0.9.1-2',
+171 verbose parsed url   href: 'slimerjs@0.9.1-2' }
+172 verbose cache add name="slimerjs" spec="0.9.1-2" args=["slimerjs","0.9.1-2"]
+173 verbose parsed url { protocol: null,
+173 verbose parsed url   slashes: null,
+173 verbose parsed url   auth: null,
+173 verbose parsed url   host: null,
+173 verbose parsed url   port: null,
+173 verbose parsed url   hostname: null,
+173 verbose parsed url   hash: null,
+173 verbose parsed url   search: null,
+173 verbose parsed url   query: null,
+173 verbose parsed url   pathname: '0.9.1-2',
+173 verbose parsed url   path: '0.9.1-2',
+173 verbose parsed url   href: '0.9.1-2' }
+174 verbose addNamed [ 'slimerjs', '0.9.1-2' ]
+175 verbose addNamed [ '0.9.1-2', '0.9.1-2' ]
+176 silly lockFile 16b2b353-slimerjs-0-9-1-2 slimerjs@0.9.1-2
+177 verbose lock slimerjs@0.9.1-2 C:\Users\simplewei\AppData\Roaming\npm-cache\16b2b353-slimerjs-0-9-1-2.lock
+178 silly addNameRange { name: 'grunt-contrib-jshint',
+178 silly addNameRange   range: '>=0.10.0-0 <0.11.0-0',
+178 silly addNameRange   hasData: false }
+179 silly addNameRange { name: 'grunt-contrib-concat',
+179 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+179 silly addNameRange   hasData: false }
+180 silly addNameRange { name: 'grunt-browserify',
+180 silly addNameRange   range: '>=2.0.7-0 <2.1.0-0',
+180 silly addNameRange   hasData: false }
+181 silly addNameRange { name: 'grunt-cli',
+181 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+181 silly addNameRange   hasData: false }
+182 silly addNameRange { name: 'grunt-contrib-jasmine',
+182 silly addNameRange   range: '>=0.6.4-0 <0.7.0-0',
+182 silly addNameRange   hasData: false }
+183 silly addNameRange { name: 'grunt-contrib-watch',
+183 silly addNameRange   range: '>=0.6.1-0 <0.7.0-0',
+183 silly addNameRange   hasData: false }
+184 silly addNameRange { name: 'jquery', range: '>=2.1.0-0 <2.2.0-0', hasData: false }
+185 silly addNameRange { name: 'grunt-umd',
+185 silly addNameRange   range: '>=1.7.3-0 <1.8.0-0',
+185 silly addNameRange   hasData: false }
+186 silly addNameRange { name: 'inlineresources',
+186 silly addNameRange   range: '>=0.1.1-0 <0.2.0-0',
+186 silly addNameRange   hasData: false }
+187 silly addNameRange { name: 'grunt', range: '>=0.4.1-0 <0.5.0-0', hasData: false }
+188 verbose addRemoteGit [ 'git://github.com/cburgmer/js-imagediff', 'v1.1merged' ]
+189 silly addNameRange { name: 'xmlserializer',
+189 silly addNameRange   range: '>=0.3.1-0 <0.4.0-0',
+189 silly addNameRange   hasData: false }
+190 silly addNameRange { name: 'url', range: '>=0.10.1-0 <0.11.0-0', hasData: false }
+191 silly addNameRange { name: 'ayepromise',
+191 silly addNameRange   range: '>=1.1.1-0 <1.2.0-0',
+191 silly addNameRange   hasData: false }
+192 silly addNameRange { name: 'grunt-contrib-clean',
+192 silly addNameRange   range: '>=0.5.0-0 <0.6.0-0',
+192 silly addNameRange   hasData: false }
+193 verbose url raw grunt-browserify
+194 verbose url resolving [ 'http://npm.oa.com/', './grunt-browserify' ]
+195 verbose url resolved http://npm.oa.com/grunt-browserify
+196 info trying registry request attempt 1 at 17:59:44
+197 http GET http://npm.oa.com/grunt-browserify
+198 verbose url raw grunt-contrib-jasmine
+199 verbose url resolving [ 'http://npm.oa.com/', './grunt-contrib-jasmine' ]
+200 verbose url resolved http://npm.oa.com/grunt-contrib-jasmine
+201 info trying registry request attempt 1 at 17:59:44
+202 http GET http://npm.oa.com/grunt-contrib-jasmine
+203 silly addNameRange { name: 'grunt-contrib-uglify',
+203 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+203 silly addNameRange   hasData: false }
+204 silly addNameRange { name: 'grunt-regex-check',
+204 silly addNameRange   range: '>=0.1.5-0 <0.2.0-0',
+204 silly addNameRange   hasData: false }
+205 verbose url raw jquery
+206 verbose url resolving [ 'http://npm.oa.com/', './jquery' ]
+207 verbose url resolved http://npm.oa.com/jquery
+208 info trying registry request attempt 1 at 17:59:44
+209 http GET http://npm.oa.com/jquery
+210 verbose url raw grunt-umd
+211 verbose url resolving [ 'http://npm.oa.com/', './grunt-umd' ]
+212 verbose url resolved http://npm.oa.com/grunt-umd
+213 info trying registry request attempt 1 at 17:59:44
+214 http GET http://npm.oa.com/grunt-umd
+215 verbose url raw jasmine-core
+216 verbose url resolving [ 'http://npm.oa.com/', './jasmine-core' ]
+217 verbose url resolved http://npm.oa.com/jasmine-core
+218 info trying registry request attempt 1 at 17:59:44
+219 http GET http://npm.oa.com/jasmine-core
+220 verbose url raw slimerjs
+221 verbose url resolving [ 'http://npm.oa.com/', './slimerjs' ]
+222 verbose url resolved http://npm.oa.com/slimerjs
+223 info trying registry request attempt 1 at 17:59:44
+224 http GET http://npm.oa.com/slimerjs
+225 verbose url raw inlineresources
+226 verbose url resolving [ 'http://npm.oa.com/', './inlineresources' ]
+227 verbose url resolved http://npm.oa.com/inlineresources
+228 info trying registry request attempt 1 at 17:59:44
+229 http GET http://npm.oa.com/inlineresources
+230 verbose url raw xmlserializer
+231 verbose url resolving [ 'http://npm.oa.com/', './xmlserializer' ]
+232 verbose url resolved http://npm.oa.com/xmlserializer
+233 info trying registry request attempt 1 at 17:59:44
+234 http GET http://npm.oa.com/xmlserializer
+235 verbose url raw url
+236 verbose url resolving [ 'http://npm.oa.com/', './url' ]
+237 verbose url resolved http://npm.oa.com/url
+238 info trying registry request attempt 1 at 17:59:44
+239 http GET http://npm.oa.com/url
+240 verbose url raw ayepromise
+241 verbose url resolving [ 'http://npm.oa.com/', './ayepromise' ]
+242 verbose url resolved http://npm.oa.com/ayepromise
+243 info trying registry request attempt 1 at 17:59:44
+244 http GET http://npm.oa.com/ayepromise
+245 verbose url raw grunt-cli
+246 verbose url resolving [ 'http://npm.oa.com/', './grunt-cli' ]
+247 verbose url resolved http://npm.oa.com/grunt-cli
+248 info trying registry request attempt 1 at 17:59:44
+249 verbose etag "8QGBNZDUK1PF4NE9N2NN3RNTP"
+250 http GET http://npm.oa.com/grunt-cli
+251 verbose url raw grunt-regex-check
+252 verbose url resolving [ 'http://npm.oa.com/', './grunt-regex-check' ]
+253 verbose url resolved http://npm.oa.com/grunt-regex-check
+254 info trying registry request attempt 1 at 17:59:44
+255 http GET http://npm.oa.com/grunt-regex-check
+256 verbose url raw grunt-contrib-concat
+257 verbose url resolving [ 'http://npm.oa.com/', './grunt-contrib-concat' ]
+258 verbose url resolved http://npm.oa.com/grunt-contrib-concat
+259 info trying registry request attempt 1 at 17:59:44
+260 verbose etag "E9T8JQF5CWIL7A7GFKIJG0CRJ"
+261 http GET http://npm.oa.com/grunt-contrib-concat
+262 verbose url raw grunt-contrib-watch
+263 verbose url resolving [ 'http://npm.oa.com/', './grunt-contrib-watch' ]
+264 verbose url resolved http://npm.oa.com/grunt-contrib-watch
+265 info trying registry request attempt 1 at 17:59:44
+266 verbose etag "BSLJVN93FG74UN2BW7SUNFCET"
+267 http GET http://npm.oa.com/grunt-contrib-watch
+268 verbose url raw grunt-contrib-jshint
+269 verbose url resolving [ 'http://npm.oa.com/', './grunt-contrib-jshint' ]
+270 verbose url resolved http://npm.oa.com/grunt-contrib-jshint
+271 info trying registry request attempt 1 at 17:59:44
+272 verbose etag "3HXS7DGT33EVBIHZYXZHBCBO8"
+273 http GET http://npm.oa.com/grunt-contrib-jshint
+274 verbose url raw grunt
+275 verbose url resolving [ 'http://npm.oa.com/', './grunt' ]
+276 verbose url resolved http://npm.oa.com/grunt
+277 info trying registry request attempt 1 at 17:59:44
+278 verbose etag "C9YNF3QMPNI76IECSIJ0TV2EB"
+279 http GET http://npm.oa.com/grunt
+280 http 200 http://npm.oa.com/grunt-browserify
+281 silly registry.get cb [ 200,
+281 silly registry.get   { server: 'nginx/1.0.15',
+281 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+281 silly registry.get     'content-type': 'application/json',
+281 silly registry.get     connection: 'keep-alive',
+281 silly registry.get     vary: 'Accept',
+281 silly registry.get     etag: '"1E5WWAHVZVOGJS8Z4H1RFQLRH"',
+281 silly registry.get     'content-length': '81918' } ]
+282 http 200 http://npm.oa.com/grunt-umd
+283 silly registry.get cb [ 200,
+283 silly registry.get   { server: 'nginx/1.0.15',
+283 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+283 silly registry.get     'content-type': 'application/json',
+283 silly registry.get     connection: 'keep-alive',
+283 silly registry.get     vary: 'Accept',
+283 silly registry.get     etag: '"17BHXU1B2Z1P0XJWBLPNPODII"',
+283 silly registry.get     'content-length': '21732' } ]
+284 verbose url raw grunt-contrib-clean
+285 verbose url resolving [ 'http://npm.oa.com/', './grunt-contrib-clean' ]
+286 verbose url resolved http://npm.oa.com/grunt-contrib-clean
+287 info trying registry request attempt 1 at 17:59:44
+288 verbose etag "4OKXCVSPCI3Z61CINZMVMBFBY"
+289 http GET http://npm.oa.com/grunt-contrib-clean
+290 verbose url raw grunt-contrib-uglify
+291 verbose url resolving [ 'http://npm.oa.com/', './grunt-contrib-uglify' ]
+292 verbose url resolved http://npm.oa.com/grunt-contrib-uglify
+293 info trying registry request attempt 1 at 17:59:44
+294 verbose etag "80GWMDFL61QRLN6HPOJFGU8M"
+295 http GET http://npm.oa.com/grunt-contrib-uglify
+296 silly addNameRange number 2 { name: 'grunt-umd', range: '>=1.7.3-0 <1.8.0-0', hasData: true }
+297 silly addNameRange versions [ 'grunt-umd',
+297 silly addNameRange   [ '1.0.0',
+297 silly addNameRange     '1.1.0',
+297 silly addNameRange     '1.2.0',
+297 silly addNameRange     '1.3.0',
+297 silly addNameRange     '1.6.1',
+297 silly addNameRange     '1.6.2',
+297 silly addNameRange     '1.7.3',
+297 silly addNameRange     '1.7.4',
+297 silly addNameRange     '2.0.0-beta1',
+297 silly addNameRange     '2.0.0',
+297 silly addNameRange     '2.0.1',
+297 silly addNameRange     '2.2.0',
+297 silly addNameRange     '2.2.1',
+297 silly addNameRange     '2.3.0-beta1' ] ]
+298 verbose addNamed [ 'grunt-umd', '1.7.4' ]
+299 verbose addNamed [ '1.7.4', '1.7.4' ]
+300 silly lockFile 9d5c0393-grunt-umd-1-7-4 grunt-umd@1.7.4
+301 verbose lock grunt-umd@1.7.4 C:\Users\simplewei\AppData\Roaming\npm-cache\9d5c0393-grunt-umd-1-7-4.lock
+302 silly addNameRange number 2 { name: 'grunt-browserify',
+302 silly addNameRange   range: '>=2.0.7-0 <2.1.0-0',
+302 silly addNameRange   hasData: true }
+303 silly addNameRange versions [ 'grunt-browserify',
+303 silly addNameRange   [ '0.1.0',
+303 silly addNameRange     '0.1.1',
+303 silly addNameRange     '0.1.2',
+303 silly addNameRange     '0.1.3',
+303 silly addNameRange     '0.2.0',
+303 silly addNameRange     '0.2.1',
+303 silly addNameRange     '0.2.2',
+303 silly addNameRange     '0.2.3',
+303 silly addNameRange     '0.2.4',
+303 silly addNameRange     '0.2.5',
+303 silly addNameRange     '1.0.0',
+303 silly addNameRange     '1.0.1',
+303 silly addNameRange     '1.0.2',
+303 silly addNameRange     '1.0.3',
+303 silly addNameRange     '1.0.4',
+303 silly addNameRange     '1.0.5',
+303 silly addNameRange     '1.1.1',
+303 silly addNameRange     '1.2.0',
+303 silly addNameRange     '1.2.1',
+303 silly addNameRange     '1.2.2',
+303 silly addNameRange     '1.2.3',
+303 silly addNameRange     '1.2.4',
+303 silly addNameRange     '1.2.5',
+303 silly addNameRange     '1.2.6',
+303 silly addNameRange     '1.2.7',
+303 silly addNameRange     '1.2.8',
+303 silly addNameRange     '1.2.9',
+303 silly addNameRange     '1.2.10',
+303 silly addNameRange     '1.2.11',
+303 silly addNameRange     '1.2.12',
+303 silly addNameRange     '1.3.0',
+303 silly addNameRange     '1.3.1',
+303 silly addNameRange     '1.3.2',
+303 silly addNameRange     '2.0.1',
+303 silly addNameRange     '2.0.3',
+303 silly addNameRange     '2.0.5',
+303 silly addNameRange     '2.0.6',
+303 silly addNameRange     '2.0.7',
+303 silly addNameRange     '2.0.8',
+303 silly addNameRange     '2.1.0',
+303 silly addNameRange     '2.1.1',
+303 silly addNameRange     '2.1.2',
+303 silly addNameRange     '2.1.3',
+303 silly addNameRange     '2.1.4',
+303 silly addNameRange     '3.0.0',
+303 silly addNameRange     '3.0.1',
+303 silly addNameRange     '3.1.0',
+303 silly addNameRange     '3.2.0',
+303 silly addNameRange     '3.2.1',
+303 silly addNameRange     '3.3.0' ] ]
+304 verbose addNamed [ 'grunt-browserify', '2.0.8' ]
+305 verbose addNamed [ '2.0.8', '2.0.8' ]
+306 silly lockFile 5eb3c024-grunt-browserify-2-0-8 grunt-browserify@2.0.8
+307 verbose lock grunt-browserify@2.0.8 C:\Users\simplewei\AppData\Roaming\npm-cache\5eb3c024-grunt-browserify-2-0-8.lock
+308 silly lockFile 6f57ab8f-ts-grunt-umd-grunt-umd-1-7-4-tgz http://npm.oa.com/attachments/grunt-umd/-/grunt-umd-1.7.4.tgz
+309 verbose lock http://npm.oa.com/attachments/grunt-umd/-/grunt-umd-1.7.4.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\6f57ab8f-ts-grunt-umd-grunt-umd-1-7-4-tgz.lock
+310 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/grunt-umd/-/grunt-umd-1.7.4.tgz',
+310 verbose addRemoteTarball   'e03aa1c3c2e3f5aa0f3740b7a944bca1bc389e14' ]
+311 silly lockFile b70bbc9f-erify-grunt-browserify-2-0-8-tgz http://npm.oa.com/attachments/grunt-browserify/-/grunt-browserify-2.0.8.tgz
+312 verbose lock http://npm.oa.com/attachments/grunt-browserify/-/grunt-browserify-2.0.8.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\b70bbc9f-erify-grunt-browserify-2-0-8-tgz.lock
+313 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/grunt-browserify/-/grunt-browserify-2.0.8.tgz',
+313 verbose addRemoteTarball   '200bf954a3a808d31b03c34ab4ae772345867c99' ]
+314 info retry fetch attempt 1 at 17:59:44
+315 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384830-0.1359115035738796\tmp.tgz
+316 info retry fetch attempt 1 at 17:59:44
+317 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384829-0.552068364340812\tmp.tgz
+318 http GET http://npm.oa.com/attachments/grunt-browserify/-/grunt-browserify-2.0.8.tgz
+319 http GET http://npm.oa.com/attachments/grunt-umd/-/grunt-umd-1.7.4.tgz
+320 http 200 http://npm.oa.com/grunt-contrib-jasmine
+321 silly registry.get cb [ 200,
+321 silly registry.get   { server: 'nginx/1.0.15',
+321 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+321 silly registry.get     'content-type': 'application/json',
+321 silly registry.get     connection: 'keep-alive',
+321 silly registry.get     vary: 'Accept',
+321 silly registry.get     etag: '"C0KGW01QTAKS6HH6766HP11XB"',
+321 silly registry.get     'content-length': '57264' } ]
+322 http 200 http://npm.oa.com/jquery
+323 silly registry.get cb [ 200,
+323 silly registry.get   { server: 'nginx/1.0.15',
+323 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+323 silly registry.get     'content-type': 'application/json',
+323 silly registry.get     connection: 'keep-alive',
+323 silly registry.get     vary: 'Accept',
+323 silly registry.get     etag: '"7PZ5MAUSWXJSU2WYHAKIMBJPF"',
+323 silly registry.get     'content-length': '53015' } ]
+324 silly addNameRange number 2 { name: 'grunt-contrib-jasmine',
+324 silly addNameRange   range: '>=0.6.4-0 <0.7.0-0',
+324 silly addNameRange   hasData: true }
+325 silly addNameRange versions [ 'grunt-contrib-jasmine',
+325 silly addNameRange   [ '0.1.0',
+325 silly addNameRange     '0.1.1',
+325 silly addNameRange     '0.2.0',
+325 silly addNameRange     '0.3.1',
+325 silly addNameRange     '0.3.2',
+325 silly addNameRange     '0.3.3',
+325 silly addNameRange     '0.4.0',
+325 silly addNameRange     '0.4.1',
+325 silly addNameRange     '0.4.2',
+325 silly addNameRange     '0.5.0',
+325 silly addNameRange     '0.5.1',
+325 silly addNameRange     '0.5.2',
+325 silly addNameRange     '0.3.0-rc5',
+325 silly addNameRange     '0.3.0-rc7',
+325 silly addNameRange     '0.3.1-rc7',
+325 silly addNameRange     '0.6.0',
+325 silly addNameRange     '0.6.1',
+325 silly addNameRange     '0.5.3',
+325 silly addNameRange     '0.6.2',
+325 silly addNameRange     '0.6.3',
+325 silly addNameRange     '0.6.4',
+325 silly addNameRange     '0.6.5',
+325 silly addNameRange     '0.7.0',
+325 silly addNameRange     '0.8.0',
+325 silly addNameRange     '0.8.1',
+325 silly addNameRange     '0.8.2' ] ]
+326 verbose addNamed [ 'grunt-contrib-jasmine', '0.6.5' ]
+327 verbose addNamed [ '0.6.5', '0.6.5' ]
+328 silly lockFile 122f1046-grunt-contrib-jasmine-0-6-5 grunt-contrib-jasmine@0.6.5
+329 verbose lock grunt-contrib-jasmine@0.6.5 C:\Users\simplewei\AppData\Roaming\npm-cache\122f1046-grunt-contrib-jasmine-0-6-5.lock
+330 silly addNameRange number 2 { name: 'jquery', range: '>=2.1.0-0 <2.2.0-0', hasData: true }
+331 silly addNameRange versions [ 'jquery',
+331 silly addNameRange   [ '1.5.1',
+331 silly addNameRange     '1.6.2',
+331 silly addNameRange     '1.6.3',
+331 silly addNameRange     '1.7.2',
+331 silly addNameRange     '1.7.3',
+331 silly addNameRange     '1.8.2',
+331 silly addNameRange     '1.8.3',
+331 silly addNameRange     '2.1.0-beta2',
+331 silly addNameRange     '2.1.0-beta3',
+331 silly addNameRange     '1.11.0-beta3',
+331 silly addNameRange     '1.11.0-rc1',
+331 silly addNameRange     '2.1.0-rc1',
+331 silly addNameRange     '1.11.0',
+331 silly addNameRange     '2.1.0',
+331 silly addNameRange     '2.1.1-beta1',
+331 silly addNameRange     '1.11.1-beta1',
+331 silly addNameRange     '2.1.1-rc1',
+331 silly addNameRange     '1.11.1-rc1',
+331 silly addNameRange     '2.1.1-rc2',
+331 silly addNameRange     '1.11.1-rc2',
+331 silly addNameRange     '2.1.1',
+331 silly addNameRange     '1.11.1',
+331 silly addNameRange     '1.9.1',
+331 silly addNameRange     '2.1.2',
+331 silly addNameRange     '1.11.2',
+331 silly addNameRange     '2.1.3' ] ]
+332 verbose addNamed [ 'jquery', '2.1.3' ]
+333 verbose addNamed [ '2.1.3', '2.1.3' ]
+334 silly lockFile 6fbd5787-jquery-2-1-3 jquery@2.1.3
+335 verbose lock jquery@2.1.3 C:\Users\simplewei\AppData\Roaming\npm-cache\6fbd5787-jquery-2-1-3.lock
+336 silly lockFile c3a6cc60--grunt-contrib-jasmine-0-6-5-tgz http://npm.oa.com/attachments/grunt-contrib-jasmine/-/grunt-contrib-jasmine-0.6.5.tgz
+337 verbose lock http://npm.oa.com/attachments/grunt-contrib-jasmine/-/grunt-contrib-jasmine-0.6.5.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\c3a6cc60--grunt-contrib-jasmine-0-6-5-tgz.lock
+338 silly lockFile 062a792f-achments-jquery-jquery-2-1-3-tgz http://npm.oa.com/attachments/jquery/-/jquery-2.1.3.tgz
+339 verbose lock http://npm.oa.com/attachments/jquery/-/jquery-2.1.3.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\062a792f-achments-jquery-jquery-2-1-3-tgz.lock
+340 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/grunt-contrib-jasmine/-/grunt-contrib-jasmine-0.6.5.tgz',
+340 verbose addRemoteTarball   '86c12bcf73ce8cde09368e9f45f1aaff89f3c0de' ]
+341 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/jquery/-/jquery-2.1.3.tgz',
+341 verbose addRemoteTarball   '6ec55204673d505d39432c5bf5cfad10e1dbad2e' ]
+342 info retry fetch attempt 1 at 17:59:44
+343 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.08034130185842514\tmp.tgz
+344 http 200 http://npm.oa.com/slimerjs
+345 silly registry.get cb [ 200,
+345 silly registry.get   { server: 'nginx/1.0.15',
+345 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+345 silly registry.get     'content-type': 'application/json',
+345 silly registry.get     connection: 'keep-alive',
+345 silly registry.get     vary: 'Accept',
+345 silly registry.get     etag: '"B8G3KDSQ1D4NIZ3DG6HL8X9HM"',
+345 silly registry.get     'content-length': '8326' } ]
+346 http 200 http://npm.oa.com/inlineresources
+347 silly registry.get cb [ 200,
+347 silly registry.get   { server: 'nginx/1.0.15',
+347 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+347 silly registry.get     'content-type': 'application/json',
+347 silly registry.get     connection: 'keep-alive',
+347 silly registry.get     vary: 'Accept',
+347 silly registry.get     etag: '"44HG6K9137APXMGRZRNMSZBIC"',
+347 silly registry.get     'content-length': '8131' } ]
+348 http 200 http://npm.oa.com/jasmine-core
+349 silly registry.get cb [ 200,
+349 silly registry.get   { server: 'nginx/1.0.15',
+349 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+349 silly registry.get     'content-type': 'application/json',
+349 silly registry.get     connection: 'keep-alive',
+349 silly registry.get     vary: 'Accept',
+349 silly registry.get     etag: '"W1L18LHSNT9X38G90P3XA0T2"',
+349 silly registry.get     'content-length': '12512' } ]
+350 http 200 http://npm.oa.com/xmlserializer
+351 silly registry.get cb [ 200,
+351 silly registry.get   { server: 'nginx/1.0.15',
+351 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+351 silly registry.get     'content-type': 'application/json',
+351 silly registry.get     connection: 'keep-alive',
+351 silly registry.get     vary: 'Accept',
+351 silly registry.get     etag: '"DPNVLNPQY77CG27SBKINC60RM"',
+351 silly registry.get     'content-length': '8578' } ]
+352 info retry fetch attempt 1 at 17:59:44
+353 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.906071930192411\tmp.tgz
+354 http GET http://npm.oa.com/attachments/grunt-contrib-jasmine/-/grunt-contrib-jasmine-0.6.5.tgz
+355 http GET http://npm.oa.com/attachments/jquery/-/jquery-2.1.3.tgz
+356 silly lockFile 7160d171-ts-slimerjs-slimerjs-0-9-1-2-tgz http://npm.oa.com/attachments/slimerjs/-/slimerjs-0.9.1-2.tgz
+357 verbose lock http://npm.oa.com/attachments/slimerjs/-/slimerjs-0.9.1-2.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\7160d171-ts-slimerjs-slimerjs-0-9-1-2-tgz.lock
+358 silly addNameRange number 2 { name: 'inlineresources',
+358 silly addNameRange   range: '>=0.1.1-0 <0.2.0-0',
+358 silly addNameRange   hasData: true }
+359 silly addNameRange versions [ 'inlineresources', [ '0.1.0', '0.1.1', '0.1.6' ] ]
+360 verbose addNamed [ 'inlineresources', '0.1.6' ]
+361 verbose addNamed [ '0.1.6', '0.1.6' ]
+362 silly lockFile 01f0d383-inlineresources-0-1-6 inlineresources@0.1.6
+363 verbose lock inlineresources@0.1.6 C:\Users\simplewei\AppData\Roaming\npm-cache\01f0d383-inlineresources-0-1-6.lock
+364 silly lockFile d5a7039e-mine-core-jasmine-core-2-0-0-tgz http://npm.oa.com/attachments/jasmine-core/-/jasmine-core-2.0.0.tgz
+365 verbose lock http://npm.oa.com/attachments/jasmine-core/-/jasmine-core-2.0.0.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\d5a7039e-mine-core-jasmine-core-2-0-0-tgz.lock
+366 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/slimerjs/-/slimerjs-0.9.1-2.tgz',
+366 verbose addRemoteTarball   '05c7b4bd935702ae18231dd884783da2604011cf' ]
+367 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/jasmine-core/-/jasmine-core-2.0.0.tgz',
+367 verbose addRemoteTarball   '8c7b590f17e6583e42f41d710d12549e0d319929' ]
+368 silly lockFile efb9e6b8-ources-inlineresources-0-1-6-tgz http://npm.oa.com/attachments/inlineresources/-/inlineresources-0.1.6.tgz
+369 verbose lock http://npm.oa.com/attachments/inlineresources/-/inlineresources-0.1.6.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\efb9e6b8-ources-inlineresources-0-1-6-tgz.lock
+370 info retry fetch attempt 1 at 17:59:44
+371 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384896-0.6933681257069111\tmp.tgz
+372 info retry fetch attempt 1 at 17:59:44
+373 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384898-0.09030432556755841\tmp.tgz
+374 http GET http://npm.oa.com/attachments/slimerjs/-/slimerjs-0.9.1-2.tgz
+375 http GET http://npm.oa.com/attachments/jasmine-core/-/jasmine-core-2.0.0.tgz
+376 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/inlineresources/-/inlineresources-0.1.6.tgz',
+376 verbose addRemoteTarball   '5bdadd8a221c218adc1b90cfd3a63cb4c8310e05' ]
+377 silly addNameRange number 2 { name: 'xmlserializer',
+377 silly addNameRange   range: '>=0.3.1-0 <0.4.0-0',
+377 silly addNameRange   hasData: true }
+378 silly addNameRange versions [ 'xmlserializer',
+378 silly addNameRange   [ '0.2.0', '0.3.0', '0.3.1', '0.3.2', '0.3.3' ] ]
+379 verbose addNamed [ 'xmlserializer', '0.3.3' ]
+380 verbose addNamed [ '0.3.3', '0.3.3' ]
+381 silly lockFile 525f173c-xmlserializer-0-3-3 xmlserializer@0.3.3
+382 verbose lock xmlserializer@0.3.3 C:\Users\simplewei\AppData\Roaming\npm-cache\525f173c-xmlserializer-0-3-3.lock
+383 http 200 http://npm.oa.com/url
+384 silly registry.get cb [ 200,
+384 silly registry.get   { server: 'nginx/1.0.15',
+384 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+384 silly registry.get     'content-type': 'application/json',
+384 silly registry.get     connection: 'keep-alive',
+384 silly registry.get     vary: 'Accept',
+384 silly registry.get     etag: '"5E73H907HHBMNLVT8DBU1292W"',
+384 silly registry.get     'content-length': '9563' } ]
+385 info retry fetch attempt 1 at 17:59:44
+386 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384899-0.2273383243009448\tmp.tgz
+387 http GET http://npm.oa.com/attachments/inlineresources/-/inlineresources-0.1.6.tgz
+388 silly lockFile 2fb65f5f-rializer-xmlserializer-0-3-3-tgz http://npm.oa.com/attachments/xmlserializer/-/xmlserializer-0.3.3.tgz
+389 verbose lock http://npm.oa.com/attachments/xmlserializer/-/xmlserializer-0.3.3.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\2fb65f5f-rializer-xmlserializer-0-3-3-tgz.lock
+390 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/xmlserializer/-/xmlserializer-0.3.3.tgz',
+390 verbose addRemoteTarball   '43c11232ec579a0b8c0dac7d91803de558c2a36e' ]
+391 info retry fetch attempt 1 at 17:59:44
+392 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384929-0.3156075931619853\tmp.tgz
+393 http GET http://npm.oa.com/attachments/xmlserializer/-/xmlserializer-0.3.3.tgz
+394 http 200 http://npm.oa.com/ayepromise
+395 silly registry.get cb [ 200,
+395 silly registry.get   { server: 'nginx/1.0.15',
+395 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+395 silly registry.get     'content-type': 'application/json',
+395 silly registry.get     connection: 'keep-alive',
+395 silly registry.get     vary: 'Accept',
+395 silly registry.get     etag: '"6FPDBO12FBLVBH3K017IVLD0W"',
+395 silly registry.get     'content-length': '8820' } ]
+396 silly addNameRange number 2 { name: 'url', range: '>=0.10.1-0 <0.11.0-0', hasData: true }
+397 silly addNameRange versions [ 'url', [ '0.4.9', '0.7.9', '0.10.0', '0.10.1', '0.10.2' ] ]
+398 verbose addNamed [ 'url', '0.10.2' ]
+399 verbose addNamed [ '0.10.2', '0.10.2' ]
+400 silly lockFile 04a240e2-url-0-10-2 url@0.10.2
+401 verbose lock url@0.10.2 C:\Users\simplewei\AppData\Roaming\npm-cache\04a240e2-url-0-10-2.lock
+402 silly addNameRange number 2 { name: 'ayepromise',
+402 silly addNameRange   range: '>=1.1.1-0 <1.2.0-0',
+402 silly addNameRange   hasData: true }
+403 silly addNameRange versions [ 'ayepromise',
+403 silly addNameRange   [ '0.1.0', '0.1.1', '1.0.0', '1.1.0', '1.1.1' ] ]
+404 verbose addNamed [ 'ayepromise', '1.1.1' ]
+405 verbose addNamed [ '1.1.1', '1.1.1' ]
+406 silly lockFile 709b6423-ayepromise-1-1-1 ayepromise@1.1.1
+407 verbose lock ayepromise@1.1.1 C:\Users\simplewei\AppData\Roaming\npm-cache\709b6423-ayepromise-1-1-1.lock
+408 silly lockFile 8219fa39-m-attachments-url-url-0-10-2-tgz http://npm.oa.com/attachments/url/-/url-0.10.2.tgz
+409 verbose lock http://npm.oa.com/attachments/url/-/url-0.10.2.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\8219fa39-m-attachments-url-url-0-10-2-tgz.lock
+410 silly lockFile 5c9eb2e3--ayepromise-ayepromise-1-1-1-tgz http://npm.oa.com/ayepromise/-/ayepromise-1.1.1.tgz
+411 verbose lock http://npm.oa.com/ayepromise/-/ayepromise-1.1.1.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\5c9eb2e3--ayepromise-ayepromise-1-1-1-tgz.lock
+412 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/url/-/url-0.10.2.tgz',
+412 verbose addRemoteTarball   '68621d6929ea1cad344ebf135d82fcf7eb1a7469' ]
+413 verbose addRemoteTarball [ 'http://npm.oa.com/ayepromise/-/ayepromise-1.1.1.tgz',
+413 verbose addRemoteTarball   '9f9e427a77a560db643e5543b8892c9859cdb92e' ]
+414 info retry fetch attempt 1 at 17:59:44
+415 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.09978041728027165\tmp.tgz
+416 info retry fetch attempt 1 at 17:59:44
+417 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.9686708864755929\tmp.tgz
+418 http GET http://npm.oa.com/attachments/url/-/url-0.10.2.tgz
+419 http 200 http://npm.oa.com/grunt-cli
+420 silly registry.get cb [ 200,
+420 silly registry.get   { server: 'nginx/1.0.15',
+420 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+420 silly registry.get     'content-type': 'application/json',
+420 silly registry.get     connection: 'keep-alive',
+420 silly registry.get     vary: 'Accept',
+420 silly registry.get     etag: '"BY4W9HDTCWSJDM4L9JQV54VR9"',
+420 silly registry.get     'content-length': '20330' } ]
+421 http GET http://npm.oa.com/ayepromise/-/ayepromise-1.1.1.tgz
+422 silly addNameRange number 2 { name: 'grunt-cli', range: '>=0.1.0-0 <0.2.0-0', hasData: true }
+423 silly addNameRange versions [ 'grunt-cli',
+423 silly addNameRange   [ '0.1.0',
+423 silly addNameRange     '0.1.1',
+423 silly addNameRange     '0.1.2',
+423 silly addNameRange     '0.1.3',
+423 silly addNameRange     '0.1.4',
+423 silly addNameRange     '0.1.5',
+423 silly addNameRange     '0.1.6',
+423 silly addNameRange     '0.1.7',
+423 silly addNameRange     '0.1.8',
+423 silly addNameRange     '0.1.9',
+423 silly addNameRange     '0.1.10',
+423 silly addNameRange     '0.1.11',
+423 silly addNameRange     '0.1.12',
+423 silly addNameRange     '0.1.13' ] ]
+424 verbose addNamed [ 'grunt-cli', '0.1.13' ]
+425 verbose addNamed [ '0.1.13', '0.1.13' ]
+426 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+427 verbose lock grunt-cli@0.1.13 C:\Users\simplewei\AppData\Roaming\npm-cache\28997503-grunt-cli-0-1-13.lock
+428 http 304 http://npm.oa.com/grunt-contrib-concat
+429 silly registry.get cb [ 304,
+429 silly registry.get   { server: 'nginx/1.0.15',
+429 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+429 silly registry.get     connection: 'keep-alive',
+429 silly registry.get     etag: '"E9T8JQF5CWIL7A7GFKIJG0CRJ"',
+429 silly registry.get     'content-length': '0' } ]
+430 verbose etag grunt-contrib-concat from cache
+431 http 304 http://npm.oa.com/grunt-contrib-watch
+432 silly registry.get cb [ 304,
+432 silly registry.get   { server: 'nginx/1.0.15',
+432 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+432 silly registry.get     connection: 'keep-alive',
+432 silly registry.get     etag: '"BSLJVN93FG74UN2BW7SUNFCET"',
+432 silly registry.get     'content-length': '0' } ]
+433 verbose etag grunt-contrib-watch from cache
+434 silly addNameRange number 2 { name: 'grunt-contrib-concat',
+434 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+434 silly addNameRange   hasData: true }
+435 silly addNameRange versions [ 'grunt-contrib-concat',
+435 silly addNameRange   [ '0.1.0',
+435 silly addNameRange     '0.1.1',
+435 silly addNameRange     '0.1.2',
+435 silly addNameRange     '0.1.3',
+435 silly addNameRange     '0.2.0',
+435 silly addNameRange     '0.3.0',
+435 silly addNameRange     '0.4.0',
+435 silly addNameRange     '0.5.0',
+435 silly addNameRange     '0.1.2-rc5',
+435 silly addNameRange     '0.1.2-rc6' ] ]
+436 verbose addNamed [ 'grunt-contrib-concat', '0.4.0' ]
+437 verbose addNamed [ '0.4.0', '0.4.0' ]
+438 silly lockFile 6dafb8ea-grunt-contrib-concat-0-4-0 grunt-contrib-concat@0.4.0
+439 verbose lock grunt-contrib-concat@0.4.0 C:\Users\simplewei\AppData\Roaming\npm-cache\6dafb8ea-grunt-contrib-concat-0-4-0.lock
+440 silly addNameRange number 2 { name: 'grunt-contrib-watch',
+440 silly addNameRange   range: '>=0.6.1-0 <0.7.0-0',
+440 silly addNameRange   hasData: true }
+441 silly addNameRange versions [ 'grunt-contrib-watch',
+441 silly addNameRange   [ '0.1.0',
+441 silly addNameRange     '0.1.1',
+441 silly addNameRange     '0.1.2',
+441 silly addNameRange     '0.1.3',
+441 silly addNameRange     '0.1.4',
+441 silly addNameRange     '0.2.0',
+441 silly addNameRange     '0.3.0',
+441 silly addNameRange     '0.3.1',
+441 silly addNameRange     '0.4.0',
+441 silly addNameRange     '0.4.1',
+441 silly addNameRange     '0.4.2',
+441 silly addNameRange     '0.4.3',
+441 silly addNameRange     '0.4.4',
+441 silly addNameRange     '0.5.0',
+441 silly addNameRange     '0.5.1',
+441 silly addNameRange     '0.5.2',
+441 silly addNameRange     '0.5.3',
+441 silly addNameRange     '0.6.0',
+441 silly addNameRange     '0.6.1',
+441 silly addNameRange     '0.2.0-a',
+441 silly addNameRange     '0.2.0-rc5',
+441 silly addNameRange     '0.2.0-rc7' ] ]
+442 verbose addNamed [ 'grunt-contrib-watch', '0.6.1' ]
+443 verbose addNamed [ '0.6.1', '0.6.1' ]
+444 silly lockFile 08049756-grunt-contrib-watch-0-6-1 grunt-contrib-watch@0.6.1
+445 verbose lock grunt-contrib-watch@0.6.1 C:\Users\simplewei\AppData\Roaming\npm-cache\08049756-grunt-contrib-watch-0-6-1.lock
+446 silly lockFile 3ea1402d-t-grunt-contrib-concat-0-4-0-tgz http://npm.oa.com/attachments/grunt-contrib-concat/-/grunt-contrib-concat-0.4.0.tgz
+447 verbose lock http://npm.oa.com/attachments/grunt-contrib-concat/-/grunt-contrib-concat-0.4.0.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\3ea1402d-t-grunt-contrib-concat-0-4-0-tgz.lock
+448 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/grunt-contrib-concat/-/grunt-contrib-concat-0.4.0.tgz',
+448 verbose addRemoteTarball   'b87f7cf153bf64688142f947161156013fbc7c74' ]
+449 info retry fetch attempt 1 at 17:59:44
+450 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384990-0.016000226140022278\tmp.tgz
+451 http GET http://npm.oa.com/attachments/grunt-contrib-concat/-/grunt-contrib-concat-0.4.0.tgz
+452 http 200 http://npm.oa.com/grunt-regex-check
+453 silly registry.get cb [ 200,
+453 silly registry.get   { server: 'nginx/1.0.15',
+453 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+453 silly registry.get     'content-type': 'application/json',
+453 silly registry.get     connection: 'keep-alive',
+453 silly registry.get     vary: 'Accept',
+453 silly registry.get     etag: '"DNT42CIYTP7VSS0LLMSC2YVVW"',
+453 silly registry.get     'content-length': '18031' } ]
+454 silly addNameRange number 2 { name: 'grunt-regex-check',
+454 silly addNameRange   range: '>=0.1.5-0 <0.2.0-0',
+454 silly addNameRange   hasData: true }
+455 silly addNameRange versions [ 'grunt-regex-check',
+455 silly addNameRange   [ '0.1.0',
+455 silly addNameRange     '0.1.1',
+455 silly addNameRange     '0.1.2',
+455 silly addNameRange     '0.1.3',
+455 silly addNameRange     '0.1.4',
+455 silly addNameRange     '0.1.5',
+455 silly addNameRange     '0.1.7',
+455 silly addNameRange     '0.1.8',
+455 silly addNameRange     '0.1.9' ] ]
+456 verbose addNamed [ 'grunt-regex-check', '0.1.9' ]
+457 verbose addNamed [ '0.1.9', '0.1.9' ]
+458 silly lockFile 12e6f85b-grunt-regex-check-0-1-9 grunt-regex-check@0.1.9
+459 verbose lock grunt-regex-check@0.1.9 C:\Users\simplewei\AppData\Roaming\npm-cache\12e6f85b-grunt-regex-check-0-1-9.lock
+460 http 304 http://npm.oa.com/grunt-contrib-clean
+461 silly registry.get cb [ 304,
+461 silly registry.get   { server: 'nginx/1.0.15',
+461 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+461 silly registry.get     connection: 'keep-alive',
+461 silly registry.get     etag: '"4OKXCVSPCI3Z61CINZMVMBFBY"',
+461 silly registry.get     'content-length': '0' } ]
+462 verbose etag grunt-contrib-clean from cache
+463 http 304 http://npm.oa.com/grunt-contrib-uglify
+464 silly registry.get cb [ 304,
+464 silly registry.get   { server: 'nginx/1.0.15',
+464 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+464 silly registry.get     connection: 'keep-alive',
+464 silly registry.get     etag: '"80GWMDFL61QRLN6HPOJFGU8M"',
+464 silly registry.get     'content-length': '0' } ]
+465 verbose etag grunt-contrib-uglify from cache
+466 http 200 http://npm.oa.com/grunt-contrib-jshint
+467 silly registry.get cb [ 200,
+467 silly registry.get   { server: 'nginx/1.0.15',
+467 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+467 silly registry.get     'content-type': 'application/json',
+467 silly registry.get     connection: 'keep-alive',
+467 silly registry.get     vary: 'Accept',
+467 silly registry.get     etag: '"6TR2JKJAMPPYO0E96N2V5EVVP"',
+467 silly registry.get     'content-length': '55190' } ]
+468 silly lockFile 08049756-grunt-contrib-watch-0-6-1 grunt-contrib-watch@0.6.1
+469 silly lockFile 08049756-grunt-contrib-watch-0-6-1 grunt-contrib-watch@0.6.1
+470 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+471 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+472 silly lockFile 82ce6ec8-grunt-contrib-watch-0-6-1 grunt-contrib-watch@~0.6.1
+473 silly lockFile 82ce6ec8-grunt-contrib-watch-0-6-1 grunt-contrib-watch@~0.6.1
+474 silly lockFile c01faaa1-grunt-cli-0-1 grunt-cli@~0.1
+475 silly lockFile c01faaa1-grunt-cli-0-1 grunt-cli@~0.1
+476 silly lockFile eeedeeea-heck-grunt-regex-check-0-1-9-tgz http://npm.oa.com/attachments/grunt-regex-check/-/grunt-regex-check-0.1.9.tgz
+477 verbose lock http://npm.oa.com/attachments/grunt-regex-check/-/grunt-regex-check-0.1.9.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\eeedeeea-heck-grunt-regex-check-0-1-9-tgz.lock
+478 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/grunt-regex-check/-/grunt-regex-check-0.1.9.tgz',
+478 verbose addRemoteTarball   '2fb37a7e3fd72189cd9891d006075f5053386629' ]
+479 info retry fetch attempt 1 at 17:59:45
+480 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385036-0.919837890425697\tmp.tgz
+481 silly addNameRange number 2 { name: 'grunt-contrib-jshint',
+481 silly addNameRange   range: '>=0.10.0-0 <0.11.0-0',
+481 silly addNameRange   hasData: true }
+482 silly addNameRange versions [ 'grunt-contrib-jshint',
+482 silly addNameRange   [ '0.1.0',
+482 silly addNameRange     '0.1.1',
+482 silly addNameRange     '0.2.0',
+482 silly addNameRange     '0.3.0',
+482 silly addNameRange     '0.4.0',
+482 silly addNameRange     '0.4.1',
+482 silly addNameRange     '0.4.2',
+482 silly addNameRange     '0.4.3',
+482 silly addNameRange     '0.5.0',
+482 silly addNameRange     '0.5.1',
+482 silly addNameRange     '0.5.2',
+482 silly addNameRange     '0.5.3',
+482 silly addNameRange     '0.5.4',
+482 silly addNameRange     '0.6.0',
+482 silly addNameRange     '0.6.1',
+482 silly addNameRange     '0.6.2',
+482 silly addNameRange     '0.6.3',
+482 silly addNameRange     '0.6.4',
+482 silly addNameRange     '0.6.5',
+482 silly addNameRange     '0.7.0',
+482 silly addNameRange     '0.7.1',
+482 silly addNameRange     '0.7.2',
+482 silly addNameRange     '0.8.0',
+482 silly addNameRange     '0.9.0',
+482 silly addNameRange     '0.9.1',
+482 silly addNameRange     '0.9.2',
+482 silly addNameRange     '0.10.0',
+482 silly addNameRange     '0.11.0',
+482 silly addNameRange     '0.1.1-rc5',
+482 silly addNameRange     '0.1.1-rc6' ] ]
+483 verbose addNamed [ 'grunt-contrib-jshint', '0.10.0' ]
+484 verbose addNamed [ '0.10.0', '0.10.0' ]
+485 silly lockFile af8d4102-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@0.10.0
+486 verbose lock grunt-contrib-jshint@0.10.0 C:\Users\simplewei\AppData\Roaming\npm-cache\af8d4102-grunt-contrib-jshint-0-10-0.lock
+487 silly addNameRange number 2 { name: 'grunt-contrib-uglify',
+487 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+487 silly addNameRange   hasData: true }
+488 silly addNameRange versions [ 'grunt-contrib-uglify',
+488 silly addNameRange   [ '0.1.0',
+488 silly addNameRange     '0.1.1',
+488 silly addNameRange     '0.1.2',
+488 silly addNameRange     '0.2.0',
+488 silly addNameRange     '0.2.1',
+488 silly addNameRange     '0.2.2',
+488 silly addNameRange     '0.2.3',
+488 silly addNameRange     '0.2.4',
+488 silly addNameRange     '0.2.5',
+488 silly addNameRange     '0.2.6',
+488 silly addNameRange     '0.2.7',
+488 silly addNameRange     '0.3.0',
+488 silly addNameRange     '0.3.1',
+488 silly addNameRange     '0.1.1-rc5',
+488 silly addNameRange     '0.1.1-rc6',
+488 silly addNameRange     '0.3.2',
+488 silly addNameRange     '0.3.3',
+488 silly addNameRange     '0.4.0',
+488 silly addNameRange     '0.5.0',
+488 silly addNameRange     '0.4.1',
+488 silly addNameRange     '0.5.1',
+488 silly addNameRange     '0.6.0',
+488 silly addNameRange     '0.7.0' ] ]
+489 verbose addNamed [ 'grunt-contrib-uglify', '0.4.1' ]
+490 verbose addNamed [ '0.4.1', '0.4.1' ]
+491 silly lockFile 8ba6efaa-grunt-contrib-uglify-0-4-1 grunt-contrib-uglify@0.4.1
+492 verbose lock grunt-contrib-uglify@0.4.1 C:\Users\simplewei\AppData\Roaming\npm-cache\8ba6efaa-grunt-contrib-uglify-0-4-1.lock
+493 http 200 http://npm.oa.com/grunt
+494 silly registry.get cb [ 200,
+494 silly registry.get   { server: 'nginx/1.0.15',
+494 silly registry.get     date: 'Mon, 26 Jan 2015 09:59:44 GMT',
+494 silly registry.get     'content-type': 'application/json',
+494 silly registry.get     connection: 'keep-alive',
+494 silly registry.get     vary: 'Accept',
+494 silly registry.get     etag: '"9WRH36Q18L6Z5371MYAMDUPW9"',
+494 silly registry.get     'content-length': '88313' } ]
+495 silly addNameRange number 2 { name: 'grunt-contrib-clean',
+495 silly addNameRange   range: '>=0.5.0-0 <0.6.0-0',
+495 silly addNameRange   hasData: true }
+496 silly addNameRange versions [ 'grunt-contrib-clean',
+496 silly addNameRange   [ '0.1.0',
+496 silly addNameRange     '0.2.0',
+496 silly addNameRange     '0.3.0',
+496 silly addNameRange     '0.3.1',
+496 silly addNameRange     '0.3.2',
+496 silly addNameRange     '0.4.0',
+496 silly addNameRange     '0.4.1',
+496 silly addNameRange     '0.5.0',
+496 silly addNameRange     '0.6.0',
+496 silly addNameRange     '0.4.0-a',
+496 silly addNameRange     '0.4.0-rc5',
+496 silly addNameRange     '0.4.0-rc6' ] ]
+497 verbose addNamed [ 'grunt-contrib-clean', '0.5.0' ]
+498 verbose addNamed [ '0.5.0', '0.5.0' ]
+499 silly lockFile 9e0b1814-grunt-contrib-clean-0-5-0 grunt-contrib-clean@0.5.0
+500 verbose lock grunt-contrib-clean@0.5.0 C:\Users\simplewei\AppData\Roaming\npm-cache\9e0b1814-grunt-contrib-clean-0-5-0.lock
+501 http GET http://npm.oa.com/attachments/grunt-regex-check/-/grunt-regex-check-0.1.9.tgz
+502 http 200 http://npm.oa.com/attachments/jquery/-/jquery-2.1.3.tgz
+503 silly lockFile 23d9901f-y-grunt-contrib-uglify-0-4-1-tgz http://npm.oa.com/attachments/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.1.tgz
+504 verbose lock http://npm.oa.com/attachments/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.1.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\23d9901f-y-grunt-contrib-uglify-0-4-1-tgz.lock
+505 silly addNameRange number 2 { name: 'grunt', range: '>=0.4.1-0 <0.5.0-0', hasData: true }
+506 silly addNameRange versions [ 'grunt',
+506 silly addNameRange   [ '0.1.0',
+506 silly addNameRange     '0.1.1',
+506 silly addNameRange     '0.1.2',
+506 silly addNameRange     '0.2.0',
+506 silly addNameRange     '0.2.1',
+506 silly addNameRange     '0.2.2',
+506 silly addNameRange     '0.2.3',
+506 silly addNameRange     '0.2.4',
+506 silly addNameRange     '0.2.5',
+506 silly addNameRange     '0.2.6',
+506 silly addNameRange     '0.2.7',
+506 silly addNameRange     '0.2.8',
+506 silly addNameRange     '0.2.9',
+506 silly addNameRange     '0.2.10',
+506 silly addNameRange     '0.2.11',
+506 silly addNameRange     '0.2.12',
+506 silly addNameRange     '0.2.13',
+506 silly addNameRange     '0.2.14',
+506 silly addNameRange     '0.2.15',
+506 silly addNameRange     '0.3.0',
+506 silly addNameRange     '0.3.1',
+506 silly addNameRange     '0.3.2',
+506 silly addNameRange     '0.3.3',
+506 silly addNameRange     '0.3.4',
+506 silly addNameRange     '0.3.5',
+506 silly addNameRange     '0.3.6',
+506 silly addNameRange     '0.3.7',
+506 silly addNameRange     '0.3.8',
+506 silly addNameRange     '0.3.9',
+506 silly addNameRange     '0.3.10',
+506 silly addNameRange     '0.3.11',
+506 silly addNameRange     '0.3.12',
+506 silly addNameRange     '0.3.13',
+506 silly addNameRange     '0.3.14',
+506 silly addNameRange     '0.3.15',
+506 silly addNameRange     '0.3.16',
+506 silly addNameRange     '0.3.17',
+506 silly addNameRange     '0.4.0',
+506 silly addNameRange     '0.4.1',
+506 silly addNameRange     '0.4.2',
+506 silly addNameRange     '0.4.3',
+506 silly addNameRange     '0.4.4',
+506 silly addNameRange     '0.4.5',
+506 silly addNameRange     '0.3.13-a',
+506 silly addNameRange     '0.4.0-a',
+506 silly addNameRange     '0.4.0-rc1',
+506 silly addNameRange     '0.4.0-rc2',
+506 silly addNameRange     '0.4.0-rc3',
+506 silly addNameRange     '0.4.0-rc4',
+506 silly addNameRange     '0.4.0-rc5',
+506 silly addNameRange     '0.4.0-rc6',
+506 silly addNameRange     '0.4.0-rc7',
+506 silly addNameRange     '0.4.0-rc8' ] ]
+507 verbose addNamed [ 'grunt', '0.4.5' ]
+508 verbose addNamed [ '0.4.5', '0.4.5' ]
+509 silly lockFile 81abf7ad-grunt-0-4-5 grunt@0.4.5
+510 verbose lock grunt@0.4.5 C:\Users\simplewei\AppData\Roaming\npm-cache\81abf7ad-grunt-0-4-5.lock
+511 http 200 http://npm.oa.com/attachments/grunt-contrib-jasmine/-/grunt-contrib-jasmine-0.6.5.tgz
+512 verbose addRemoteTarball [ 'http://npm.oa.com/attachments/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.1.tgz',
+512 verbose addRemoteTarball   'd43f3bc6e02c335563f8c4f9f0813fb4b0ff79b1' ]
+513 info retry fetch attempt 1 at 17:59:45
+514 verbose fetch to= C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385067-0.24426827137358487\tmp.tgz
+515 http GET http://npm.oa.com/attachments/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.1.tgz
+516 silly lockFile af8d4102-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@0.10.0
+517 silly lockFile af8d4102-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@0.10.0
+518 silly lockFile 956acfd4-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@~0.10.0
+519 silly lockFile 956acfd4-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@~0.10.0
+520 silly lockFile 81abf7ad-grunt-0-4-5 grunt@0.4.5
+521 silly lockFile 81abf7ad-grunt-0-4-5 grunt@0.4.5
+522 silly lockFile 766a3bd3-grunt-0-4-1 grunt@~0.4.1
+523 silly lockFile 766a3bd3-grunt-0-4-1 grunt@~0.4.1
+524 silly lockFile 9e0b1814-grunt-contrib-clean-0-5-0 grunt-contrib-clean@0.5.0
+525 silly lockFile 9e0b1814-grunt-contrib-clean-0-5-0 grunt-contrib-clean@0.5.0
+526 silly lockFile 83f743bc-grunt-contrib-clean-0-5-0 grunt-contrib-clean@~0.5.0
+527 silly lockFile 83f743bc-grunt-contrib-clean-0-5-0 grunt-contrib-clean@~0.5.0
+528 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.08034130185842514\tmp.tgz
+529 silly lockFile 314c6a10-nt-contrib-jasmine-0-6-5-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-jasmine\0.6.5\package
+530 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-jasmine\0.6.5\package C:\Users\simplewei\AppData\Roaming\npm-cache\314c6a10-nt-contrib-jasmine-0-6-5-package.lock
+531 silly lockFile 976a1b0a-4867-0-08034130185842514-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.08034130185842514\tmp.tgz
+532 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.08034130185842514\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\976a1b0a-4867-0-08034130185842514-tmp-tgz.lock
+533 silly gunzTarPerm modes [ '755', '644' ]
+534 silly gunzTarPerm extractEntry package.json
+535 silly gunzTarPerm extractEntry README.md
+536 silly gunzTarPerm extractEntry Gruntfile.js
+537 silly gunzTarPerm extractEntry LICENSE-MIT
+538 silly gunzTarPerm extractEntry .travis.yml
+539 silly gunzTarPerm extractEntry AUTHORS
+540 silly gunzTarPerm extractEntry CHANGELOG
+541 silly gunzTarPerm extractEntry junit/TEST-Player.xml
+542 silly gunzTarPerm extractEntry junit/TEST-Playerresume.xml
+543 silly gunzTarPerm extractEntry junit/TEST-Playerwhensonghasbeenpaused.xml
+544 silly gunzTarPerm extractEntry junit/customTemplate/TEST-Player.xml
+545 silly gunzTarPerm extractEntry CONTRIBUTING.md
+546 silly gunzTarPerm extractEntry tasks/jasmine.js
+547 silly gunzTarPerm extractEntry tasks/jasmine/reporters/PhantomReporter.js
+548 silly gunzTarPerm extractEntry tasks/jasmine/templates/DefaultRunner.tmpl
+549 silly gunzTarPerm extractEntry tasks/jasmine/templates/JUnit.tmpl
+550 silly gunzTarPerm extractEntry tasks/lib/jasmine.js
+551 silly gunzTarPerm extractEntry vendor/require-2.1.1.js
+552 silly gunzTarPerm extractEntry vendor/jasmine-2.0.0/boot.js
+553 silly gunzTarPerm extractEntry vendor/jasmine-2.0.0/console.js
+554 silly gunzTarPerm extractEntry vendor/jasmine-2.0.0/jasmine-html.js
+555 silly gunzTarPerm extractEntry vendor/jasmine-2.0.0/jasmine.js
+556 silly gunzTarPerm extractEntry vendor/jasmine-2.0.0/jasmine.css
+557 silly gunzTarPerm extractEntry vendor/jasmine-2.0.0/jasmine_favicon.png
+558 silly lockFile 314c6a10-nt-contrib-jasmine-0-6-5-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-jasmine\0.6.5\package
+559 silly lockFile 314c6a10-nt-contrib-jasmine-0-6-5-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-jasmine\0.6.5\package
+560 silly lockFile 976a1b0a-4867-0-08034130185842514-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.08034130185842514\tmp.tgz
+561 silly lockFile 976a1b0a-4867-0-08034130185842514-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.08034130185842514\tmp.tgz
+562 silly lockFile c3a6cc60--grunt-contrib-jasmine-0-6-5-tgz http://npm.oa.com/attachments/grunt-contrib-jasmine/-/grunt-contrib-jasmine-0.6.5.tgz
+563 silly lockFile c3a6cc60--grunt-contrib-jasmine-0-6-5-tgz http://npm.oa.com/attachments/grunt-contrib-jasmine/-/grunt-contrib-jasmine-0.6.5.tgz
+564 silly lockFile 122f1046-grunt-contrib-jasmine-0-6-5 grunt-contrib-jasmine@0.6.5
+565 silly lockFile 122f1046-grunt-contrib-jasmine-0-6-5 grunt-contrib-jasmine@0.6.5
+566 silly lockFile e9b7c2c7-grunt-contrib-jasmine-0-6-4 grunt-contrib-jasmine@~0.6.4
+567 silly lockFile e9b7c2c7-grunt-contrib-jasmine-0-6-4 grunt-contrib-jasmine@~0.6.4
+568 http 200 http://npm.oa.com/attachments/grunt-umd/-/grunt-umd-1.7.4.tgz
+569 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384829-0.552068364340812\tmp.tgz
+570 silly lockFile 98508f68-pm-cache-grunt-umd-1-7-4-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-umd\1.7.4\package
+571 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-umd\1.7.4\package C:\Users\simplewei\AppData\Roaming\npm-cache\98508f68-pm-cache-grunt-umd-1-7-4-package.lock
+572 silly lockFile dc63f9d7-384829-0-552068364340812-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384829-0.552068364340812\tmp.tgz
+573 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384829-0.552068364340812\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\dc63f9d7-384829-0-552068364340812-tmp-tgz.lock
+574 silly gunzTarPerm modes [ '755', '644' ]
+575 silly gunzTarPerm extractEntry package.json
+576 silly gunzTarPerm extractEntry .npmignore
+577 silly gunzTarPerm extractEntry README.md
+578 silly gunzTarPerm extractEntry Gruntfile.js
+579 silly gunzTarPerm extractEntry LICENSE.txt
+580 silly gunzTarPerm extractEntry demo/grunt-umd.js
+581 silly gunzTarPerm extractEntry tasks/umd.js
+582 silly gunzTarPerm extractEntry templates/umd.hbs
+583 silly gunzTarPerm extractEntry templates/unit.hbs
+584 silly lockFile 98508f68-pm-cache-grunt-umd-1-7-4-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-umd\1.7.4\package
+585 silly lockFile 98508f68-pm-cache-grunt-umd-1-7-4-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-umd\1.7.4\package
+586 silly lockFile dc63f9d7-384829-0-552068364340812-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384829-0.552068364340812\tmp.tgz
+587 silly lockFile dc63f9d7-384829-0-552068364340812-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384829-0.552068364340812\tmp.tgz
+588 silly lockFile 6f57ab8f-ts-grunt-umd-grunt-umd-1-7-4-tgz http://npm.oa.com/attachments/grunt-umd/-/grunt-umd-1.7.4.tgz
+589 silly lockFile 6f57ab8f-ts-grunt-umd-grunt-umd-1-7-4-tgz http://npm.oa.com/attachments/grunt-umd/-/grunt-umd-1.7.4.tgz
+590 silly lockFile 9d5c0393-grunt-umd-1-7-4 grunt-umd@1.7.4
+591 silly lockFile 9d5c0393-grunt-umd-1-7-4 grunt-umd@1.7.4
+592 silly lockFile 7c071ae3-grunt-umd-1-7-3 grunt-umd@~1.7.3
+593 silly lockFile 7c071ae3-grunt-umd-1-7-3 grunt-umd@~1.7.3
+594 http 200 http://npm.oa.com/attachments/slimerjs/-/slimerjs-0.9.1-2.tgz
+595 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384896-0.6933681257069111\tmp.tgz
+596 silly lockFile dade5557-m-cache-slimerjs-0-9-1-2-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\slimerjs\0.9.1-2\package
+597 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\slimerjs\0.9.1-2\package C:\Users\simplewei\AppData\Roaming\npm-cache\dade5557-m-cache-slimerjs-0-9-1-2-package.lock
+598 silly lockFile f65b60f1-84896-0-6933681257069111-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384896-0.6933681257069111\tmp.tgz
+599 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384896-0.6933681257069111\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\f65b60f1-84896-0-6933681257069111-tmp-tgz.lock
+600 silly gunzTarPerm modes [ '755', '644' ]
+601 silly gunzTarPerm extractEntry package.json
+602 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+603 silly gunzTarPerm extractEntry .npmignore
+604 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+605 silly gunzTarPerm extractEntry README.md
+606 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+607 silly gunzTarPerm extractEntry install.js
+608 silly gunzTarPerm modified mode [ 'install.js', 436, 420 ]
+609 silly gunzTarPerm extractEntry .jshintrc
+610 silly gunzTarPerm modified mode [ '.jshintrc', 436, 420 ]
+611 silly gunzTarPerm extractEntry .travis.yml
+612 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+613 silly gunzTarPerm extractEntry LICENSE.txt
+614 silly gunzTarPerm modified mode [ 'LICENSE.txt', 436, 420 ]
+615 silly gunzTarPerm extractEntry bin/slimerjs
+616 silly gunzTarPerm modified mode [ 'bin/slimerjs', 509, 493 ]
+617 silly gunzTarPerm extractEntry lib/slimerjs.js
+618 silly gunzTarPerm modified mode [ 'lib/slimerjs.js', 436, 420 ]
+619 silly gunzTarPerm extractEntry test/exit.js
+620 silly gunzTarPerm modified mode [ 'test/exit.js', 436, 420 ]
+621 silly gunzTarPerm extractEntry test/loadspeed.js
+622 silly gunzTarPerm modified mode [ 'test/loadspeed.js', 436, 420 ]
+623 silly gunzTarPerm extractEntry test/tests.js
+624 silly gunzTarPerm modified mode [ 'test/tests.js', 436, 420 ]
+625 silly lockFile dade5557-m-cache-slimerjs-0-9-1-2-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\slimerjs\0.9.1-2\package
+626 silly lockFile dade5557-m-cache-slimerjs-0-9-1-2-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\slimerjs\0.9.1-2\package
+627 silly lockFile f65b60f1-84896-0-6933681257069111-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384896-0.6933681257069111\tmp.tgz
+628 silly lockFile f65b60f1-84896-0-6933681257069111-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384896-0.6933681257069111\tmp.tgz
+629 silly lockFile 7160d171-ts-slimerjs-slimerjs-0-9-1-2-tgz http://npm.oa.com/attachments/slimerjs/-/slimerjs-0.9.1-2.tgz
+630 silly lockFile 7160d171-ts-slimerjs-slimerjs-0-9-1-2-tgz http://npm.oa.com/attachments/slimerjs/-/slimerjs-0.9.1-2.tgz
+631 silly lockFile 16b2b353-slimerjs-0-9-1-2 slimerjs@0.9.1-2
+632 silly lockFile 16b2b353-slimerjs-0-9-1-2 slimerjs@0.9.1-2
+633 http 200 http://npm.oa.com/attachments/jasmine-core/-/jasmine-core-2.0.0.tgz
+634 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384898-0.09030432556755841\tmp.tgz
+635 silly lockFile 6f42d037-cache-jasmine-core-2-0-0-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\jasmine-core\2.0.0\package
+636 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\jasmine-core\2.0.0\package C:\Users\simplewei\AppData\Roaming\npm-cache\6f42d037-cache-jasmine-core-2-0-0-package.lock
+637 silly lockFile fd30b590-4898-0-09030432556755841-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384898-0.09030432556755841\tmp.tgz
+638 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384898-0.09030432556755841\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\fd30b590-4898-0-09030432556755841-tmp-tgz.lock
+639 silly gunzTarPerm modes [ '755', '644' ]
+640 http 200 http://npm.oa.com/attachments/grunt-browserify/-/grunt-browserify-2.0.8.tgz
+641 silly gunzTarPerm extractEntry package.json
+642 silly gunzTarPerm extractEntry README.md
+643 silly gunzTarPerm extractEntry lib/console/console.js
+644 silly gunzTarPerm extractEntry lib/jasmine-core/boot.js
+645 silly gunzTarPerm extractEntry lib/jasmine-core/jasmine-html.js
+646 silly gunzTarPerm extractEntry lib/jasmine-core/jasmine.js
+647 silly gunzTarPerm extractEntry lib/jasmine-core/json2.js
+648 silly gunzTarPerm extractEntry lib/jasmine-core/boot/boot.js
+649 silly gunzTarPerm extractEntry lib/jasmine-core/example/spec/PlayerSpec.js
+650 silly gunzTarPerm extractEntry lib/jasmine-core/example/spec/SpecHelper.js
+651 silly gunzTarPerm extractEntry lib/jasmine-core/example/src/Player.js
+652 silly gunzTarPerm extractEntry lib/jasmine-core/example/src/Song.js
+653 silly gunzTarPerm extractEntry lib/jasmine-core/jasmine.css
+654 silly gunzTarPerm extractEntry lib/jasmine-core/version.rb
+655 silly lockFile 6f42d037-cache-jasmine-core-2-0-0-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\jasmine-core\2.0.0\package
+656 silly lockFile 6f42d037-cache-jasmine-core-2-0-0-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\jasmine-core\2.0.0\package
+657 silly lockFile fd30b590-4898-0-09030432556755841-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384898-0.09030432556755841\tmp.tgz
+658 silly lockFile fd30b590-4898-0-09030432556755841-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384898-0.09030432556755841\tmp.tgz
+659 silly lockFile d5a7039e-mine-core-jasmine-core-2-0-0-tgz http://npm.oa.com/attachments/jasmine-core/-/jasmine-core-2.0.0.tgz
+660 silly lockFile d5a7039e-mine-core-jasmine-core-2-0-0-tgz http://npm.oa.com/attachments/jasmine-core/-/jasmine-core-2.0.0.tgz
+661 silly lockFile 664559b2-jasmine-core-2-0-0 jasmine-core@2.0.0
+662 silly lockFile 664559b2-jasmine-core-2-0-0 jasmine-core@2.0.0
+663 http 200 http://npm.oa.com/attachments/url/-/url-0.10.2.tgz
+664 http 200 http://npm.oa.com/attachments/xmlserializer/-/xmlserializer-0.3.3.tgz
+665 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.09978041728027165\tmp.tgz
+666 silly lockFile 7b696a97-ing-npm-cache-url-0-10-2-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\url\0.10.2\package
+667 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\url\0.10.2\package C:\Users\simplewei\AppData\Roaming\npm-cache\7b696a97-ing-npm-cache-url-0-10-2-package.lock
+668 silly lockFile 5dcac599-4958-0-09978041728027165-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.09978041728027165\tmp.tgz
+669 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.09978041728027165\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\5dcac599-4958-0-09978041728027165-tmp-tgz.lock
+670 silly gunzTarPerm modes [ '755', '644' ]
+671 silly gunzTarPerm extractEntry package.json
+672 http 200 http://npm.oa.com/attachments/inlineresources/-/inlineresources-0.1.6.tgz
+673 silly gunzTarPerm extractEntry .npmignore
+674 silly gunzTarPerm extractEntry README.md
+675 silly gunzTarPerm extractEntry LICENSE
+676 silly gunzTarPerm extractEntry test.js
+677 http 200 http://npm.oa.com/ayepromise/-/ayepromise-1.1.1.tgz
+678 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.9686708864755929\tmp.tgz
+679 silly lockFile 609b1327-m-cache-ayepromise-1-1-1-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\ayepromise\1.1.1\package
+680 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\ayepromise\1.1.1\package C:\Users\simplewei\AppData\Roaming\npm-cache\609b1327-m-cache-ayepromise-1-1-1-package.lock
+681 silly lockFile 0d21fca4-84958-0-9686708864755929-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.9686708864755929\tmp.tgz
+682 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.9686708864755929\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\0d21fca4-84958-0-9686708864755929-tmp-tgz.lock
+683 silly gunzTarPerm extractEntry url.js
+684 silly gunzTarPerm modes [ '755', '644' ]
+685 silly gunzTarPerm extractEntry package.json
+686 silly gunzTarPerm extractEntry .travis.yml
+687 silly gunzTarPerm extractEntry .zuul.yml
+688 silly gunzTarPerm extractEntry .npmignore
+689 silly gunzTarPerm extractEntry README.md
+690 silly gunzTarPerm extractEntry LICENSE
+691 silly gunzTarPerm extractEntry ayepromise.js
+692 silly gunzTarPerm extractEntry .jshintrc
+693 silly gunzTarPerm extractEntry .travis.yml
+694 silly gunzTarPerm extractEntry bower.json
+695 silly gunzTarPerm extractEntry test/ayeSpec.js
+696 silly gunzTarPerm extractEntry test/complianceTestSuiteAdapter.js
+697 silly gunzTarPerm extractEntry test/helpers.js
+698 silly gunzTarPerm extractEntry test/qIntegrationSpec.js
+699 silly gunzTarPerm extractEntry test/specs.js
+700 silly gunzTarPerm extractEntry test/CompatibilitySpecRunner.html
+701 silly gunzTarPerm extractEntry test/SpecRunner.html
+702 silly lockFile 7b696a97-ing-npm-cache-url-0-10-2-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\url\0.10.2\package
+703 silly lockFile 7b696a97-ing-npm-cache-url-0-10-2-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\url\0.10.2\package
+704 silly lockFile 5dcac599-4958-0-09978041728027165-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.09978041728027165\tmp.tgz
+705 silly lockFile 5dcac599-4958-0-09978041728027165-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.09978041728027165\tmp.tgz
+706 silly lockFile 8219fa39-m-attachments-url-url-0-10-2-tgz http://npm.oa.com/attachments/url/-/url-0.10.2.tgz
+707 silly lockFile 8219fa39-m-attachments-url-url-0-10-2-tgz http://npm.oa.com/attachments/url/-/url-0.10.2.tgz
+708 silly lockFile 04a240e2-url-0-10-2 url@0.10.2
+709 silly lockFile 04a240e2-url-0-10-2 url@0.10.2
+710 silly lockFile c64eb249-url-0-10-1 url@~0.10.1
+711 silly lockFile c64eb249-url-0-10-1 url@~0.10.1
+712 silly lockFile 609b1327-m-cache-ayepromise-1-1-1-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\ayepromise\1.1.1\package
+713 silly lockFile 609b1327-m-cache-ayepromise-1-1-1-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\ayepromise\1.1.1\package
+714 silly lockFile 0d21fca4-84958-0-9686708864755929-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.9686708864755929\tmp.tgz
+715 silly lockFile 0d21fca4-84958-0-9686708864755929-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384958-0.9686708864755929\tmp.tgz
+716 silly lockFile 5c9eb2e3--ayepromise-ayepromise-1-1-1-tgz http://npm.oa.com/ayepromise/-/ayepromise-1.1.1.tgz
+717 silly lockFile 5c9eb2e3--ayepromise-ayepromise-1-1-1-tgz http://npm.oa.com/ayepromise/-/ayepromise-1.1.1.tgz
+718 silly lockFile 709b6423-ayepromise-1-1-1 ayepromise@1.1.1
+719 silly lockFile 709b6423-ayepromise-1-1-1 ayepromise@1.1.1
+720 silly lockFile c91f0236-ayepromise-1-1-1 ayepromise@~1.1.1
+721 silly lockFile c91f0236-ayepromise-1-1-1 ayepromise@~1.1.1
+722 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384899-0.2273383243009448\tmp.tgz
+723 silly lockFile a1a4bcf5-he-inlineresources-0-1-6-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\inlineresources\0.1.6\package
+724 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\inlineresources\0.1.6\package C:\Users\simplewei\AppData\Roaming\npm-cache\a1a4bcf5-he-inlineresources-0-1-6-package.lock
+725 silly lockFile c98a498f-84899-0-2273383243009448-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384899-0.2273383243009448\tmp.tgz
+726 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384899-0.2273383243009448\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\c98a498f-84899-0-2273383243009448-tmp-tgz.lock
+727 silly gunzTarPerm modes [ '755', '644' ]
+728 silly gunzTarPerm extractEntry package.json
+729 silly gunzTarPerm extractEntry .npmignore
+730 silly gunzTarPerm extractEntry README.md
+731 silly gunzTarPerm extractEntry Gruntfile.js
+732 silly gunzTarPerm extractEntry dist/inlineresources.allinone.js
+733 silly gunzTarPerm extractEntry dist/inlineresources.js
+734 silly gunzTarPerm extractEntry examples/bundlePage.js
+735 silly gunzTarPerm extractEntry examples/bundlePage.html
+736 silly gunzTarPerm extractEntry go
+737 silly gunzTarPerm extractEntry src/backgroundValueParser.js
+738 silly gunzTarPerm extractEntry src/cssSupport.js
+739 silly gunzTarPerm extractEntry src/inline.js
+740 silly gunzTarPerm extractEntry src/inlineCss.js
+741 silly gunzTarPerm extractEntry src/inlineImage.js
+742 silly gunzTarPerm extractEntry src/inlineScript.js
+743 silly gunzTarPerm extractEntry src/util.js
+744 http 200 http://npm.oa.com/attachments/grunt-contrib-concat/-/grunt-contrib-concat-0.4.0.tgz
+745 silly gunzTarPerm extractEntry .travis.yml
+746 silly gunzTarPerm extractEntry test/testHelper.js
+747 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384990-0.016000226140022278\tmp.tgz
+748 silly lockFile 07217377-unt-contrib-concat-0-4-0-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-concat\0.4.0\package
+749 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-concat\0.4.0\package C:\Users\simplewei\AppData\Roaming\npm-cache\07217377-unt-contrib-concat-0-4-0-package.lock
+750 silly lockFile 54ff5d47-990-0-016000226140022278-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384990-0.016000226140022278\tmp.tgz
+751 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384990-0.016000226140022278\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\54ff5d47-990-0-016000226140022278-tmp-tgz.lock
+752 silly gunzTarPerm modes [ '755', '644' ]
+753 silly gunzTarPerm extractEntry test/SpecRunner.html
+754 silly gunzTarPerm extractEntry test/fixtures/green.png
+755 silly gunzTarPerm extractEntry package.json
+756 silly gunzTarPerm extractEntry README.md
+757 silly gunzTarPerm extractEntry LICENSE-MIT
+758 silly gunzTarPerm extractEntry test/fixtures/ajax.html
+759 silly gunzTarPerm extractEntry test/fixtures/backgroundImage.html
+760 silly gunzTarPerm extractEntry tasks/concat.js
+761 silly gunzTarPerm extractEntry tasks/lib/comment.js
+762 silly gunzTarPerm extractEntry test/fixtures/empty.css
+763 silly gunzTarPerm extractEntry test/fixtures/empty1.html
+764 silly gunzTarPerm extractEntry test/fixtures/empty2.html
+765 silly gunzTarPerm extractEntry test/fixtures/externalCSS.html
+766 silly gunzTarPerm extractEntry test/fixtures/externalJS.html
+767 silly gunzTarPerm extractEntry test/fixtures/fontFace.html
+768 silly gunzTarPerm extractEntry test/fixtures/ajaxContent.txt
+769 silly gunzTarPerm extractEntry test/fixtures/image.html
+770 silly gunzTarPerm extractEntry test/fixtures/importCss.html
+771 silly gunzTarPerm extractEntry test/fixtures/integration/aScript.js
+772 silly lockFile 07217377-unt-contrib-concat-0-4-0-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-concat\0.4.0\package
+773 silly lockFile 07217377-unt-contrib-concat-0-4-0-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-concat\0.4.0\package
+774 silly lockFile 54ff5d47-990-0-016000226140022278-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384990-0.016000226140022278\tmp.tgz
+775 silly lockFile 54ff5d47-990-0-016000226140022278-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384990-0.016000226140022278\tmp.tgz
+776 silly lockFile 3ea1402d-t-grunt-contrib-concat-0-4-0-tgz http://npm.oa.com/attachments/grunt-contrib-concat/-/grunt-contrib-concat-0.4.0.tgz
+777 silly lockFile 3ea1402d-t-grunt-contrib-concat-0-4-0-tgz http://npm.oa.com/attachments/grunt-contrib-concat/-/grunt-contrib-concat-0.4.0.tgz
+778 silly lockFile 6dafb8ea-grunt-contrib-concat-0-4-0 grunt-contrib-concat@0.4.0
+779 silly lockFile 6dafb8ea-grunt-contrib-concat-0-4-0 grunt-contrib-concat@0.4.0
+780 silly lockFile cc7194be-grunt-contrib-concat-0-4-0 grunt-contrib-concat@~0.4.0
+781 silly lockFile cc7194be-grunt-contrib-concat-0-4-0 grunt-contrib-concat@~0.4.0
+782 silly gunzTarPerm extractEntry test/fixtures/integration/aStylesheet.css
+783 silly gunzTarPerm extractEntry test/fixtures/integration/differentPath/anotherFakeImage.svg
+784 silly gunzTarPerm extractEntry test/fixtures/integration/differentPath/withImage.css
+785 silly gunzTarPerm extractEntry test/fixtures/integration/fakeFont.ttf
+786 silly gunzTarPerm extractEntry test/fixtures/integration/fakeFont.woff
+787 silly gunzTarPerm extractEntry test/fixtures/integration/fakeImage.png
+788 silly gunzTarPerm extractEntry test/fixtures/integration/withImport.css
+789 silly gunzTarPerm extractEntry test/fixtures/nonUTF8Encoding.html
+790 silly gunzTarPerm extractEntry test/fixtures/raphaelicons-license.txt
+791 silly gunzTarPerm extractEntry test/fixtures/raphaelicons-webfont.woff
+792 silly gunzTarPerm extractEntry test/fixtures/rednblue.png
+793 silly gunzTarPerm extractEntry test/fixtures/some.css
+794 silly gunzTarPerm extractEntry test/inlineIntegration/rasterize.js
+795 silly gunzTarPerm extractEntry test/inlineIntegration/checksums/github_sha.txt
+796 silly gunzTarPerm extractEntry test/inlineIntegration/checksums/twitter_sha.txt
+797 silly gunzTarPerm extractEntry test/inlineIntegration/compileTestPageData.sh
+798 silly gunzTarPerm extractEntry test/inlineIntegration/runInlineTests.sh
+799 silly gunzTarPerm extractEntry test/specs/BackgroundValueParserSpec.js
+800 silly gunzTarPerm extractEntry test/specs/InlineCssLinksIntegrationSpec.js
+801 silly gunzTarPerm extractEntry test/specs/InlineCssLinksSpec.js
+802 silly gunzTarPerm extractEntry test/specs/InlineCssSpec.js
+803 silly gunzTarPerm extractEntry test/specs/InlineImagesSpec.js
+804 silly gunzTarPerm extractEntry test/specs/InlineMainSpec.js
+805 silly gunzTarPerm extractEntry test/specs/InlineScriptSpec.js
+806 silly gunzTarPerm extractEntry test/specs/InlineStylesSpec.js
+807 silly gunzTarPerm extractEntry test/specs/IntegrationSpec.js
+808 silly gunzTarPerm extractEntry test/specs/UtilSpec.js
+809 silly lockFile a1a4bcf5-he-inlineresources-0-1-6-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\inlineresources\0.1.6\package
+810 silly lockFile a1a4bcf5-he-inlineresources-0-1-6-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\inlineresources\0.1.6\package
+811 silly lockFile c98a498f-84899-0-2273383243009448-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384899-0.2273383243009448\tmp.tgz
+812 silly lockFile c98a498f-84899-0-2273383243009448-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384899-0.2273383243009448\tmp.tgz
+813 silly lockFile efb9e6b8-ources-inlineresources-0-1-6-tgz http://npm.oa.com/attachments/inlineresources/-/inlineresources-0.1.6.tgz
+814 silly lockFile efb9e6b8-ources-inlineresources-0-1-6-tgz http://npm.oa.com/attachments/inlineresources/-/inlineresources-0.1.6.tgz
+815 silly lockFile 01f0d383-inlineresources-0-1-6 inlineresources@0.1.6
+816 silly lockFile 01f0d383-inlineresources-0-1-6 inlineresources@0.1.6
+817 silly lockFile 8ad58d89-inlineresources-0-1-1 inlineresources@~0.1.1
+818 silly lockFile 8ad58d89-inlineresources-0-1-1 inlineresources@~0.1.1
+819 http 200 http://npm.oa.com/attachments/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.1.tgz
+820 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385067-0.24426827137358487\tmp.tgz
+821 silly lockFile b25cbb0d-unt-contrib-uglify-0-4-1-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-uglify\0.4.1\package
+822 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-uglify\0.4.1\package C:\Users\simplewei\AppData\Roaming\npm-cache\b25cbb0d-unt-contrib-uglify-0-4-1-package.lock
+823 silly lockFile 906254fd-5067-0-24426827137358487-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385067-0.24426827137358487\tmp.tgz
+824 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385067-0.24426827137358487\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\906254fd-5067-0-24426827137358487-tmp-tgz.lock
+825 silly gunzTarPerm modes [ '755', '644' ]
+826 silly gunzTarPerm extractEntry package.json
+827 silly gunzTarPerm extractEntry README.md
+828 silly gunzTarPerm extractEntry LICENSE-MIT
+829 silly gunzTarPerm extractEntry tasks/uglify.js
+830 silly gunzTarPerm extractEntry tasks/lib/uglify.js
+831 silly lockFile b25cbb0d-unt-contrib-uglify-0-4-1-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-uglify\0.4.1\package
+832 silly lockFile b25cbb0d-unt-contrib-uglify-0-4-1-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-contrib-uglify\0.4.1\package
+833 silly lockFile 906254fd-5067-0-24426827137358487-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385067-0.24426827137358487\tmp.tgz
+834 silly lockFile 906254fd-5067-0-24426827137358487-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385067-0.24426827137358487\tmp.tgz
+835 silly lockFile 23d9901f-y-grunt-contrib-uglify-0-4-1-tgz http://npm.oa.com/attachments/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.1.tgz
+836 silly lockFile 23d9901f-y-grunt-contrib-uglify-0-4-1-tgz http://npm.oa.com/attachments/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.1.tgz
+837 silly lockFile 8ba6efaa-grunt-contrib-uglify-0-4-1 grunt-contrib-uglify@0.4.1
+838 silly lockFile 8ba6efaa-grunt-contrib-uglify-0-4-1 grunt-contrib-uglify@0.4.1
+839 silly lockFile bea3f155-grunt-contrib-uglify-0-4-0 grunt-contrib-uglify@~0.4.0
+840 silly lockFile bea3f155-grunt-contrib-uglify-0-4-0 grunt-contrib-uglify@~0.4.0
+841 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384929-0.3156075931619853\tmp.tgz
+842 silly lockFile 5b2609b9-ache-xmlserializer-0-3-3-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\xmlserializer\0.3.3\package
+843 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\xmlserializer\0.3.3\package C:\Users\simplewei\AppData\Roaming\npm-cache\5b2609b9-ache-xmlserializer-0-3-3-package.lock
+844 silly lockFile a15b8a52-84929-0-3156075931619853-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384929-0.3156075931619853\tmp.tgz
+845 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384929-0.3156075931619853\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\a15b8a52-84929-0-3156075931619853-tmp-tgz.lock
+846 silly gunzTarPerm modes [ '755', '644' ]
+847 silly gunzTarPerm extractEntry package.json
+848 silly gunzTarPerm extractEntry .npmignore
+849 silly gunzTarPerm extractEntry README.md
+850 silly gunzTarPerm extractEntry Jakefile.js
+851 silly gunzTarPerm extractEntry browser/parser.js
+852 silly gunzTarPerm extractEntry example.html
+853 silly gunzTarPerm extractEntry lib/serializer.js
+854 silly gunzTarPerm extractEntry .travis.yml
+855 silly gunzTarPerm extractEntry tests/run-jasmine.js
+856 silly gunzTarPerm extractEntry tests/BrowserCompatibilityRunner.html
+857 silly gunzTarPerm extractEntry tests/SpecRunner.html
+858 silly gunzTarPerm extractEntry tests/browserSpecs/integrationSpec.js
+859 silly gunzTarPerm extractEntry tests/jasmine-1.3.1/jasmine-html.js
+860 silly gunzTarPerm extractEntry tests/jasmine-1.3.1/jasmine.js
+861 silly gunzTarPerm extractEntry tests/jasmine-1.3.1/MIT.LICENSE
+862 silly gunzTarPerm extractEntry tests/jasmine-1.3.1/jasmine.css
+863 silly gunzTarPerm extractEntry tests/specs/serializerSpec.js
+864 silly lockFile 5b2609b9-ache-xmlserializer-0-3-3-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\xmlserializer\0.3.3\package
+865 silly lockFile 5b2609b9-ache-xmlserializer-0-3-3-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\xmlserializer\0.3.3\package
+866 silly lockFile a15b8a52-84929-0-3156075931619853-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384929-0.3156075931619853\tmp.tgz
+867 silly lockFile a15b8a52-84929-0-3156075931619853-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384929-0.3156075931619853\tmp.tgz
+868 silly lockFile 2fb65f5f-rializer-xmlserializer-0-3-3-tgz http://npm.oa.com/attachments/xmlserializer/-/xmlserializer-0.3.3.tgz
+869 silly lockFile 2fb65f5f-rializer-xmlserializer-0-3-3-tgz http://npm.oa.com/attachments/xmlserializer/-/xmlserializer-0.3.3.tgz
+870 silly lockFile 525f173c-xmlserializer-0-3-3 xmlserializer@0.3.3
+871 silly lockFile 525f173c-xmlserializer-0-3-3 xmlserializer@0.3.3
+872 silly lockFile d9192f73-xmlserializer-0-3-1 xmlserializer@~0.3.1
+873 silly lockFile d9192f73-xmlserializer-0-3-1 xmlserializer@~0.3.1
+874 http 200 http://npm.oa.com/attachments/grunt-regex-check/-/grunt-regex-check-0.1.9.tgz
+875 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385036-0.919837890425697\tmp.tgz
+876 silly lockFile c54b6729--grunt-regex-check-0-1-9-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-regex-check\0.1.9\package
+877 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-regex-check\0.1.9\package C:\Users\simplewei\AppData\Roaming\npm-cache\c54b6729--grunt-regex-check-0-1-9-package.lock
+878 silly lockFile ff310959-385036-0-919837890425697-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385036-0.919837890425697\tmp.tgz
+879 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385036-0.919837890425697\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\ff310959-385036-0-919837890425697-tmp-tgz.lock
+880 silly gunzTarPerm modes [ '755', '644' ]
+881 silly gunzTarPerm extractEntry package.json
+882 silly gunzTarPerm modified mode [ 'package.json', 388, 420 ]
+883 silly gunzTarPerm extractEntry .npmignore
+884 silly gunzTarPerm modified mode [ '.npmignore', 388, 420 ]
+885 silly gunzTarPerm extractEntry README.md
+886 silly gunzTarPerm extractEntry Gruntfile.js
+887 silly gunzTarPerm extractEntry LICENSE-MIT
+888 silly gunzTarPerm modified mode [ 'LICENSE-MIT', 388, 420 ]
+889 silly gunzTarPerm extractEntry .jshintrc
+890 silly gunzTarPerm modified mode [ '.jshintrc', 388, 420 ]
+891 silly gunzTarPerm extractEntry tasks/regex-check-task.js
+892 silly gunzTarPerm extractEntry tasks/lib/regex-check.js
+893 silly gunzTarPerm extractEntry tasks/lib/utils.js
+894 silly gunzTarPerm extractEntry test/regex_check_test.js
+895 silly gunzTarPerm extractEntry test/expected/custom_options
+896 silly gunzTarPerm modified mode [ 'test/expected/custom_options', 388, 420 ]
+897 silly gunzTarPerm extractEntry test/expected/default_options
+898 silly gunzTarPerm modified mode [ 'test/expected/default_options', 388, 420 ]
+899 silly gunzTarPerm extractEntry test/fixtures/123
+900 silly gunzTarPerm modified mode [ 'test/fixtures/123', 388, 420 ]
+901 silly gunzTarPerm extractEntry test/fixtures/invalid-constants/constants.js
+902 silly gunzTarPerm extractEntry test/fixtures/testing
+903 silly gunzTarPerm modified mode [ 'test/fixtures/testing', 388, 420 ]
+904 silly lockFile c54b6729--grunt-regex-check-0-1-9-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-regex-check\0.1.9\package
+905 silly lockFile c54b6729--grunt-regex-check-0-1-9-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\grunt-regex-check\0.1.9\package
+906 silly lockFile ff310959-385036-0-919837890425697-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385036-0.919837890425697\tmp.tgz
+907 silly lockFile ff310959-385036-0-919837890425697-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266385036-0.919837890425697\tmp.tgz
+908 silly lockFile eeedeeea-heck-grunt-regex-check-0-1-9-tgz http://npm.oa.com/attachments/grunt-regex-check/-/grunt-regex-check-0.1.9.tgz
+909 silly lockFile eeedeeea-heck-grunt-regex-check-0-1-9-tgz http://npm.oa.com/attachments/grunt-regex-check/-/grunt-regex-check-0.1.9.tgz
+910 silly lockFile 12e6f85b-grunt-regex-check-0-1-9 grunt-regex-check@0.1.9
+911 silly lockFile 12e6f85b-grunt-regex-check-0-1-9 grunt-regex-check@0.1.9
+912 silly lockFile e5bd82df-grunt-regex-check-0-1-5 grunt-regex-check@~0.1.5
+913 silly lockFile e5bd82df-grunt-regex-check-0-1-5 grunt-regex-check@~0.1.5
+914 verbose tar unpack C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.906071930192411\tmp.tgz
+915 silly lockFile cd856b16-g-npm-cache-jquery-2-1-3-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\jquery\2.1.3\package
+916 verbose lock tar://C:\Users\simplewei\AppData\Roaming\npm-cache\jquery\2.1.3\package C:\Users\simplewei\AppData\Roaming\npm-cache\cd856b16-g-npm-cache-jquery-2-1-3-package.lock
+917 silly lockFile 3883902c-384867-0-906071930192411-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.906071930192411\tmp.tgz
+918 verbose lock tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.906071930192411\tmp.tgz C:\Users\simplewei\AppData\Roaming\npm-cache\3883902c-384867-0-906071930192411-tmp-tgz.lock
+919 silly gunzTarPerm modes [ '755', '644' ]
+920 silly gunzTarPerm extractEntry package.json
+921 silly gunzTarPerm extractEntry .npmignore
+922 silly gunzTarPerm extractEntry README.md
+923 silly gunzTarPerm extractEntry CONTRIBUTING.md
+924 silly gunzTarPerm extractEntry .bowerrc
+925 silly gunzTarPerm extractEntry AUTHORS.txt
+926 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+927 silly gunzTarPerm extractEntry bower.json
+928 silly gunzTarPerm extractEntry dist/jquery.js
+929 silly gunzTarPerm extractEntry dist/jquery.min.js
+930 silly gunzTarPerm extractEntry dist/cdn/jquery-2.1.3.js
+931 silly gunzTarPerm extractEntry dist/cdn/jquery-2.1.3.min.js
+932 silly gunzTarPerm extractEntry dist/cdn/jquery-2.1.3.min.map
+933 silly gunzTarPerm extractEntry dist/jquery.min.map
+934 silly gunzTarPerm extractEntry src/wrap.js
+935 silly gunzTarPerm extractEntry src/dimensions.js
+936 silly gunzTarPerm extractEntry src/effects.js
+937 silly gunzTarPerm extractEntry src/event.js
+938 silly gunzTarPerm extractEntry src/deprecated.js
+939 silly gunzTarPerm extractEntry src/intro.js
+940 silly gunzTarPerm extractEntry src/jquery.js
+941 silly gunzTarPerm extractEntry src/manipulation.js
+942 silly gunzTarPerm extractEntry src/offset.js
+943 silly gunzTarPerm extractEntry src/outro.js
+944 silly gunzTarPerm extractEntry src/deferred.js
+945 silly gunzTarPerm extractEntry src/queue.js
+946 silly gunzTarPerm extractEntry src/data.js
+947 silly gunzTarPerm extractEntry src/selector-native.js
+948 silly gunzTarPerm extractEntry src/css.js
+949 silly gunzTarPerm extractEntry src/selector-sizzle.js
+950 silly gunzTarPerm extractEntry src/core.js
+951 silly gunzTarPerm extractEntry src/selector.js
+952 silly gunzTarPerm extractEntry src/callbacks.js
+953 silly gunzTarPerm extractEntry src/serialize.js
+954 silly gunzTarPerm extractEntry src/attributes.js
+955 silly gunzTarPerm extractEntry src/traversing.js
+956 silly gunzTarPerm extractEntry src/ajax.js
+957 silly gunzTarPerm extractEntry src/data/Data.js
+958 silly gunzTarPerm extractEntry src/data/accepts.js
+959 silly gunzTarPerm extractEntry src/data/var/data_priv.js
+960 silly gunzTarPerm extractEntry src/data/var/data_user.js
+961 silly gunzTarPerm extractEntry src/event/ajax.js
+962 silly gunzTarPerm extractEntry src/event/alias.js
+963 silly gunzTarPerm extractEntry src/event/support.js
+964 silly gunzTarPerm extractEntry src/queue/delay.js
+965 silly gunzTarPerm extractEntry src/core/access.js
+966 silly gunzTarPerm extractEntry src/core/init.js
+967 silly gunzTarPerm extractEntry src/core/parseHTML.js
+968 silly gunzTarPerm extractEntry src/core/ready.js
+969 silly gunzTarPerm extractEntry src/core/var/rsingleTag.js
+970 silly gunzTarPerm extractEntry src/ajax/jsonp.js
+971 silly gunzTarPerm extractEntry src/ajax/load.js
+972 silly gunzTarPerm extractEntry src/ajax/parseJSON.js
+973 silly gunzTarPerm extractEntry src/ajax/parseXML.js
+974 silly gunzTarPerm extractEntry src/ajax/script.js
+975 silly gunzTarPerm extractEntry src/ajax/xhr.js
+976 silly gunzTarPerm extractEntry src/ajax/var/nonce.js
+977 silly gunzTarPerm extractEntry src/ajax/var/rquery.js
+978 silly gunzTarPerm extractEntry src/css/addGetHookIf.js
+979 silly gunzTarPerm extractEntry src/css/curCSS.js
+980 silly gunzTarPerm extractEntry src/css/defaultDisplay.js
+981 silly gunzTarPerm extractEntry src/css/hiddenVisibleSelectors.js
+982 silly gunzTarPerm extractEntry src/css/support.js
+983 silly gunzTarPerm extractEntry src/css/swap.js
+984 silly gunzTarPerm extractEntry src/css/var/cssExpand.js
+985 silly gunzTarPerm extractEntry src/css/var/getStyles.js
+986 silly gunzTarPerm extractEntry src/css/var/isHidden.js
+987 silly gunzTarPerm extractEntry src/css/var/rmargin.js
+988 silly gunzTarPerm extractEntry src/css/var/rnumnonpx.js
+989 silly gunzTarPerm extractEntry src/attributes/attr.js
+990 silly gunzTarPerm extractEntry src/attributes/classes.js
+991 silly gunzTarPerm extractEntry src/attributes/prop.js
+992 silly gunzTarPerm extractEntry src/attributes/support.js
+993 silly gunzTarPerm extractEntry src/attributes/val.js
+994 silly gunzTarPerm extractEntry src/manipulation/_evalUrl.js
+995 silly gunzTarPerm extractEntry src/manipulation/support.js
+996 silly gunzTarPerm extractEntry src/manipulation/var/rcheckableType.js
+997 silly gunzTarPerm extractEntry src/sizzle/dist/sizzle.js
+998 silly gunzTarPerm extractEntry src/sizzle/dist/sizzle.min.js
+999 silly gunzTarPerm extractEntry src/sizzle/dist/sizzle.min.map
+1000 silly gunzTarPerm extractEntry src/sizzle/test/jquery.js
+1001 silly gunzTarPerm extractEntry src/sizzle/test/data/empty.js
+1002 silly gunzTarPerm extractEntry src/sizzle/test/data/testinit.js
+1003 silly gunzTarPerm extractEntry src/sizzle/test/data/mixed_sort.html
+1004 silly gunzTarPerm extractEntry src/sizzle/test/index.html
+1005 silly gunzTarPerm extractEntry src/sizzle/test/unit/extending.js
+1006 silly gunzTarPerm extractEntry src/sizzle/test/unit/selector.js
+1007 silly gunzTarPerm extractEntry src/sizzle/test/unit/utilities.js
+1008 silly gunzTarPerm extractEntry src/traversing/findFilter.js
+1009 silly gunzTarPerm extractEntry src/traversing/var/rneedsContext.js
+1010 silly gunzTarPerm extractEntry src/effects/Tween.js
+1011 silly gunzTarPerm extractEntry src/effects/animatedSelector.js
+1012 silly gunzTarPerm extractEntry src/var/arr.js
+1013 silly gunzTarPerm extractEntry src/var/concat.js
+1014 silly gunzTarPerm extractEntry src/var/hasOwn.js
+1015 silly gunzTarPerm extractEntry src/var/indexOf.js
+1016 silly gunzTarPerm extractEntry src/var/pnum.js
+1017 silly gunzTarPerm extractEntry src/var/class2type.js
+1018 silly gunzTarPerm extractEntry src/var/rnotwhite.js
+1019 silly gunzTarPerm extractEntry src/var/slice.js
+1020 silly gunzTarPerm extractEntry src/var/strundefined.js
+1021 silly gunzTarPerm extractEntry src/var/support.js
+1022 silly gunzTarPerm extractEntry src/var/toString.js
+1023 silly gunzTarPerm extractEntry src/var/push.js
+1024 silly gunzTarPerm extractEntry src/exports/amd.js
+1025 silly gunzTarPerm extractEntry src/exports/global.js
+1026 silly gunzTarPerm extractEntry .jscsrc
+1027 silly lockFile cd856b16-g-npm-cache-jquery-2-1-3-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\jquery\2.1.3\package
+1028 silly lockFile cd856b16-g-npm-cache-jquery-2-1-3-package tar://C:\Users\simplewei\AppData\Roaming\npm-cache\jquery\2.1.3\package
+1029 silly lockFile 3883902c-384867-0-906071930192411-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.906071930192411\tmp.tgz
+1030 silly lockFile 3883902c-384867-0-906071930192411-tmp-tgz tar://C:\Users\SIMPLE~1\AppData\Local\Temp\npm-9572-N88oxRfD\1422266384867-0.906071930192411\tmp.tgz
+1031 silly lockFile 062a792f-achments-jquery-jquery-2-1-3-tgz http://npm.oa.com/attachments/jquery/-/jquery-2.1.3.tgz
+1032 silly lockFile 062a792f-achments-jquery-jquery-2-1-3-tgz http://npm.oa.com/attachments/jquery/-/jquery-2.1.3.tgz
+1033 silly lockFile 6fbd5787-jquery-2-1-3 jquery@2.1.3
+1034 silly lockFile 6fbd5787-jquery-2-1-3 jquery@2.1.3
+1035 silly lockFile 76a8e64b-jquery-2-1-0 jquery@~2.1.0
+1036 silly lockFile 76a8e64b-jquery-2-1-0 jquery@~2.1.0
+1037 error git clone git://github.com/cburgmer/js-imagediff Cloning into bare repository 'C:\Users\simplewei\AppData\Roaming\npm-cache\_git-remotes\git-github-com-cburgmer-js-imagediff-2c2617c9'...
+1037 error git clone git://github.com/cburgmer/js-imagediff fatal: unable to access 'https://github.com/cburgmer/js-imagediff/': Failed connect to github.com:443; No error
+1038 silly lockFile 2c2617c9-github-com-cburgmer-js-imagediff git://github.com/cburgmer/js-imagediff
+1039 silly lockFile 2c2617c9-github-com-cburgmer-js-imagediff git://github.com/cburgmer/js-imagediff
+1040 error Error: Command failed: Cloning into bare repository 'C:\Users\simplewei\AppData\Roaming\npm-cache\_git-remotes\git-github-com-cburgmer-js-imagediff-2c2617c9'...
+1040 error fatal: unable to access 'https://github.com/cburgmer/js-imagediff/': Failed connect to github.com:443; No error
+1040 error
+1040 error     at ChildProcess.exithandler (child_process.js:647:15)
+1040 error     at ChildProcess.EventEmitter.emit (events.js:98:17)
+1040 error     at maybeClose (child_process.js:753:16)
+1040 error     at Socket.<anonymous> (child_process.js:966:11)
+1040 error     at Socket.EventEmitter.emit (events.js:95:17)
+1040 error     at Pipe.close (net.js:465:12)
+1041 error If you need help, you may report this *entire* log,
+1041 error including the npm and node versions, at:
+1041 error     <http://github.com/npm/npm/issues>
+1042 error System Windows_NT 6.1.7601
+1043 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+1044 error cwd F:\github\hkjc\app\test
+1045 error node -v v0.10.28
+1046 error npm -v 1.4.9
+1047 error code 128
+1048 verbose exit [ 1, true ]

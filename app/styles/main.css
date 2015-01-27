@@ -616,6 +616,11 @@ img {vertical-align: middle;}
     text-align: center;
     border: 1px solid #808080;
 }
+.record-detail .ticket-item .ico-arrow {
+    position: absolute;
+    right: 15px;
+    top:16px;
+}
 .record-detail .ticket-expired .state .state-expired,.record-detail .ticket-used .state .state-used {
     display: inline-block;
 }
