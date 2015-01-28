@@ -18,6 +18,7 @@ define(['zepto', 'queryString', '/scripts/config/sys.config.js'],
      * 登陆态校验
      */
     exports.check = function() {
+
         return $.ajax({
             url: login_cgi,
             data: {

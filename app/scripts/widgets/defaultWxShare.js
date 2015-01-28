@@ -63,8 +63,5 @@ define(['widgets/weixinApi'], function(weixin){
 		// 点击分享到腾讯微博，会执行下面这个代码
 		Api.shareToWeibo(wxData, wxCallbacks);
 
-		// iOS上，可以直接调用这个API进行分享，一句话搞定
-		Api.generalShare(wxData, wxCallbacks);
-
 	});
 });
