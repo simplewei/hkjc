@@ -182,8 +182,10 @@ require(['zepto', 'queryString', 'underscore', 'widgets/wxLogin', 'widgets/tips'
 		var cclatePrice = function(){
 			var raceInfo = JSON.parse($('#race-chkin').val());
 			var ticket_price = raceInfo.ticket_price;
+			var full_price = raceInfo.full_price;
 			var numb = $('.count-select input').val();
-			$('.pay-price .old em').html((numb*20).toFixed(2));
+			// debugger
+			$('.pay-price .old em').html((numb*full_price/100).toFixed(2));
 			$('.pay-price .now em').html((numb*ticket_price/100).toFixed(2));
 		};
 
