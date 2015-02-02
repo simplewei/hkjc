@@ -1,0 +1,73 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'webdriver-io' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json pc@ No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'webdriver-io', null ]
+8 verbose cache add name=undefined spec="webdriver-io" args=["webdriver-io",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'webdriver-io',
+9 verbose parsed url   path: 'webdriver-io',
+9 verbose parsed url   href: 'webdriver-io' }
+10 silly lockFile 4ba65e04-webdriver-io webdriver-io
+11 verbose lock webdriver-io C:\Users\simplewei\AppData\Roaming\npm-cache\4ba65e04-webdriver-io.lock
+12 silly lockFile 4ba65e04-webdriver-io webdriver-io
+13 silly lockFile 4ba65e04-webdriver-io webdriver-io
+14 verbose addNamed [ 'webdriver-io', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile 8e558800-webdriver-io webdriver-io@
+17 verbose lock webdriver-io@ C:\Users\simplewei\AppData\Roaming\npm-cache\8e558800-webdriver-io.lock
+18 silly addNameRange { name: 'webdriver-io', range: '*', hasData: false }
+19 verbose request where is /webdriver-io
+20 verbose request registry http://npm.oa.com/
+21 verbose request id 45457ee4689213b4
+22 verbose url raw /webdriver-io
+23 verbose url resolving [ 'http://npm.oa.com/', './webdriver-io' ]
+24 verbose url resolved http://npm.oa.com/webdriver-io
+25 verbose request where is http://npm.oa.com/webdriver-io
+26 info trying registry request attempt 1 at 19:16:45
+27 http GET http://npm.oa.com/webdriver-io
+28 http 404 http://npm.oa.com/webdriver-io
+29 verbose headers { server: 'nginx/1.0.15',
+29 verbose headers   date: 'Thu, 29 Jan 2015 11:16:45 GMT',
+29 verbose headers   'content-type': 'application/json',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'content-length': '52',
+29 verbose headers   'cache-control': 'must-revalidate' }
+30 silly registry.get cb [ 404,
+30 silly registry.get   { server: 'nginx/1.0.15',
+30 silly registry.get     date: 'Thu, 29 Jan 2015 11:16:45 GMT',
+30 silly registry.get     'content-type': 'application/json',
+30 silly registry.get     connection: 'keep-alive',
+30 silly registry.get     'content-length': '52',
+30 silly registry.get     'cache-control': 'must-revalidate' } ]
+31 silly lockFile 8e558800-webdriver-io webdriver-io@
+32 silly lockFile 8e558800-webdriver-io webdriver-io@
+33 error 404 404 Not Found: webdriver-io
+33 error 404
+33 error 404 'webdriver-io' is not in the npm registry.
+33 error 404 You should bug the author to publish it
+33 error 404 It was specified as a dependency of 'pc'
+33 error 404
+33 error 404 Note that you can also install from a
+33 error 404 tarball, folder, or http url, or git url.
+34 error System Windows_NT 6.1.7601
+35 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "webdriver-io"
+36 error cwd F:\github\hkjc
+37 error node -v v0.10.36
+38 error npm -v 1.4.28
+39 error code E404
+40 verbose exit [ 1, true ]
