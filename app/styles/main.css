@@ -55,10 +55,9 @@ img {vertical-align: middle;}
 .btn-cancel,.btn-cancel:visited,.btn-cancel:hover {color: #FFFFFF;}
 
 /* 素材 */
-.ico-arrow{display: inline-block;width:8px;height: 13px;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAaCAYAAAC+aNwHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVhJREFUeNqcldFKAkEUhnUTLc2yBwi6L8RY6EJRCkRDECqkB8gnU+9CTNNKvBIJIth9gh5DCBJi+0fOwnHa3Zlx4OfI0e/bcTk7G/c8LyaW67qnKAe2bX/EDJZF8DnKHJnic8lEEHcc5wx1gRxRb4k0sJN33R18IZ+sl0XesJOylgBX+kG9ERDr75OkonUPQiQZklwpBSRZkeSVfZ9GJpBUlQImuUVeJMkIkppSwCR3AZIhJHWlQJKMWXuPJNdKAZO0JMkuSRpKgSR5Zu0U8gRJcz2J/rMQtfDjJEofabK2kN9bmiMvButY6u0gOUvj6ocoM6TA2r9IG3+xY2nCdhAceRMBZ2kqL8LgUAHgNA1SMQoOFDC4rIL/CQgeIZc6sFgJBosBGSBVCX4A3FWdiUmC6ybwWkDwozgHTWF/B3mktg3sn4kOzfi3KbzxMNEpfAK4Z/Je+BNgAMrnlgtB8v9tAAAAAElFTkSuQmCC);background-size: 100% 100%;}
-.ico-hkrace {display: inline-block; width: 45px;height: 45px;vertical-align: middle;background: url("img/ico_hkrace.png") no-repeat;background-size: 100% 100%;}
-.i-dir {display: inline-block;width:28px;height:60px;background: url("img/share_arrow.png"); background-size: 100% 100%;}
-
+.ico-arrow { display: inline-block; width: 8px; height: 13px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAaCAYAAAC+aNwHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVhJREFUeNqcldFKAkEUhnUTLc2yBwi6L8RY6EJRCkRDECqkB8gnU+9CTNNKvBIJIth9gh5DCBJi+0fOwnHa3Zlx4OfI0e/bcTk7G/c8LyaW67qnKAe2bX/EDJZF8DnKHJnic8lEEHcc5wx1gRxRb4k0sJN33R18IZ+sl0XesJOylgBX+kG9ERDr75OkonUPQiQZklwpBSRZkeSVfZ9GJpBUlQImuUVeJMkIkppSwCR3AZIhJHWlQJKMWXuPJNdKAZO0JMkuSRpKgSR5Zu0U8gRJcz2J/rMQtfDjJEofabK2kN9bmiMvButY6u0gOUvj6ocoM6TA2r9IG3+xY2nCdhAceRMBZ2kqL8LgUAHgNA1SMQoOFDC4rIL/CQgeIZc6sFgJBosBGSBVCX4A3FWdiUmC6ybwWkDwozgHTWF/B3mktg3sn4kOzfi3KbzxMNEpfAK4Z/Je+BNgAMrnlgtB8v9tAAAAAElFTkSuQmCC); background-size: 100% 100%; }
+.ico-hkrace { display: inline-block; width: 54px; height: 54px; vertical-align: middle; background: url("img/ico_hkrace.png") no-repeat; background-size: 100% 100%; }
+.i-dir { display: inline-block; width: 28px; height: 60px; background: url("img/share_arrow.png"); background-size: 100% 100%; }
 /* 公用类 */
 .hide {
     display: none !important;
@@ -212,23 +211,26 @@ img {vertical-align: middle;}
     display: none;
     height: 30px;
     padding: 0 30px;
-    line-height: 30px;
     position: absolute;
-    top:12px;
+    top: 12px;
     left: -29px;
-    -webkit-transform:rotate(-45deg);
-    transform:rotate(-45deg);
-    font-size: 18px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     color: #FFFFFF;
 }
 .form-info .i-youhui {
     background-color: #EC5158;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 2px 40px;
+    top: 11px;
+    left: -36px;
 }
 .form-info .i-sold {
     background-color: #646464;
 }
 .form-info .line {
-    padding: 13px 0 12px;
+    padding: 4px 0 10px;
     text-align: center;
 }
 .form-info p {
