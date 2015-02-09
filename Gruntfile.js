@@ -212,7 +212,7 @@ module.exports = function (grunt) {
           src: [
             '<%= config.dist %>/scripts/{,**/}*.min.js',
             '<%= config.dist %>/styles/{,*/}*.css',
-            '<%= config.dist %>/images/{,*/}*.*',
+            '<%= config.dist %>/styles/img/{,*/}*.*',
             '<%= config.dist %>/styles/fonts/{,*/}*.*',
             '<%= config.dist %>/*.{ico,png}'
           ]

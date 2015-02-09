@@ -8,7 +8,6 @@
   "dependencies": {
     "express": "4.11.0",
     "body-parser": "*",
-    "multer": "0.1.7",
-    "qr-image": "*"
+    "multer": "0.1.7"
   }
 }
