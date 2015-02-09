@@ -56,8 +56,8 @@ img {vertical-align: middle;}
 
 /* 素材 */
 .ico-arrow { display: inline-block; width: 8px; height: 13px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAaCAYAAAC+aNwHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVhJREFUeNqcldFKAkEUhnUTLc2yBwi6L8RY6EJRCkRDECqkB8gnU+9CTNNKvBIJIth9gh5DCBJi+0fOwnHa3Zlx4OfI0e/bcTk7G/c8LyaW67qnKAe2bX/EDJZF8DnKHJnic8lEEHcc5wx1gRxRb4k0sJN33R18IZ+sl0XesJOylgBX+kG9ERDr75OkonUPQiQZklwpBSRZkeSVfZ9GJpBUlQImuUVeJMkIkppSwCR3AZIhJHWlQJKMWXuPJNdKAZO0JMkuSRpKgSR5Zu0U8gRJcz2J/rMQtfDjJEofabK2kN9bmiMvButY6u0gOUvj6ocoM6TA2r9IG3+xY2nCdhAceRMBZ2kqL8LgUAHgNA1SMQoOFDC4rIL/CQgeIZc6sFgJBosBGSBVCX4A3FWdiUmC6ybwWkDwozgHTWF/B3mktg3sn4kOzfi3KbzxMNEpfAK4Z/Je+BNgAMrnlgtB8v9tAAAAAElFTkSuQmCC); background-size: 100% 100%; }
-.ico-hkrace { display: inline-block; width: 54px; height: 54px; vertical-align: middle; background: url("img/ico_hkrace.png") no-repeat; background-size: 100% 100%; }
-.i-dir { display: inline-block; width: 28px; height: 60px; background: url("img/share_arrow.png"); background-size: 100% 100%; }
+.ico-hkrace { display: inline-block; width: 54px; height: 54px; vertical-align: middle; background: url("/styles/img/ico_hkrace.png") no-repeat; background-size: 100% 100%; }
+.i-dir { display: inline-block; width: 28px; height: 60px; background: url("/styles/img/share_arrow.png"); background-size: 100% 100%; }
 /* 公用类 */
 .hide {
     display: none !important;
@@ -702,7 +702,7 @@ img {vertical-align: middle;}
     display: none;
     width: 129px;
     height: 129px;
-    background: url("img/watermask.png") no-repeat 0 0;
+    background: url("/styles/img/watermask.png") no-repeat 0 0;
     background-size: 259px 129px;
     -webkit-background-size:259px 129px;
     position: absolute;
@@ -775,11 +775,12 @@ img {vertical-align: middle;}
 
 /* 使用须知页(notice.shtml) */
 .notice .main {padding-bottom: 20px;color: #000000;}
-.notice .main .foreword,.notice .main .cnt {padding: 0 16px;}
+.notice .main .foreword,.notice .main .cnt {padding:0 12px 0 16px;font-size: 12px;}
 .notice .main p {margin: 7px 0;}
 .notice h1 {padding-top: 25px;margin-bottom: 15px; font-size: 16px;text-align: center;font-weight: bold;}
-.notice h2,.notice p {font-size: 12px;line-height: 20px;}
-.notice h2 {font-weight: bold;}
+.notice .cnt ol {list-style: decimal;-webkit-padding-start: 15px;-webkit-margin-before: 0;-webkit-margin-after: 0;line-height:1.5em;}
+.notice .cnt ol li {margin-bottom: 10px;}
+.notice h2,.notice p {line-height: 20px;}
 
 
 .qrcode-download{
