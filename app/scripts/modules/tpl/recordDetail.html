@@ -8,11 +8,12 @@
         '2': '沙田馬場公眾席'
     };
     var time = new Date(list_info.race_day);
+    var year = time.getFullYear();
     var month = time.getMonth()+1;
     var date = time.getDate();
     var day = ['日', '一', '二', '三', '四', '五', '六'][time.getDay()];
     var type = {'1': '日', '2': '夜'}[list_info.race_type];
-    var _date = ''+ month+ '月'+ date+ '日 星期'+ day+ ' '+ type+ '馬';
+    var _date = ''+ year+ '年'+ month+ '月'+ date+ '日 星期'+ day+ ' '+ type+ '馬';
 %>
 <div class="info-detail">
     <h1>香港賽馬會馬場公眾席門票</h1>

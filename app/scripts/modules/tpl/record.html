@@ -8,6 +8,7 @@
       <%
             if(!record.race_day) return;
             var time = new Date(record.race_day);
+            var year = time.getFullYear();
             var month = time.getMonth()+1;
             var date = time.getDate();
             var day = ['日', '一', '二', '三', '四', '五', '六'][time.getDay()];
@@ -16,7 +17,7 @@
       <li class="record-item" data-href="/pages/recordDetail.html?listid=<%- record.listid %>">
           <div class="item-info">
               <p class="name">
-              <%- ''+ month+ '月'+ date+ '日 星期'+ day+ ' '+ type+ '馬'%>
+              <%- ''+ year+ '年'+ month+ '月'+ date+ '日 星期'+ day+ ' '+ type+ '馬'%>
               </p>
               <p class="line"><span class="title">入場地點</span><span class="content"><%- addrMap[record.checkin_addr] %></span>
               </p>

@@ -102,7 +102,8 @@ require(['zepto', 'queryString', 'underscore', 'widgets/wxLogin', 'widgets/tips'
 
 			var _html= '';
 			_.each(addr.checkin_info, function(obj){
-				_html+= '<option value=\''+ JSON.stringify(obj) +'\'>'+
+				var selected = obj.checkin_addr == addr.race_addr? 'selected': '';
+				_html+= '<option '+selected +' value=\''+ JSON.stringify(obj) +'\'>'+
 					addrMap[obj.checkin_addr] +'</option>'
 			});
 			$('#race-chkin').html(_html).change();
@@ -157,7 +158,7 @@ require(['zepto', 'queryString', 'underscore', 'widgets/wxLogin', 'widgets/tips'
 
 			$('.count-select').on('tap', '.add, .del', function(){
 				if($(this).hasClass('add') && $(this).hasClass('on')){
-					new tips({content: '超出购买限额'});
+					new tips({content: '超出購買限額'});
 					return;
 				};
 				var $input = $(this).parent().find('input');
@@ -201,7 +202,7 @@ require(['zepto', 'queryString', 'underscore', 'widgets/wxLogin', 'widgets/tips'
 			var race_id = raceInfo.race_id;
 			var count = $('.count-select input').val();
 			if(pay <1){
-				new tips({content: '至少购买一张票！'});
+				new tips({content: '至少購買一張票！'});
 				return;
 			};
 			pay(race_id, count);

@@ -9,13 +9,14 @@
 <% _.each(race_info, function(info){ %>
     <!-- <option value="">1月14日 星期三 夜馬</option> -->
     <% 
-        var time = new Date(info.race_day); 
+        var time = new Date(info.race_day);
+        var year = time.getFullYear();
         var month = time.getMonth()+1;
         var date = time.getDate();
         var day = ['日', '一', '二', '三', '四', '五', '六'][time.getDay()];
         var type = {'1': '日', '2': '夜'}[info.race_type];
     %>
     <option value="<%- JSON.stringify(info.race) %>">
-        <%- ''+ month+ '月'+ date+ '日 星期'+ day+ ' '+ type+ '馬'%>
+        <%- ''+ year+ '年'+ month+ '月'+ date+ '日 星期'+ day+ ' '+ type+ '馬'%>
     </option>
 <% }) %>

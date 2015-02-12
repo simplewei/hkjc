@@ -75,7 +75,7 @@ require(['zepto', 'underscore', 'iscroll', 'widgets/wxLogin', 'widgets/tips', 'w
 				};
 				if ((this.limit * (this.currPage + 1)) >= this.totalCount) {
 					new tips({
-						content: '全部加载完毕',
+						content: '全部加載完畢',
 						stayTime: 500
 					});
 					this.hasRecords = false;

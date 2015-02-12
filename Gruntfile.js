@@ -64,31 +64,41 @@ module.exports = function (grunt) {
       }
     },
 
+    express: {
+      custom: {
+        options: {
+          port: 9001,
+          bases: '/cgi-bin/v2.0/',
+          server: './app/demo/data/main'
+        }
+      }
+    },
+
+
     // The actual grunt server settings
     connect: {
       options: {
-        port: 80,
+        port: 9000,
         open: true,
         livereload: 35729,
         // Change this to '0.0.0.0' to access the server from outside
         hostname: '127.0.0.1'
       },
       proxypass: {
-          proxies: [
-              {
-                  // 需反向代理路径
-                  context: '/cgi-bin',
-                  // 测试环境ip
-                  host: '10.129.133.31'
-              },{
-                  // 反向代理路径
-                  context: '/node',
-                  // 本地nodejs
-                  host: '127.0.0.1',
-                  port: 8000
-              }
-          ]
+        proxies: [{
+          // 需反向代理路径
+          context: '/cgi-bin',
+          // 测试环境ip
+          host: '10.129.133.31'
+        }, {
+          // node反向代理路径
+          context: '/node',
+          // 本地nodejs
+          host: '127.0.0.1',
+          port: 8000
+        }]
       },
+
       livereload: {
         options: {
           middleware: function(connect, options) {
@@ -396,13 +406,32 @@ module.exports = function (grunt) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'configureProxies:proxypass', 
         'connect:dist:keepalive']);
-    }
+    };
 
+    if(target === 'testData'){
+      grunt.task.run(['express']);
+      var proxypass = [{
+        // 电脑端测试用假数据
+        context: '/cgi-bin/v2.0/hkjc_query_all_order.cgi',
+        // 本地nodejs
+        host: '127.0.0.1',
+        port: 9001
+      },{
+        context: '/cgi-bin/v2.0/hkjc_query_order.cgi',
+        // 本地nodejs
+        host: '127.0.0.1',
+        port: 9001
+      }];
+      proxypass = proxypass.concat(grunt.config.get('connect.proxypass.proxies'));
+      grunt.config.set('connect.proxypass.proxies', proxypass)
+    };
+
+// console.log(grunt.config.get('connect.proxypass.proxies'))
     grunt.task.run([
       'clean:server',
-      'configureProxies:proxypass',
       'concurrent:server',
       // 'autoprefixer',
+      'configureProxies:proxypass',
       'connect:livereload',
       'watch'
     ]);

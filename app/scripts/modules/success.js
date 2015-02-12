@@ -40,7 +40,6 @@ require(['zepto', 'queryString', 'widgets/wxLogin', 'widgets/loading', 'widgets/
 			
 			var parsed = queryString.parse(location.search);
 			getListInfo(parsed.out_trade_no).then(function(data){
-// var data={"list_info":{"checkin_addr":"1","create_time":"2015-01-24 17:10:33","from_url":"wechat","listid":"3000000003201501240000010645","modify_time":"2015-01-24 17:11:11","pay_time":"2015-01-24 17:11:14","race_addr":"1","race_day":"2015-02-15","race_id":"11","race_type":"1","send_msg":"0","spid":"3000000003","state":"1","ticket_count":"1","ticket_price":"10","total_money":"10","trade_state":"4","transid":"1010013000000003201501240000473388","uin":"ojmkttwv_4zEk3uec5d8jxZx6jEc"},"listid":"3000000003201501240000010645","msg_id":"1f85810a142209067420386h","retcode":"0","retmsg":"ok","ticket_info":[{"qrcode":"S002114-9000001108-11001","state":"1"}],"tid":"hkjc_query_order"}
 
 				loading.hide();
 
@@ -50,11 +49,13 @@ require(['zepto', 'queryString', 'widgets/wxLogin', 'widgets/loading', 'widgets/
 					'2': '沙田'
 				};
 				var time = new Date(data.list_info.race_day);
+				var year = time.getFullYear();
 				var month = time.getMonth() + 1;
 				var date = time.getDate();
 				var day = ['日', '一', '二', '三', '四', '五', '六'][time.getDay()];
 				var type = {'1': '日','2': '夜'}[data.list_info.race_type];
-				var _date = '' + month + '月' + date + '日 星期' + day + ' ' + type + '馬';
+				var _date = ''+ year+ '年' + month + '月' +
+				 date + '日 星期' + day + ' ' + type + '馬';
 				
 				$('#count').html(data.list_info.ticket_count);
 				$("#date").html(_date);

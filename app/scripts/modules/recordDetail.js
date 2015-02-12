@@ -60,43 +60,29 @@ require(['zepto', 'underscore', 'iscroll', 'queryString', 'qrcode', 'widgets/wei
 
 
 
-			html2canvas($('.qrcode-img')[0], {
-				letterRendering: true,
-				background: '#fff',
-				onrendered: function(canvas) {
-					$.ajax({
-						url: '/node/ticket',
-						type: 'post',
-						data:{
-							imgData: canvas.toDataURL(),
-							name: params.qrcode
-						}
-					}).then(function(data){
-						var _h = '<img class="qrcode-download" src="'+
-							data.url+ '" width="238" height="238"/>';
-						$('.img-wrap').append(_h);
-						$('.tips-1').css({
-							visibility:''
-						})
-					});
-				}
-			});
-	
+				html2canvas($('.piccut-area')[0], {
+					letterRendering: true,
+					background: '#fff',
+					onrendered: function(canvas) {
+						$.ajax({
+							url: '/node/ticket',
+							type: 'post',
+							data:{
+								imgData: canvas.toDataURL(),
+								name: params.qrcode
+							}
+						}).then(function(data){
+							var _h = '<img class="qrcode-download" src="'+
+								data.url+ '" width="238" height="238"/>';
+							$('.img-wrap').append(_h);
+							$('.tips-1').css({
+								visibility: 'visible'
+							});
+						});
+					}
+				});
+		
 
-				// 生成门票图片 html2canvas
-				// $.ajax({
-				// 	url: '/node/ticket',
-				// 	data: {
-				// 		code: params.qrcode,
-				// 		checkin_addr: params.checkin_addr,
-				// 		race_day: params.race_day,
-				// 		race_type: params.race_type
-				// 	},
-				// 	timeout: 3000
-				// }).then(function(data){
-				// 	$('.img-wrap').append('<img class="qrcode-download" src="'+
-				// 		data.url+'" width="238" height="238"/>')
-				// });
 
 
 			};
