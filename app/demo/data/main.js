@@ -7,7 +7,7 @@ app.get('/cgi-bin/v2.0/hkjc_query_all_order.cgi', function(req, res) {
 	res.send({
 		"list_infos": [{
 			"checkin_addr": "2",
-			"create_time": "2015-02-02 16:10:53",
+			"pay_time": "2015-02-02 16:10:53",
 			"listid": "3000000003201502020000010790",
 			"modify_time": "2015-02-02 16:11:04",
 			"pay_time": "2015-02-02 16:11:07",
@@ -23,7 +23,7 @@ app.get('/cgi-bin/v2.0/hkjc_query_all_order.cgi', function(req, res) {
 			"uin": "ojmkttwv_4zEk3uec5d8jxZx6jEc"
 		},{
 			"checkin_addr": "2",
-			"create_time": "2015-02-02 16:11:53",
+			"pay_time": "2015-02-02 16:11:53",
 			"listid": "3000000003201502020000010791",
 			"modify_time": "2015-02-02 16:11:04",
 			"pay_time": "2015-02-02 16:11:07",
@@ -51,7 +51,7 @@ app.get('/cgi-bin/v2.0/hkjc_query_order.cgi', function(req, res) {
 	res.send({
 		"list_info": {
 			"checkin_addr": "2",
-			"create_time": "2015-02-02 16:10:53",
+			"pay_time": "2015-02-02 16:10:53",
 			"from_url": "wechat",
 			"listid": "3000000003201502020000010790",
 			"modify_time": "2015-02-02 16:11:04",

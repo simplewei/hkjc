@@ -62,6 +62,7 @@ img {vertical-align: middle;}
 .hide {
     display: none !important;
 }
+.on-active:active {background-color: #EAEAEA; }
 
 /* iscroll 彈性滾動 */
 .iscroll-body > *{height:100%;}/* 该节点为SPA模式使用，JS控制 */
@@ -310,7 +311,7 @@ img {vertical-align: middle;}
     -webkit-border-radius: 3px;
     border-radius: 3px;
 }
-.form-line  .count-select .on,.form-line .count-select a:active {
+.form-line  .count-select .on {
     background-color: #EAEAEA;
 }
 .form-line .count-select .number {
@@ -806,7 +807,7 @@ img {vertical-align: middle;}
 .record-detail .qrcode-download{
     position: absolute;
     left: 0;
-    top: 25px;
+    top: 0;
     opacity: 0;
     z-index: 10;
 }

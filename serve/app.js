@@ -32,24 +32,34 @@ module.exports = app
 //保存base64图片POST方法
 app.post('/node/ticket', function(req, res){
     //接收前台POST过来的base64
-    
+    var _path = __dirname + '/resource/tickets/';
+
+
     var imgData = req.body.imgData;
     //过滤data:URL
     var base64Data = imgData.replace(/^data:image\/\w+;base64,/, "");
     var dataBuffer = new Buffer(base64Data, 'base64');
     var filename = req.body.name+".png";
 
-    var _path = __dirname + '/resource/tickets/';
-    fs.writeFile(_path+filename, dataBuffer, function(err) {
-        if(err){
-          res.status(500).send(err);
-        }else{
-          res.send({url:'/node/ticket/'+filename});
-          // 出于安全考虑，10分钟后销毁图片
-          setTimeout(function(){
-            fs.unlink(_path+filename);
-          },600000);
-        };
+    fs.open(_path+filename, 'r', function(e, fd){
+
+      if(e){
+        fs.writeFile(_path+filename, dataBuffer, function(err) {
+            if(err){
+              res.status(500).send(err);
+            }else{
+              res.send({url:'/node/ticket/'+filename});
+              // // 出于安全考虑，10分钟后销毁图片
+              // setTimeout(function(){
+              //   fs.unlink(_path+filename);
+              // },600000);
+            };
+        });
+        console.log(1)
+        return;      
+      };
+      console.log(2)
+      res.send({url:'/node/ticket/'+filename});
     });
 });
 

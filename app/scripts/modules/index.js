@@ -102,7 +102,7 @@ require(['zepto', 'queryString', 'underscore', 'widgets/wxLogin', 'widgets/tips'
 
 			var _html= '';
 			_.each(addr.checkin_info, function(obj){
-				var selected = obj.checkin_addr == addr.race_addr? 'selected': '';
+				var selected = obj.checkin_addr == addr.race_addr? 'selected="selected"': '';
 				_html+= '<option '+selected +' value=\''+ JSON.stringify(obj) +'\'>'+
 					addrMap[obj.checkin_addr] +'</option>'
 			});
@@ -253,6 +253,7 @@ require(['zepto', 'queryString', 'underscore', 'widgets/wxLogin', 'widgets/tips'
 
 			//  立即预定
 			$('.btn-book').on('tap', payOrder);
+
 		};
 
 		init();
