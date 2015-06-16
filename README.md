@@ -1,4 +1,4 @@
-# hkjc
+# hkjc - xx
 
 
 这是一个基于YEOMAN搭建的系统，集成了grunt-proxy、requirejs及rev等打包特性。
